@@ -23,5 +23,10 @@
   "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791661277159-tqka6bni.mp3",
   "tool": "gemini-3-1-flash-tts",
   "voice": "Gacrux"
+ },
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791662452146-pim2j8br.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
  }
 }
