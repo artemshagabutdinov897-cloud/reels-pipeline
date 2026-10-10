@@ -1,9 +1,4 @@
 {
- "voice": {
-  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791661277159-tqka6bni.mp3",
-  "tool": "gemini-3-1-flash-tts",
-  "voice": "Gacrux"
- },
  "scene_2": {
   "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791661335687.png",
   "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791661498008-q3ds087q.mp4",
@@ -23,5 +18,10 @@
   "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791661503365.png",
   "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791661631928-hhmmgfj0.mp4",
   "prompt": "The tea mushroom slides into the jar and floats up, she stretches gauze over the neck and ties it with string"
+ },
+ "voice_old": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791661277159-tqka6bni.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
  }
 }
