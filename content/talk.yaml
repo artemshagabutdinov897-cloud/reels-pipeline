@@ -653,3 +653,57 @@ talks:
       Подпишись, ещё расскажу. А рецепты для живота — пиши «Книга» 👇
 
       Баба Зоя — собирательный образ, советы из деревенских тетрадей. Это не лечение.
+
+  - id: "40-chainy-grib"
+    title: Чайный гриб — ностальгия «раньше в каждом доме», формат свекольного кваса (90 тыс. в пробном), 2026-10-10
+    cfg:
+      subtitles: karaoke
+      words_per_line: 1
+      highlight_color: FFFFFF
+      font_size: 104
+    talk_in:
+      text: >-
+        Раньше такая банка на каждом окне стояла. А теперь внуки спрашивают: бабуль, это что за медуза? Чайный гриб, милок. Сейчас научу.
+      image: "Medium close-up: the grandmother standing by the wooden windowsill of her rustic village kitchen, lace curtain and red geraniums in pots behind her, soft daylight, looking straight into the camera with a warm sly smile. Next to her on the windowsill stands a three-liter glass jar of homemade kombucha: amber tea with a thick pale beige round tea mushroom (SCOBY) floating on top, the neck covered with white gauze tied with string; with one hand she lifts the edge of the gauze"
+      motion: "The grandmother lifts the gauze on the jar, peeks inside, then turns to the camera and talks warmly, small natural head movements, handheld smartphone video"
+    broll:
+      text: >-
+        Завариваю чай: на три литра — три ложки чёрного, без всяких добавок. Сахару — стакан с горкой, мешаю, пока весь не разойдётся. Остужаю до тёплого: в горячий гриб не кладут — сварится. Гриб — в банку, и стакан старого настоя туда же. Марлей накрою — и в тёплый тёмный угол.
+      scenes:
+        - image: "Close-up: a white enamel saucepan with a dark blue rim on a gas stove with a lit blue flame in a rustic village kitchen, boiling water, the grandmother's hand in a burgundy knitted cardigan sleeve pouring a spoonful of loose black tea leaves into the boiling water, steam rising"
+          motion: "The tea leaves fall into the boiling water and swirl, the water darkens to amber, steam rises, the blue flame flickers"
+        - image: "Close-up: the same white enamel saucepan with a dark blue rim with dark amber tea on the gas stove with a low blue flame, the grandmother's hand pouring white sugar from a faceted glass into the tea and stirring with a wooden spoon"
+          motion: "Sugar pours into the tea, the wooden spoon stirs in slow circles until the sugar dissolves, light steam rises"
+        - image: "Close-up: the same white enamel saucepan with a dark blue rim with amber sweet tea standing on a wooden kitchen table away from the stove, cooling, the grandmother's palm gently touching the side of the pan to check the warmth, kitchen window with geraniums softly blurred behind"
+          motion: "Thin wisps of steam fade away, the grandmother's palm rests on the side of the pan and she nods, calm natural movement"
+        - image: "Close-up: a clean three-liter glass jar of amber tea on a wooden kitchen table, the grandmother's hands carefully lowering a thick pale beige round tea mushroom (SCOBY) into the jar, a faceted glass of cloudy old kombucha liquid standing beside the jar"
+          motion: "The tea mushroom slides gently into the jar and floats up to the surface, the tea ripples, then she pours the glass of old kombucha in after it"
+        - image: "Close-up: the grandmother's hands covering the neck of the three-liter glass jar of kombucha with white gauze and tying it with string, then the jar standing on a wooden shelf in a shaded warm corner of the village kitchen"
+          motion: "Her fingers stretch the gauze over the jar neck and tie the string in a knot, she pats the jar gently"
+    talk_out:
+      text: >-
+        Через неделю квасок готов — кисленький, с пузырьками. Это напиток, а не лекарство. Подпишись — завтра расскажу, как гриб с нуля вырастить.
+      image: "Medium close-up: the grandmother sitting at the wooden kitchen table by the window with lace curtain and red geraniums, holding a clear faceted glass of sparkling amber kombucha with tiny bubbles, the three-liter jar with the tea mushroom under gauze beside her, looking straight into the camera with a warm kind smile"
+      motion: "The grandmother raises the glass, bubbles rise in the drink, she takes a small sip, smiles and nods to the camera, small natural head movements, handheld smartphone video"
+    caption: |
+      Чайный гриб 🫙 Раньше на каждом окне стоял
+
+      Что нужно на банку 3 л:
+      — 2,5 л воды
+      — 3 ст. л. чёрного листового чая (без ароматизаторов)
+      — 1 стакан сахара (около 200 г)
+      — гриб и стакан старого настоя
+
+      Как делаю:
+      1. Завариваю чай, кладу сахар и мешаю, пока весь не растворится.
+      2. Остужаю до комнатной температуры — в горячем гриб погибнет.
+      3. Процеживаю в чистую банку, кладу гриб и стакан старого настоя.
+      4. Горлышко — марлей, в тёплое место без солнца на 5–7 дней.
+      5. Готовый напиток сливаю в бутылки и в холодильник, гриб заливаю новым чаем.
+
+      Металлическую посуду не берите. Если на грибе плесень (пушистые пятна) — выбросить и начать заново.
+      При диабете, гастрите и язве — осторожно: в напитке сахар и кислота, есть немного градуса. Детям и беременным лучше не давать.
+
+      Подпишись — завтра расскажу, как вырастить гриб с нуля 👇
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это напиток, а не лечение.
