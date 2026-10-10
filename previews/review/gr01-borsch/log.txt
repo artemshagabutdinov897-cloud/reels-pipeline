@@ -1,0 +1,22 @@
+k0 200 5107765 PNG image data, 1536 x 2752, 16-bit/colo
+k1 200 5083240 PNG image data, 1536 x 2752, 16-bit/colo
+https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791195996154.png 000  cannot open `tmp/gr01-borsch-https://sto
+k3 200 3965354 PNG image data, 1536 x 2752, 16-bit/colo
+k4 200 4899430 PNG image data, 1536 x 2752, 16-bit/colo
+https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791196340701.png 000  cannot open `tmp/gr01-borsch-https://sto
+k6 200 5723473 PNG image data, 1536 x 2752, 16-bit/colo
+clip_1 200 3575965 ISO Media, MP4 Base Media v1 [ISO 14496-
+k0 200 5107765 PNG image data, 1536 x 2752, 16-bit/colo
+k1 200 5083240 PNG image data, 1536 x 2752, 16-bit/colo
+k2 200 3903387 PNG image data, 1536 x 2752, 16-bit/colo
+k3 200 3965354 PNG image data, 1536 x 2752, 16-bit/colo
+k4 200 4899430 PNG image data, 1536 x 2752, 16-bit/colo
+k5 200 4873152 PNG image data, 1536 x 2752, 16-bit/colo
+k6 200 5723473 PNG image data, 1536 x 2752, 16-bit/colo
+clip_3 200 4725940 ISO Media, MP4 Base Media v1 [ISO 14496-
+clip_4 200 4495163 ISO Media, MP4 Base Media v1 [ISO 14496-
+clip_1 200 3575965 ISO Media, MP4 Base Media v1 [ISO 14496-
+clip_2 200 5544208 ISO Media, MP4 Base Media v1 [ISO 14496-
+clip_6 200 2692229 ISO Media, MP4 Base Media v1 [ISO 14496-
+clip_5 200 3865822 ISO Media, MP4 Base Media v1 [ISO 14496-
+clip_7 200 3668581 ISO Media, MP4 Base Media v1 [ISO 14496-

@@ -1,0 +1,22 @@
+{
+ "keyframes": {
+  "sky_face": "https://109.71.240.55/graf/media/ref/sky-face.jpg",
+  "sky_body": "https://109.71.240.55/graf/media/ref/sky-body.jpg",
+  "k0": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791195751032.png",
+  "k1": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791195840013.png",
+  "k2": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791195938885.png",
+  "k3": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791195999503.png",
+  "k4": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791196052260.png",
+  "k5": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791196128237.png",
+  "k6": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791196232495.png"
+ },
+ "clips": {
+  "clip_1": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791196363185-bpt3ti6y.mp4",
+  "clip_2": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791196388289-jcklyney.mp4",
+  "clip_3": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791196420087-ta1i7jbs.mp4",
+  "clip_4": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791196426068-iuuapv14.mp4",
+  "clip_6": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791196554259-2lmmv0zi.mp4",
+  "clip_5": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791196564938-4zvroaqb.mp4",
+  "clip_7": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791196588441-m3la03nk.mp4"
+ }
+}

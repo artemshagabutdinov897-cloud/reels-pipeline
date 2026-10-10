@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,DejaVu Sans,80,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,1,0,0,0,100,100,0,0,1,7,3,2,80,80,518,1
+Style: Simple,DejaVu Sans,49,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2.5,1,2,90,90,249,1
+Style: Hook,DejaVu Sans,68,&H00FFFFFF,&H00FFFFFF,&H00202020,&H28202020,1,0,0,0,100,100,0,0,3,22,0,8,90,90,230,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:03.27,Simple,,0,0,0,,Письмо Колино на комоде лежит не
+Dialogue: 0,0:00:03.27,0:00:05.61,Simple,,0,0,0,,открываю, жду его дня рождения.
+Dialogue: 0,0:00:05.61,0:00:07.94,Simple,,0,0,0,,А руки сами пряники затеяли.
+Dialogue: 0,0:00:07.94,0:00:09.34,Simple,,0,0,0,,По его тетради.
+Dialogue: 0,0:00:09.34,0:00:12.62,Simple,,0,0,0,,Мёд с Колиных ульев в кастрюльку,
+Dialogue: 0,0:00:12.62,0:00:15.42,Simple,,0,0,0,,с маслом и сахаром, пока не
+Dialogue: 0,0:00:15.42,0:00:15.89,Simple,,0,0,0,,запенится.
+Dialogue: 0,0:00:15.89,0:00:19.16,Simple,,0,0,0,,Корица, гвоздика, мука тесто мягкое, как
+Dialogue: 0,0:00:19.16,0:00:19.62,Simple,,0,0,0,,ушко.
+Dialogue: 0,0:00:19.62,0:00:22.90,Simple,,0,0,0,,Пятнадцать минут в печи и дух
+Dialogue: 0,0:00:22.90,0:00:25.70,Simple,,0,0,0,,по избе, как сорок лет назад.
+Dialogue: 0,0:00:25.70,0:00:28.97,Simple,,0,0,0,,Напиши в комментариях «книга» пришлю рецепты.
+Dialogue: 0,0:00:28.97,0:00:31.77,Simple,,0,0,0,,А письмо откроем вместе, в Колин
+Dialogue: 0,0:00:31.77,0:00:32.24,Simple,,0,0,0,,день.

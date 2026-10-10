@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790474709294-k5a7bb19.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790474909960.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790475172292-tc082a6e.mp4",
+  "prompt": "The knife goes through the crackling crust, crumbs fall, she lifts a thick slice"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790475400841.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790475778317-lpo3rgdl.mp4",
+  "prompt": "She tilts the jar slightly towards the light, looks at it fondly, then smiles at the camera"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790477841689.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790478338629-mj2t5p6b.mp4",
+  "prompt": "She stirs it with a wooden spoon and covers the jar with a linen cloth"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790478429513.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790478779090-ya637tju.mp4",
+  "prompt": "She takes a bite, chews slowly and nods contentedly"
+ }
+}

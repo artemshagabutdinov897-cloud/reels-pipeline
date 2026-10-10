@@ -1,0 +1,24 @@
+{
+ "keyframes": {
+  "b1": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791400944325.png",
+  "b2": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791401021949.png",
+  "b3": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791402530979.png",
+  "b4": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791402683738.png",
+  "b5": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791401333474.png",
+  "b6": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791402830339.png",
+  "b7": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791401589862.png",
+  "b8": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791401649291.png",
+  "b9": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791402225554.png"
+ },
+ "clips": {
+  "clip_1": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791403338091-l75isr1h.mp4",
+  "clip_3": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791403338020-rp071b5p.mp4",
+  "clip_4": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791403338507-oyy1kkzu.mp4",
+  "clip_2": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791403348669-k8wxixmx.mp4",
+  "clip_8": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791403512986-9vidsnc5.mp4",
+  "clip_7": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791403514072-ph1pq6xp.mp4",
+  "clip_5": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791403518810-owr495c1.mp4",
+  "clip_6": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791403518589-fsj5wxhv.mp4",
+  "clip_9": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791403672911-6th2x7xw.mp4"
+ }
+}

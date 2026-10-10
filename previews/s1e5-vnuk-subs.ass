@@ -1,0 +1,34 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,DejaVu Sans,80,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,1,0,0,0,100,100,0,0,1,7,3,2,80,80,518,1
+Style: Simple,DejaVu Sans,49,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2.5,1,2,90,90,249,1
+Style: Hook,DejaVu Sans,68,&H00FFFFFF,&H00FFFFFF,&H00202020,&H28202020,1,0,0,0,100,100,0,0,3,22,0,8,90,90,230,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.45,Simple,,0,0,0,,Мальчик лет тринадцати.
+Dialogue: 0,0:00:01.45,0:00:02.90,Simple,,0,0,0,,Я сразу поняла.
+Dialogue: 0,0:00:02.90,0:00:04.34,Simple,,0,0,0,,Звоню Серёже, внуку.
+Dialogue: 0,0:00:04.34,0:00:05.79,Simple,,0,0,0,,А он молчит.
+Dialogue: 0,0:00:05.79,0:00:08.69,Simple,,0,0,0,,А потом говорит: «Бабуль, дед уже
+Dialogue: 0,0:00:08.69,0:00:09.17,Simple,,0,0,0,,болел.
+Dialogue: 0,0:00:09.17,0:00:12.55,Simple,,0,0,0,,Попросил отвезти его к Нине чтоб
+Dialogue: 0,0:00:12.55,0:00:15.44,Simple,,0,0,0,,она своей рукой правду написала, а
+Dialogue: 0,0:00:15.44,0:00:17.86,Simple,,0,0,0,,то ты ему не поверишь.
+Dialogue: 0,0:00:17.86,0:00:20.75,Simple,,0,0,0,,Велел отдать тетрадь, когда ты скучать
+Dialogue: 0,0:00:20.75,0:00:21.23,Simple,,0,0,0,,начнёшь.
+Dialogue: 0,0:00:21.23,0:00:22.68,Simple,,0,0,0,,А я боялся».
+Dialogue: 0,0:00:22.68,0:00:24.61,Simple,,0,0,0,,Шесть лет мальчишка молчал.
+Dialogue: 0,0:00:24.61,0:00:27.51,Simple,,0,0,0,,В субботу приехал и сварил мне
+Dialogue: 0,0:00:27.51,0:00:28.47,Simple,,0,0,0,,дедову гречку.
+Dialogue: 0,0:00:28.47,0:00:31.37,Simple,,0,0,0,,А уезжая, положил на стол ключ.
+Dialogue: 0,0:00:31.37,0:00:32.33,Simple,,0,0,0,,Старый, ржавый.
+Dialogue: 0,0:00:32.33,0:00:34.26,Simple,,0,0,0,,«Это Нина просила передать.
+Dialogue: 0,0:00:34.26,0:00:37.16,Simple,,0,0,0,,Сказала от того, что твоё».

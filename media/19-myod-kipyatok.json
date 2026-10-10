@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790487098230-bnid40ma.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790487373563.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790488073550-rfwpf8do.mp4",
+  "prompt": "Honey drips in a slow thick stream, catching the window light"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790488206779.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790491111172-di5hlhyp.mp4",
+  "prompt": "She pours the tea, stops and wags her finger at the camera with a smile"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790493182106.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790493343992-lr92w02n.mp4",
+  "prompt": "She stirs gently and taps the spoon on the rim of the glass"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790493548248.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790496843989-qdkfjab2.mp4",
+  "prompt": "She drinks, lowers the glass and looks out of the window contentedly"
+ }
+}

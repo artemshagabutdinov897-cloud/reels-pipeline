@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790512007860-oz9hdz7j.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790512161088.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790512297624-jwbqloe3.mp4",
+  "prompt": "The cucumber snaps in half with a crunch, brine drips down"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790512610209.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790512784662-tdx5373q.mp4",
+  "prompt": "The knife trims the ends quickly, she drops the cucumbers into a glass jar"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790513080173.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790513254250-he6dwrcg.mp4",
+  "prompt": "The brine fills the jar, dill leaves shift and float up"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790513438001.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790513624525-818qhrrl.mp4",
+  "prompt": "She bites it with a loud crunch, chews and nods approvingly at the camera"
+ }
+}

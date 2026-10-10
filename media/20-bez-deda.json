@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790510252451-zi3fjmsx.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790510318823.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790510490236-d3khx6e6.mp4",
+  "prompt": "Bees crawl slowly, one hand gently strokes the wooden lid"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790510716695.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790510847656-1v8j86zc.mp4",
+  "prompt": "She walks slowly along the hives, touching each lid with her palm"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790510940789.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790511440063-ursxzd96.mp4",
+  "prompt": "The camera slowly moves closer to the photograph, dust floats in the window light"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790511750107.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790511924123-cjl7dny7.mp4",
+  "prompt": "She sips the tea, lowers the cup and smiles softly and a little sadly"
+ }
+}

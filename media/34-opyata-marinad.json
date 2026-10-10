@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049077147-e1mzohtt.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049143873.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049334263-8r3mtyfw.mp4",
+  "prompt": "She opens the jar and lifts a small golden mushroom on a fork, the marinade glistens"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049151705.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049323989-qs0jsnzi.mp4",
+  "prompt": "She ladles the mushrooms with marinade into a jar and screws on the lid"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049159891.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049323998-9lt81e9s.mp4",
+  "prompt": "She picks up a mushroom with a fork, eats it, squints happily and nods at the camera, she does not talk"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049251474.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049382578-tbn1lyla.mp4",
+  "prompt": "She pours the mushrooms into the pot and stirs with a wooden spoon, calm kind face"
+ }
+}

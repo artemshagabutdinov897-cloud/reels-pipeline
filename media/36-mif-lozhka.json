@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049092076-y7kkmg8j.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049149143.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049328852-0m0fomzn.mp4",
+  "prompt": "She cuts the onion, glances at it and calmly puts it aside"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049152414.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049297665-i236w7m4.mp4",
+  "prompt": "She lifts the basket slightly, nods at the camera kindly and gently wags her finger, she does not talk"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049165228.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049333601-yb2n65kz.mp4",
+  "prompt": "She lifts the silver spoon out of the pot, looks at it in the light and gently shakes her head"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049212088.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049373013-u88d2u7n.mp4",
+  "prompt": "She looks at the pale mushroom carefully and drops it into a bucket on the floor, calm and serious"
+ }
+}

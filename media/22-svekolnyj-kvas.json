@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790513714210-6xr9z4na.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790513826835.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790514014749-46ohfcqx.mp4",
+  "prompt": "The red liquid pours into the glass and glows in the light"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790514088819.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790514264469-mw6ii3jq.mp4",
+  "prompt": "The knife slices through the beet, she drops the rounds into a large glass jar"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790514365099.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790514554735-ektv1wjk.mp4",
+  "prompt": "She ties the gauze with a string and pats the jar twice"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790514641013.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790514829105-tnmvbdev.mp4",
+  "prompt": "She takes a sip, squints happily and nods at the camera"
+ }
+}

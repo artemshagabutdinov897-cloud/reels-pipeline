@@ -1,0 +1,37 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,DejaVu Sans,80,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,1,0,0,0,100,100,0,0,1,7,3,2,80,80,518,1
+Style: Simple,DejaVu Sans,49,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2.5,1,2,90,90,249,1
+Style: Hook,DejaVu Sans,68,&H00FFFFFF,&H00FFFFFF,&H00202020,&H28202020,1,0,0,0,100,100,0,0,3,22,0,8,90,90,230,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.91,Simple,,0,0,0,,Всю ночь не спала.
+Dialogue: 0,0:00:01.91,0:00:03.34,Simple,,0,0,0,,Кто такая «эн»?
+Dialogue: 0,0:00:03.34,0:00:04.77,Simple,,0,0,0,,Стала читать сначала.
+Dialogue: 0,0:00:04.77,0:00:08.11,Simple,,0,0,0,,А там про тот самый пирог.
+Dialogue: 0,0:00:08.11,0:00:10.97,Simple,,0,0,0,,Семьдесят второй год, танцы в клубе.
+Dialogue: 0,0:00:10.97,0:00:13.36,Simple,,0,0,0,,Я принесла пирог с антоновкой.
+Dialogue: 0,0:00:13.36,0:00:15.26,Simple,,0,0,0,,Отвернулась половины нет.
+Dialogue: 0,0:00:15.26,0:00:18.13,Simple,,0,0,0,,Стоит парень, щёки набиты: «Выйдешь за
+Dialogue: 0,0:00:18.13,0:00:21.47,Simple,,0,0,0,,меня буду каждый день такой есть».
+Dialogue: 0,0:00:21.47,0:00:24.33,Simple,,0,0,0,,Я сорок лет рассказывала, что он
+Dialogue: 0,0:00:24.33,0:00:25.76,Simple,,0,0,0,,ко мне пристал.
+Dialogue: 0,0:00:25.76,0:00:28.62,Simple,,0,0,0,,А Коля пишет: «Пирог мне Галька
+Dialogue: 0,0:00:28.62,0:00:29.10,Simple,,0,0,0,,отдала.
+Dialogue: 0,0:00:29.10,0:00:31.48,Simple,,0,0,0,,Сам бы год не решился».
+Dialogue: 0,0:00:31.48,0:00:33.87,Simple,,0,0,0,,А между страницами карточка.
+Dialogue: 0,0:00:33.87,0:00:35.78,Simple,,0,0,0,,Коля молодой, у улья.
+Dialogue: 0,0:00:35.78,0:00:37.21,Simple,,0,0,0,,А рядом девушка.
+Dialogue: 0,0:00:37.21,0:00:38.16,Simple,,0,0,0,,Не я.
+Dialogue: 0,0:00:38.16,0:00:40.55,Simple,,0,0,0,,На обороте: «Коле от Нины.
+Dialogue: 0,0:00:40.55,0:00:41.50,Simple,,0,0,0,,Семьдесят четвёртый».
+Dialogue: 0,0:00:41.50,0:00:44.36,Simple,,0,0,0,,Мы тогда уже два года женаты
+Dialogue: 0,0:00:44.36,0:00:44.84,Simple,,0,0,0,,были.

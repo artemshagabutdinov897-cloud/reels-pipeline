@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,DejaVu Sans,80,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,1,0,0,0,100,100,0,0,1,7,3,2,80,80,518,1
+Style: Simple,DejaVu Sans,49,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2.5,1,2,90,90,249,1
+Style: Hook,DejaVu Sans,68,&H00FFFFFF,&H00FFFFFF,&H00202020,&H28202020,1,0,0,0,100,100,0,0,3,22,0,8,90,90,230,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.75,Simple,,0,0,0,,Эту сметану я купила три недели
+Dialogue: 0,0:00:02.75,0:00:03.20,Simple,,0,0,0,,назад.
+Dialogue: 0,0:00:03.20,0:00:04.58,Simple,,0,0,0,,Три недели, милок!
+Dialogue: 0,0:00:04.58,0:00:06.41,Simple,,0,0,0,,А она как новенькая.
+Dialogue: 0,0:00:06.41,0:00:08.24,Simple,,0,0,0,,Настоящая столько не живёт.
+Dialogue: 0,0:00:08.24,0:00:11.44,Simple,,0,0,0,,Вечером наливаю банку деревенского молока и
+Dialogue: 0,0:00:11.44,0:00:12.36,Simple,,0,0,0,,в холодок.
+Dialogue: 0,0:00:12.36,0:00:15.10,Simple,,0,0,0,,К утру сверху сливки, вот такой
+Dialogue: 0,0:00:15.10,0:00:15.56,Simple,,0,0,0,,слой.
+Dialogue: 0,0:00:15.56,0:00:18.30,Simple,,0,0,0,,Снимаю ложкой, кладу ложку вчерашней сметаны
+Dialogue: 0,0:00:18.30,0:00:21.05,Simple,,0,0,0,,и ставлю в тепло на сутки.
+Dialogue: 0,0:00:21.05,0:00:23.34,Simple,,0,0,0,,Назавтра ложка в ней стоит.
+Dialogue: 0,0:00:23.34,0:00:26.54,Simple,,0,0,0,,Живая сметана через неделю скиснет и
+Dialogue: 0,0:00:26.54,0:00:27.00,Simple,,0,0,0,,правильно.
+Dialogue: 0,0:00:27.00,0:00:30.20,Simple,,0,0,0,,Зато в борще, на блинах совсем
+Dialogue: 0,0:00:30.20,0:00:31.12,Simple,,0,0,0,,другой вкус.
+Dialogue: 0,0:00:31.12,0:00:34.32,Simple,,0,0,0,,Напиши в комментариях «книга» пришлю рецепты.

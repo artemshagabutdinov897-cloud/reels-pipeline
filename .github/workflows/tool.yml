@@ -1,0 +1,32 @@
+name: tool
+on:
+  workflow_dispatch:
+    inputs:
+      name: {required: true}
+      tool: {required: true}
+      payload: {required: true}
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r pipeline/requirements.txt
+      - name: run
+        env:
+          BRATUHA_API_KEY: ${{ secrets.BRATUHA_API_KEY || secrets.YK_SECRET }}
+          PAYLOAD: ${{ inputs.payload }}
+        run: python -u pipeline/run_tool.py "${{ inputs.name }}" "${{ inputs.tool }}" "$PAYLOAD"
+      - name: save
+        run: |
+          git config user.name "artemshagabutdinov897-cloud"
+          git config user.email "artemshagabutdinov897@gmail.com"
+          git add previews
+          git commit -m "tool ${{ inputs.name }}" || true
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push && break; sleep 8; done

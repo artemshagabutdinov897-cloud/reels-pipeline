@@ -1,0 +1,52 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790694538379-04vdra2x.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_7": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790694604672.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790694768415-us6qcbwg.mp4",
+  "prompt": "She pushes the stick slowly to the bottom of the jar and pulls it out"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790694608770.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790694731808-06u7wowt.mp4",
+  "prompt": "She holds the glass stomach close to the camera, taps the glass twice with her finger and shakes her head disapprovingly"
+ },
+ "scene_8": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790694608439.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790694857059-3xn8vtd1.mp4",
+  "prompt": "She takes a forkful of sauerkraut, eats it and nods with pleasure"
+ },
+ "scene_9": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790694623057.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790694809646-xw14m7sb.mp4",
+  "prompt": "She talks to the camera warmly and nods once at the end"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790694623075.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790694793701-gxhcc60p.mp4",
+  "prompt": "Salt falls from her fingers onto the cabbage"
+ },
+ "scene_6": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790694622651.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790694819887-lwja2pjy.mp4",
+  "prompt": "She presses the cabbage down with her fist twice, the brine rises"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790694630537.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790694756998-bho718xu.mp4",
+  "prompt": "She points at the dishes one by one with a wry smile"
+ },
+ "scene_5": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790694640802.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790694804292-flmwpqte.mp4",
+  "prompt": "She squeezes and kneads the cabbage firmly, juice appears at the bottom of the basin"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790694678383.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790694849131-nufk4di3.mp4",
+  "prompt": "The knife moves quickly, thin cabbage strands pile up"
+ }
+}

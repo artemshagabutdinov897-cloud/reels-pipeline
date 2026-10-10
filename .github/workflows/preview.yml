@@ -1,0 +1,40 @@
+name: preview
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        required: true
+      run_id:
+        required: true
+permissions:
+  contents: write
+  actions: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.id }}
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+          path: art
+      - name: contact sheet
+        run: |
+          sudo apt-get -qq install -y ffmpeg >/dev/null 2>&1 || true
+          V=$(find art -name '*.mp4' | head -1)
+          D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$V")
+          echo "duration $D"
+          mkdir -p previews
+          ffmpeg -hide_banner -loglevel error -y -i "$V" -vf "fps=12/$D,scale=270:-1,tile=4x3" -frames:v 1 -q:v 5 previews/${{ inputs.id }}.jpg
+          ffmpeg -hide_banner -loglevel error -y -ss 0.3 -i "$V" -frames:v 1 -vf scale=540:-1 -q:v 4 previews/${{ inputs.id }}-first.jpg
+          cp "$V" previews/${{ inputs.id }}.mp4
+          ls -la previews
+          git config user.name "artemshagabutdinov897-cloud"
+          git config user.email "artemshagabutdinov897@gmail.com"
+          git add previews
+          git commit -m "preview ${{ inputs.id }}" || true
+          git push

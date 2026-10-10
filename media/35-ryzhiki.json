@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049087854-e2gp6z91.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049148865.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049308371-tlmm8oq0.mp4",
+  "prompt": "She picks up a mushroom with a fork, eats it, squints happily and nods at the camera, she does not talk"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049150898.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049314267-gheqwi7c.mp4",
+  "prompt": "The grandmother's hand sprinkles coarse salt over the bright orange mushrooms"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049151689.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049344273-0m0iicka.mp4",
+  "prompt": "Her hands lay the mushrooms, sprinkle salt, add a leaf and press down gently"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049156830.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049324661-fduhrmrx.mp4",
+  "prompt": "She wipes a mushroom cap with the cloth and puts it into a bowl, calm kind face"
+ }
+}

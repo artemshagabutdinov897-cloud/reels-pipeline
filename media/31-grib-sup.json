@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791047437063-lbsmvc4i.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791047502585.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791047653345-nt77pwbo.mp4",
+  "prompt": "She drops a handful of dried mushrooms into the water and gently presses them down with her fingers, they slowly soak"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791047521249.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791047771782-gar1v1r4.mp4",
+  "prompt": "She pours the barley into the pot and stirs slowly with a wooden spoon, light steam rises, calm kind face"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791047539178.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791047697757-4sb9y7ug.mp4",
+  "prompt": "Her hand lifts the string of dried mushrooms off the nail, the mushrooms sway gently"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791047557474.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791047733602-j8hcz68u.mp4",
+  "prompt": "She stirs the sour cream into the soup, takes a spoonful, tastes it, squints happily and nods at the camera, calm and kind, she does not talk"
+ }
+}

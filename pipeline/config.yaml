@@ -1,0 +1,97 @@
+# Настройки конвейера. Ключи API сюда НЕ пишем — они берутся из переменных
+# окружения: BRATUHA_API_KEY (Братуха) или FAL_KEY + ELEVENLABS_API_KEY (fal.ai).
+
+# Где генерировать: "bratuha" — всё через Братуху.ру в рублях; "fal" — fal.ai + ElevenLabs.
+provider: "bratuha"
+
+# --- Братуха.ру ---
+# slug и параметры нейросетей — со страниц bratuha.ru/tools/<slug>/api.
+bratuha:
+  budget_rub: null                  # без лимита; поставить число (₽) — конвейер остановится на этой сумме
+  image_tool: "nano-banana-pro"     # эталон и стартовые кадры сцен (правка эталона — лицо не плывёт)
+  image_mode: "cheap"               # cheap 5 ₽ / normal 8 ₽ / vip 15 ₽ за картинку
+  image_size: "2K"
+  video_tool: "seedance-2-5"        # оживление кадра — только Seedance 2.5; длительность ровно под сцену (4–30 с)
+  video_resolution: "480p"          # 480p — 14 ₽/сек, 720p — 28 ₽/сек (детальнее, вдвое дороже)
+  tts_tool: "gemini-3-1-flash-tts"  # голос выбран на пробах 26.09: Gemini, Gacrux (0,03 ₽ за символ)
+  tts_voice: "Gacrux"
+  voice_speed: 1.15                 # ускорение озвучки без изменения тембра (1 — как есть)
+  # вариант: tts_tool "qwen3-tts" — голос по описанию ниже, дальше клон (assets/voice/sample.json)
+  voice_description: >-
+    Пожилая русская деревенская женщина, 74 года. Тёплый, чуть хрипловатый голос,
+    говорит спокойно и неторопливо, по-доброму, с лёгкой хитринкой и улыбкой, как бабушка внуку.
+  # примерные цены — только для оценки в --dry-run; реальная цена пишется в лог
+  price_image: 5
+  price_video_per_sec: 14          # 28 для 720p
+  price_tts_per_1000: 30
+
+# --- Голос (ElevenLabs, provider: fal) ---
+# ID голоса из ElevenLabs (Voice Library → голос → "Copy voice ID").
+voice_id: "REPLACE_WITH_VOICE_ID"
+tts_model: "eleven_multilingual_v2"
+voice_settings:
+  stability: 0.45
+  similarity_boost: 0.8
+  style: 0.3
+  use_speaker_boost: true
+
+# --- Картинки и видео (fal.ai, provider: fal) ---
+# Названия моделей на fal.ai. Если модель переименуют или захочется другую
+# (например, Kling вместо Seedance) — меняем только здесь.
+image_model: "fal-ai/flux-pro/v1.1-ultra"   # эталонное фото бабушки
+edit_model: "fal-ai/flux-pro/kontext"       # стартовый кадр сцены из эталона
+video_model: "fal-ai/bytedance/seedance/v1/pro/image-to-video"
+video_resolution: "720p"                    # 720p дешевле; растягиваем до 1080x1920 при монтаже
+
+# Эталонное фото. Если файла нет и есть FAL_KEY — сгенерируется по промпту ниже.
+reference_image: "assets/reference/baba-zoya.jpg"   # рядом .url — оригинал в хранилище Братухи
+reference_prompt: >-
+  Photorealistic portrait of a 74-year-old Russian village grandmother, round kind face,
+  deep laugh lines around light-blue eyes, rosy cheeks, gentle closed-mouth smile,
+  grey hair almost fully covered by a red headscarf with small white polka dots tied at the back,
+  burgundy hand-knitted cardigan over a blue floral cotton dress, white apron with red embroidered hem,
+  standing in a rustic wooden kitchen with a whitewashed Russian stove, checkered oilcloth on the table,
+  geranium on the window sill, warm morning window light, shot on 35mm, shallow depth of field,
+  natural skin texture, documentary style
+
+# Добавляется к описанию каждой сцены, чтобы бабушка не менялась.
+character_lock: >-
+  Keep exactly the same elderly woman: same face, red headscarf with small white polka dots,
+  burgundy knitted cardigan, blue floral dress, white apron with red embroidered hem.
+  Photorealistic, warm natural light, rustic Russian village setting, vertical 9:16.
+  No text, letters or labels anywhere in the picture.
+video_style: >-
+  Amateur vertical smartphone video filmed by a grandchild: slight handheld shake, natural daylight,
+  ordinary everyday pace, subtle realistic motion only. No bubbles, no gas, no sparkles, no magic effects,
+  no exaggerated steam, no slow motion, no text, no subtitles,
+  no letters or labels on jars, packaging or any objects.
+
+# Флешбэки сериала «Тетрадь деда Коли» (сцены с flashback: true): 1970-е, без эталона бабы Зои.
+flashback_style: >-
+  1970s Soviet village, faded amateur color photograph look, warm washed-out colors, soft film grain,
+  slightly blurred edges, natural light, vertical 9:16. Young Kolya: tall man in his twenties, dark wavy hair,
+  short moustache, rolled-up sleeves of a checked shirt. Young Zoya: slim woman about twenty, long light-brown
+  braid, red headscarf with small white polka dots. No text, letters or labels anywhere in the picture.
+flashback_video_style: >-
+  Old 1970s amateur 8mm home movie footage: faded warm colors, film grain, gentle frame flicker,
+  slightly uneven speed, soft focus. Subtle natural motion only. No text, no subtitles.
+
+# --- Монтаж ---
+width: 1080
+height: 1920
+fps: 30
+music_volume: 0.12          # громкость фоновой музыки относительно голоса (0..1)
+tail_seconds: 0.6           # пауза в конце ролика после последнего слова
+
+# --- Субтитры ---
+# simple — спокойные субтитры фразами, мелко и внизу, как в обычном видео с телефона;
+# karaoke — крупные по 3 слова с подсветкой (выглядит как шаблон ИИ-роликов); none — без субтитров
+subtitles: "simple"
+simple_words_per_line: 6
+hook: false                 # надпись-крючок плашкой сверху в первые секунды
+font_name: "DejaVu Sans"
+font_size: 80
+words_per_line: 3
+highlight_color: "FFD84D"   # цвет текущего слова (RGB)
+hook_seconds: 2.8           # сколько секунд висит надпись-крючок
+whisper_model: "small"      # модель распознавания для своей озвучки (tiny/base/small/medium)

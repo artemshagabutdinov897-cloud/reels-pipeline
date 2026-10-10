@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790481207497-yfb6g2lj.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790481317798.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790481489378-l31f2gya.mp4",
+  "prompt": "Water pours in, the dried fruit shifts and floats up"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790481642541.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790481834807-vibjklb9.mp4",
+  "prompt": "She tucks the blanket around the pot and pats it twice"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790481943553.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790482113626-zaszc3up.mp4",
+  "prompt": "She ladles slowly, then lifts the mug towards the camera"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790482215040.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790482404230-k9b06tot.mp4",
+  "prompt": "She sips, closes her eyes for a second and smiles"
+ }
+}

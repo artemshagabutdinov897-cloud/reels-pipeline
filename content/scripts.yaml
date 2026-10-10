@@ -1,0 +1,1311 @@
+# Сценарии роликов бабы Зои.
+#
+# Каждый ролик 20–30 секунд. Структура: крючок (первые 2 секунды) → рецепт → призыв.
+# Поля:
+#   hook       — крупная надпись в первые секунды ролика (на экране, не озвучивается)
+#   voiceover  — текст озвучки (ElevenLabs). Из него же строятся субтитры.
+#   scenes     — кадры по порядку. image: что должно быть в стартовом кадре
+#                (правка эталонного фото бабушки), motion: что происходит в кадре.
+#   caption    — подпись к посту в Instagram.
+#
+# Промпты сцен — на английском: видеомодели понимают его лучше.
+
+cta: &cta "Ещё сто рецептов в моей книжке. Напиши в комментариях «книга» — пришлю."
+
+videos:
+  - id: "01-kapusta"
+    rubric: Живые заготовки
+    title: Квашеная капуста без уксуса
+    hook: "Капуста, после которой живот спасибо скажет"
+    voiceover: >-
+      Доча, магазинную капусту с уксусом выкинь. Живая капустка — только соль да время.
+      Три кило капусты, морковка, две столовые ложки соли без горки. Мни руками, пока сок не пустит.
+      Утрамбуй в банку, чтоб сок сверху был. Три дня в тепле, каждый день протыкай палкой, газ выпускай.
+      Потом в холод. Ешь понемножку к обеду — и тяжести как не бывало. Ещё сто рецептов в моей книжке, ссылка в шапке профиля.
+    scenes:
+      - image: "The grandmother at the wooden kitchen table shredding a large head of white cabbage with a big knife, pile of shredded cabbage in an enamel basin"
+        motion: "She shreds cabbage with steady strokes, looks up at the camera and smiles"
+      - image: "Close-up of the grandmother's hands kneading shredded cabbage with grated carrot in an enamel basin"
+        motion: "Hands squeeze and knead the cabbage, juice appears, slow push-in"
+      - image: "The grandmother pressing cabbage into a three-litre glass jar with her fist, brine visible on top"
+        motion: "She presses the cabbage down, brine rises, she nods satisfied"
+      - image: "The grandmother at the windowsill with geraniums pushing a long wooden stick down into a three-litre jar of shredded cabbage"
+        motion: "She pokes the cabbage with the stick a couple of times and pulls it out, ordinary movement, camera almost still"
+      - image: "The grandmother at the table with a small bowl of sauerkraut and a slice of rye bread, smiling at the camera"
+        motion: "She takes a forkful, chews, gives a thumbs up"
+    caption: |
+      Капуста с уксусом из магазина и живая квашеная — это две разные еды. Вторую моя мать делала каждую осень, и я делаю 🥬
+
+      Что нужно на трёхлитровую банку:
+      — 3 кг белокочанной капусты
+      — 1 крупная морковь
+      — 2 столовые ложки соли без горки (простая, не йодированная)
+
+      Как делаю:
+      1. Капусту тонко шинкую, морковь тру на крупной тёрке.
+      2. Солю и мну руками, пока не пустит сок. Рук не жалей, минут пять.
+      3. Плотно утрамбовываю в банку кулаком, чтобы сок был сверху.
+      4. Три дня держу в тепле. Каждый день протыкаю до дна деревянной палочкой, чтобы вышел газ, иначе будет горчить.
+      5. Потом крышку — и в холод. Через неделю самый вкус.
+
+      Ем понемножку к обеду, пару ложек. Просто так или с чёрным хлебом.
+
+      Сохрани, чтобы в сезон не искать. А ты квасишь с морковкой или без? Напиши 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+      #квашенаякапуста #заготовки #деревенскаяеда #бабушкинырецепты #рецептыбабушки #капуста #домашниезаготовки #простыерецепты #бабазоя
+
+  - id: "02-kisel"
+    rubric: Каши и взвары
+    title: Овсяный кисель
+    hook: "Кисель, который варили в каждой деревне"
+    voiceover: >-
+      Милок, это не тот кисель из пакета. Овсяный, настоящий.
+      Стакан овсянки залей тремя стаканами тёплой воды, корочку ржаного хлеба сверху — и на ночь.
+      Утром процеди, отожми. Вари на тихом огне, мешай, пока не загустеет. Соли щепотку.
+      Тёплый, с ложкой масла — живот обволакивает, сытно и легко. Ещё сто рецептов в моей книжке. Напиши в комментариях «книга» — пришлю.
+    scenes:
+      - image: "The grandmother pouring rolled oats from a paper bag into a clay jug on the kitchen table"
+        motion: "Oats pour into the jug, she adds water from a kettle"
+      - image: "Close-up of a crust of rye bread floating on oats in water in a clay jug"
+        motion: "She places the bread crust on top and covers the jug with a linen cloth"
+      - image: "The grandmother straining the oat liquid through gauze into an enamel pot"
+        motion: "Milky liquid streams through gauze, she squeezes the gauze"
+      - image: "Enamel pot on the Russian stove, thick pale oat kissel being stirred with a wooden spoon"
+        motion: "Spoon stirs thick kissel, steam rises"
+      - image: "The grandmother with a cup of warm oat kissel with a melting pat of butter, smiling"
+        motion: "She blows on the cup, sips, and nods warmly"
+    caption: |
+      Не тот кисель из пакета, что в детском саду давали. Этот варили в каждой деревне из того, что было в доме: овсянка, вода и корка хлеба 🥣
+
+      Что нужно:
+      — 1 стакан овсяных хлопьев (не быстрого приготовления)
+      — 3 стакана тёплой кипячёной воды
+      — корочка ржаного хлеба
+      — щепотка соли, кусочек сливочного масла
+
+      Как делаю:
+      1. Вечером заливаю хлопья тёплой водой, сверху корочку хлеба, накрываю полотенцем — и на ночь.
+      2. Утром процеживаю через марлю и хорошо отжимаю. Гущу не выбрасываю — в оладьи.
+      3. Варю на тихом огне и всё время мешаю, пока не загустеет, как сметана. Минут 5–7.
+      4. Соль по вкусу, ложку масла сверху.
+
+      Пью тёплым на завтрак. Сытно, дёшево, и до обеда про еду не вспоминаешь.
+
+      Сохрани себе на утро. А ты такой кисель пробовал или только из пакета? 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+      #овсяныйкисель #кисель #бабушкинырецепты #деревенскаяеда #завтрак #овсянка #рецептыбабушки #простыерецепты #бабазоя
+
+  - id: "03-perga"
+    rubric: Пасека
+    title: Что такое перга
+    hook: "Пасечники это едят сами, а не продают"
+    voiceover: >-
+      Про мёд все знают, а про пергу — единицы. Это пыльца, которую пчёлки в соты сложили и сами же законсервировали.
+      Коля мой, царствие ему небесное, каждую весну её ел по чуть-чуть. Говорил: пчёлы дурного не запасут.
+      Кисловатая, как хлебушек. Держи во рту, пока не растает, да не больше чайной ложки. Если на мёд аллергия — не трогай.
+      Ещё сто рецептов в моей книжке — напиши в комментариях «книга», пришлю.
+    scenes:
+      - image: "The grandmother at a blue wooden beehive in a flowering meadow, wearing her headscarf, holding a honeycomb frame"
+        motion: "She lifts a frame from the hive, a few bees fly around calmly"
+      - image: "Extreme close-up of honeycomb cells packed with multicoloured bee bread, perga"
+        motion: "Slow macro pan across the colourful cells"
+      - image: "The grandmother sitting on a bench by the apiary, holding an old black and white photo of an elderly man with a beekeeper hat"
+        motion: "She looks at the photo with a gentle smile, sunlight flickers"
+      - image: "Close-up of perga granules in a small wooden spoon held by the grandmother"
+        motion: "She shows the spoon to the camera, then puts the granules in her mouth"
+    caption: |
+      Перга — «пчелиный хлеб». Мало кто пробовал, а пасечники берегут для себя 🐝
+      Пробовали когда-нибудь? Напиши в комментариях.
+      Важно: при аллергии на мёд и продукты пчеловодства — нельзя.
+      #перга #пасека #мёд #деревня #бабушкинырецепты
+
+  - id: "04-hleb"
+    rubric: Печка
+    title: Ржаной хлеб на закваске
+    hook: "Хлеб, от которого не пучит"
+    voiceover: >-
+      Магазинный хлеб на дрожжах — поела и ходишь, как шарик. А вот ржаной на закваске — другое дело.
+      Закваску заводишь неделю: мука да вода, каждый день подкармливаешь. Потом ржаная мука, соль, тёплая вода — и закваску.
+      Подойдёт за ночь. В печь или духовку, час. Корочка трещит, мякиш кисленький.
+      Такой хлеб живот любит. Ещё сто рецептов в моей книжке — напиши в комментариях «книга», пришлю.
+    scenes:
+      - image: "The grandmother at the kitchen table next to a glass jar of bubbly rye sourdough starter"
+        motion: "She tilts the jar towards the camera showing the bubbles, smiles"
+      - image: "Close-up of the grandmother's hands mixing dark rye dough in a wooden trough"
+        motion: "Hands knead sticky dough, flour dust in the warm light"
+      - image: "Round rye loaf in a cast-iron pan going into a whitewashed Russian stove"
+        motion: "She pushes the pan into the stove with a long wooden peel"
+      - image: "A dark crusty round rye loaf on a linen towel, the grandmother cutting it with a big knife"
+        motion: "The knife cuts through crackling crust, steam rises from the crumb"
+    caption: |
+      Ржаной хлеб на закваске — без дрожжей, как пекли в деревне 🍞
+      Если хочешь, в следующем ролике покажу, как завести закваску. Пиши «ХОЧУ».
+      #хлебназакваске #ржанойхлеб #бездрожжей #деревенскаяеда #бабушкинырецепты
+
+  - id: "05-medovaya-voda"
+    rubric: Пасека
+    title: Медовая вода натощак
+    hook: "С этого баба Зоя начинает каждое утро"
+    voiceover: >-
+      Я каждое утро, как встану, первым делом — стакан медовой воды.
+      Вода тёплая, не горячая, запомни! В кипяток мёд не клади, он там весь вкус теряет.
+      Чайная ложка мёда, пара капель лимона, если есть. Выпила — и через полчаса завтракать.
+      Живот просыпается, как по будильнику. Вот так-то. Ещё сто рецептов в моей книжке — напиши в комментариях «книга», пришлю.
+    scenes:
+      - image: "Early morning, the grandmother in the kitchen by the window, pouring warm water from an enamel kettle into a glass"
+        motion: "Water pours into a clear glass, soft sunrise light through the window"
+      - image: "Close-up of a wooden honey dipper dripping golden honey into a glass of water"
+        motion: "Honey drips into the water"
+      - image: "The grandmother stirring the glass with a teaspoon, wagging a finger at the camera"
+        motion: "She stirs, then raises her finger as if warning, smiles"
+      - image: "The grandmother drinking the glass of honey water by the window with geraniums"
+        motion: "She drinks, sighs contentedly, looks out of the window"
+    caption: |
+      Стакан тёплой медовой воды — утренняя привычка бабы Зои 🍯
+      Главное — не кипяток! Сохраняй, чтобы завтра не забыть.
+      Мёд нельзя детям до года и при аллергии.
+      #мёд #утро #полезныепривычки #пасека #бабушкинырецепты
+
+  - id: "06-kvas"
+    rubric: Живые заготовки
+    title: Свекольный квас
+    hook: "Квас, о котором забыли. А зря"
+    voiceover: >-
+      Раньше в каждом доме свекольный квас стоял, а теперь и не слыхал никто.
+      Две свёклы почисть, порежь кружочками, в трёхлитровую банку. Залей кипячёной водой, ложку соли, корочку ржаного хлеба.
+      Марлей накрой — и пять дней в тепле. Пенку снимай.
+      Пьёшь по полстаканчика до обеда, кисленький, бодрит. И в борщ добавишь — пальчики оближешь. Ещё сто рецептов в моей книжке — напиши в комментариях «книга», пришлю.
+    scenes:
+      - image: "The grandmother peeling dark red beetroots at the kitchen table, her fingers slightly stained red"
+        motion: "She peels a beet with a small knife, shows the red fingers to the camera and laughs"
+      - image: "Sliced beetroot rounds going into a three-litre glass jar"
+        motion: "Slices drop into the jar one by one"
+      - image: "A jar of deep ruby beet kvass covered with gauze on a wooden shelf in a cellar"
+        motion: "The jar stands on the shelf, camera slowly moves closer"
+      - image: "The grandmother pouring ruby beet kvass from a jar into a small glass"
+        motion: "Ruby liquid pours, she raises the glass as a toast"
+    caption: |
+      Свекольный квас — рубиновый, кисленький, деревенский ❤️
+      Кто в детстве пробовал? Пиши, из какой ты области.
+      #свекольныйквас #квас #заготовки #деревенскаяеда #бабушкинырецепты
+
+  - id: "07-pravila"
+    rubric: Бабушкины правила
+    title: Три правила, чтоб живот не болел
+    hook: "3 правила, которые знала каждая бабушка"
+    voiceover: >-
+      Три правила, милок, и живот тебе спасибо скажет.
+      Первое: не запивай еду чаем ледяным, пей потом, через полчасика.
+      Второе: ужинай, пока светло. Коля мой говорил: пчела на ночь не ест — и ты не ешь.
+      Третье: жуй. Тридцать раз, а не как утка — глотком. Спешка в тарелке — тяжесть в животе.
+      Ещё сто рецептов в моей книжке — напиши в комментариях «книга», пришлю.
+    scenes:
+      - image: "The grandmother sitting at the kitchen table facing the camera, holding up one finger, teapot beside her"
+        motion: "She raises one finger, speaking warmly"
+      - image: "The grandmother on a bench outside the house at golden hour, eating from a bowl"
+        motion: "She eats slowly, sun sets behind the apple tree"
+      - image: "The grandmother at the apiary at dusk, bees returning to the hive"
+        motion: "Bees fly into the hive entrance, she watches smiling"
+      - image: "The grandmother at the table chewing slowly, holding up three fingers"
+        motion: "She shows three fingers, playfully shakes her head"
+    caption: |
+      Три бабушкиных правила для лёгкого живота. Просто, бесплатно, работает на привычке 😉
+      Какое нарушаешь ты? Честно 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+      #правилапитания #бабушкинысоветы #зож #деревня #полезныепривычки
+
+  - id: "08-kasha"
+    rubric: Каши и взвары
+    title: Пшённая каша с тыквой в горшке
+    hook: "Каша из печки, которую невозможно повторить. Или можно?"
+    voiceover: >-
+      Пшённая каша с тыквой, в горшочке — наша, деревенская.
+      Пшено промой семь раз, пока вода не станет чистая, и кипятком ошпарь — горчить не будет.
+      Тыкву кубиком, в горшок, пшено сверху, молоко, щепоть соли. В духовку, полтора часа, на слабый жар.
+      Сверху ложку мёда да кусочек масла. Сытно, мягко, до обеда не вспомнишь про еду. Ещё сто рецептов в моей книжке — напиши в комментариях «книга», пришлю.
+    scenes:
+      - image: "The grandmother rinsing millet in a bowl under water, cloudy water"
+        motion: "She swirls the millet, pours off cloudy water"
+      - image: "Bright orange pumpkin cubes and millet in a clay pot on the kitchen table"
+        motion: "Milk pours over the millet into the clay pot"
+      - image: "The grandmother pulling a clay pot out of the Russian stove with oven mitts"
+        motion: "She pulls the pot out, lifts the lid, a little steam comes out"
+      - image: "Golden millet porridge with pumpkin in a clay bowl, honey drizzled and a pat of butter melting"
+        motion: "Honey drizzles, butter slowly melts, spoon dips in"
+    caption: |
+      Пшённая каша с тыквой в горшке — вкус детства в деревне 🎃
+      Работает и в обычной духовке. Сохрани на выходные.
+      #пшённаякаша #тыква #кашавгоршочке #деревенскаяеда #бабушкинырецепты
+
+  - id: "09-yabloki"
+    rubric: Живые заготовки
+    title: Мочёные яблоки
+    hook: "Яблоки, которые хранятся до весны без сахара"
+    voiceover: >-
+      Мочёные яблоки — это вам не варенье, тут сахара чуть.
+      Антоновку плотно в банку, листья смородины переложи. Рассол: литр воды, ложка соли, ложка мёда, стакан ржаной муки заварить и процедить.
+      Залей, гнёт сверху, и на месяц в холод.
+      Кисло-сладкие, шипучие, как лимонад. К мясу — лучше любого соуса. Ещё сто рецептов в моей книжке — напиши в комментариях «книга», пришлю.
+    scenes:
+      - image: "The grandmother picking green-yellow Antonovka apples from an apple tree in the garden into a wicker basket"
+        motion: "She picks an apple, polishes it on her apron, smiles"
+      - image: "Apples packed tightly in a large glass jar with blackcurrant leaves between them"
+        motion: "Her hands place an apple and tuck a leaf beside it"
+      - image: "The grandmother pouring cloudy brine over the apples in a jar"
+        motion: "Brine pours in, covering the apples"
+      - image: "The grandmother cutting a pickled apple in half at the kitchen table"
+        motion: "She bites a slice, squints happily at the sour taste"
+    caption: |
+      Мочёные яблоки по-деревенски: антоновка, рассол, листья смородины 🍏
+      Кто пробовал — тот знает. Кто нет — сохраняй на осень.
+      #мочёныеяблоки #антоновка #заготовки #осень #бабушкинырецепты
+
+  - id: "10-pirog"
+    rubric: Печка
+    title: Пирог с капустой на кефире
+    hook: "Пирог, после которого не тяжело"
+    voiceover: >-
+      Пирог, говорят, тяжёлая еда. А это смотря какой.
+      Тесто на кефире: стакан кефира, яйцо, соль, сода на кончике ножа, мука — пока не станет как густая сметана.
+      Начинка — тушёная капустка с луком и морковкой. Половину теста, капусту, остальное тесто сверху.
+      Сорок минут. Лёгкий, мягкий, и живот не ругается. Ещё сто рецептов в моей книжке — напиши в комментариях «книга», пришлю.
+    scenes:
+      - image: "The grandmother pouring kefir into a mixing bowl with an egg, kitchen table with flour"
+        motion: "She whisks with a fork, looks at the camera"
+      - image: "Cabbage with onion and carrot stewing in a cast-iron skillet"
+        motion: "She stirs with a wooden spatula, steam rises"
+      - image: "Batter poured over cabbage filling in a round baking dish"
+        motion: "Thick batter slowly spreads over the filling"
+      - image: "The grandmother cutting a golden cabbage pie on a wooden board"
+        motion: "Knife cuts a slice, she lifts it and shows the filling"
+    caption: |
+      Заливной пирог с капустой на кефире — без возни с тестом 🥧
+      Сохрани, а пятничным вечером испеки.
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+      #пирогскапустой #пирог #выпечка #деревенскаяеда #бабушкинырецепты
+
+  - id: "11-zabrus"
+    rubric: Пасека
+    title: Забрус
+    hook: "Эту жвачку пасечники жевали сто лет назад"
+    voiceover: >-
+      Внучок мой прошлым летом приехал, а я ему — на, жуй. Он глаза выпучил.
+      Это забрус — крышечки с сот, которые срезают, когда мёд качают. Воск, мёд, немного прополиса.
+      Жуёшь, как жвачку, минут десять, потом выплёвываешь. Сладко, пахнет лугом.
+      Коля всегда говорил: зубы чистишь, дёсны греешь. Аллергикам — нельзя. Ещё сто рецептов в моей книжке — напиши в комментариях «книга», пришлю.
+    scenes:
+      - image: "The grandmother at the apiary slicing wax caps off a honeycomb frame with a long uncapping knife"
+        motion: "The knife slides, wax caps curl off dripping with honey"
+      - image: "Close-up of wax cappings with honey in a white enamel bowl"
+        motion: "Honey slowly oozes from the cappings"
+      - image: "The grandmother on a bench with a young grandson around 10 years old, both chewing and laughing"
+        motion: "The boy makes a surprised face, she laughs"
+    caption: |
+      Забрус — «пчелиная жвачка», которую знают только на пасеках 🐝
+      Слышали про такое? Пиши в комментариях.
+      Важно: при аллергии на продукты пчеловодства — нельзя.
+      #забрус #пасека #мёд #деревня #бабушкинырецепты
+
+  - id: "12-vzvar"
+    rubric: Каши и взвары
+    title: Взвар из сухофруктов
+    hook: "Не компот. Взвар. И разница огромная"
+    voiceover: >-
+      Компот варят, а взвар — запаривают. В этом весь секрет.
+      Курага, чернослив, сушёные яблочки, горсть изюма — промой.
+      Залей крутым кипятком, в термос или кастрюлю под полотенце. На ночь.
+      Утром ложку мёда, когда остынет. Чернослив своё дело знает — живот работает как часы. Ещё сто рецептов в моей книжке — напиши в комментариях «книга», пришлю.
+    scenes:
+      - image: "Dried apricots, prunes, dried apple slices and raisins in small bowls on the kitchen table"
+        motion: "The grandmother picks a prune and shows it to the camera with a wink"
+      - image: "The grandmother pouring boiling water from a kettle over dried fruit in an enamel pot"
+        motion: "Water pours from the kettle"
+      - image: "An enamel pot wrapped in a thick towel on the stove bench"
+        motion: "She tucks the towel around, pats it"
+      - image: "The grandmother ladling amber dried-fruit drink into a glass mug"
+        motion: "She ladles the drink, holds up the mug"
+    caption: |
+      Взвар из сухофруктов — не компот! Запаривают, а не варят. Так вкуснее и полезнее 🍑
+      Сохраняй.
+      #взвар #сухофрукты #компот #деревенскаяеда #бабушкинырецепты
+
+  - id: "13-ogurcy"
+    rubric: Живые заготовки
+    title: Малосольные огурцы за сутки
+    hook: "Огурцы за сутки. Без уксуса"
+    voiceover: >-
+      Огурчики малосольные — за сутки, и никакого уксуса.
+      Огурцы кончики срежь, в банку. Чеснок, укроп зонтиком, лист хрена, смородины.
+      Рассол: литр воды, две ложки соли, вскипяти и сразу горячим залей. На сутки на стол.
+      Хрустят — ухо закладывает. А рассольчик с утра — лучше любой минералки. Ещё сто рецептов в моей книжке — напиши в комментариях «книга», пришлю.
+    scenes:
+      - image: "The grandmother in her vegetable garden picking small cucumbers into an enamel bowl"
+        motion: "She picks a cucumber, bites it, grins"
+      - image: "Cucumbers, garlic cloves, dill umbrellas and horseradish leaves packed in a glass jar"
+        motion: "Her hands press a dill umbrella into the jar"
+      - image: "Hot brine poured into a jar of cucumbers on the kitchen table"
+        motion: "Hot brine pours in"
+      - image: "The grandmother crunching a pickled cucumber, close to the camera"
+        motion: "Loud crunch, she laughs"
+    caption: |
+      Малосольные огурцы за сутки — хрустящие, без уксуса 🥒
+      Сохрани до сезона.
+      #малосольныеогурцы #огурцы #заготовки #лето #бабушкинырецепты
+
+  - id: "14-pechene"
+    rubric: Печка
+    title: Овсяное печенье на меду
+    hook: "Печенье без сахара, внуки не отличат"
+    voiceover: >-
+      Внукам печенье из магазина не даю. Своё пеку, без сахара.
+      Два стакана овсянки, два банана или печёные яблоки, три ложки мёда, горсть изюма. Перемешай руками.
+      Шарики, прижми ладошкой — и в духовку, двадцать минут.
+      Сладко, сытно, и живот лёгкий. Внуки сметают, не спрашивают. Ещё сто рецептов в моей книжке — напиши в комментариях «книга», пришлю.
+    scenes:
+      - image: "The grandmother mashing bananas with a fork in a bowl with rolled oats"
+        motion: "She mashes and mixes, oats and banana combine"
+      - image: "Honey drizzled from a wooden dipper into the oat mixture"
+        motion: "Golden honey falls into the bowl"
+      - image: "Round oat cookies on a baking tray, the grandmother pressing them flat with her palm"
+        motion: "Her palm presses a ball into a cookie"
+      - image: "Golden oat cookies on a plate, a child's hand grabbing one"
+        motion: "A small hand snatches a cookie, the grandmother laughs"
+    caption: |
+      Овсяное печенье на меду — без сахара и без муки 🍪
+      Детям до года мёд не даём. Остальным — на здоровье.
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+      #овсяноепеченье #безсахара #выпечка #пп #бабушкинырецепты
+
+  - id: "15-istoriya"
+    rubric: Пасека
+    title: Почему я не бросила пасеку
+    hook: "Шесть лет без него. А пасека живёт"
+    voiceover: >-
+      Шесть лет, как Коли нет. А пасеку я не бросила.
+      Все говорили — Зоя, продай, куда тебе. А я каждую весну выхожу к ульям, и он будто рядом.
+      Он меня всему научил — и мёд качать, и пергу брать. А я его — хлеб печь.
+      Вот всё, что мы с ним знали, я в книжку и записала. Чтоб не пропало. Ссылка в шапке профиля.
+    scenes:
+      - image: "Wide shot of a small apiary with blue and yellow beehives in a flowering meadow at golden hour, the grandmother walking between the hives"
+        motion: "She walks slowly, touching a hive lid, warm backlight"
+      - image: "The grandmother sitting on a bench holding an old black and white photo of a smiling elderly beekeeper"
+        motion: "She gently strokes the photo, soft smile"
+      - image: "The grandmother at the kitchen table writing in a thick old notebook by lamplight, jar of honey beside"
+        motion: "She writes, turns a page, looks up at the camera"
+    caption: |
+      Про деда Колю и нашу пасеку 🐝
+      Всё, что мы знали вдвоём, — в книжке. Ссылка в шапке профиля.
+      #пасека #история #деревня #мёд #бабазоя
+
+  - id: "16-zakvaska"
+    rubric: Печка
+    title: Закваске 50 лет
+    voiceover: >-
+      Этой закваске пятьдесят лет. Её ещё моя мать заводила. Раз в неделю кормлю: ложку муки, ложку воды — и она живёт. А хлеб на ней — ни дрожжей, ни сахару. Мука, вода, соль. Корочка трещит, мякиш кисленький, и живот после него спокойный. Рецепт — в моей книжке. Напиши в комментариях «книга» — пришлю.
+    scenes:
+      - image: "Close-up of the grandmother's hands cutting a dark crusty round rye loaf on a linen towel with a big knife"
+        motion: "The knife goes through the crackling crust, crumbs fall, she lifts a thick slice"
+      - image: "The grandmother by the kitchen window holding an old glass jar with bubbly grey rye sourdough starter"
+        motion: "She tilts the jar slightly towards the light, looks at it fondly, then smiles at the camera"
+      - image: "Close-up of the grandmother's hands adding a spoon of rye flour and a little water into the jar of sourdough starter"
+        motion: "She stirs it with a wooden spoon and covers the jar with a linen cloth"
+      - image: "The grandmother at the wooden table spreading butter on a slice of rye bread, morning sun from the window"
+        motion: "She takes a bite, chews slowly and nods contentedly"
+    caption: |
+      Этой закваске пятьдесят лет. Её заводила ещё моя мать, а я только кормлю — раз в неделю, как кошку 🍞
+
+      Хлеб на ней без дрожжей и без сахара: мука, вода, соль. Корочка трещит, мякиш кисленький, и живот после него спокойный, не пучит, как от магазинного батона.
+
+      Если своей закваски нет — заведи, это неделя:
+      1. В банку 2 столовые ложки ржаной муки и столько же тёплой воды, размешай, накрой марлей.
+      2. Каждый день добавляй ещё по ложке муки и воды.
+      3. Дня через 4–6 пойдут пузыри и кисленький запах — значит, живая.
+      4. Храни в холодильнике и подкармливай раз в неделю.
+
+      А сам хлеб — ржаная мука, соль, тёплая вода и пара ложек закваски. Подходит за ночь, печётся час. Подробно, с граммами, — в моей книжке «Бабушкин стол», ссылка в шапке.
+
+      Сохрани, пока не забыл. А у тебя дома кто-нибудь пёк свой хлеб? Напиши, кто 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+      #хлебназакваске #ржанойхлеб #закваска #бездрожжей #домашнийхлеб #бабушкинырецепты #деревенскаяеда #рецептыбабушки #бабазоя
+
+  - id: "17-posle-zastolya"
+    rubric: Каши и взвары
+    title: После застолья
+    voiceover: >-
+      Вчера все объелись? Знаю. Я на следующий день плиту не включаю. Вечером горсть сухофруктов — курага, чернослив, яблочки — кипятком в кастрюлю, полотенцем укутала и спать. Утром взвар тёплый, сладкий без сахару. Стаканчик натощак — и живот как новый. Вот так-то. Ещё рецепты — в моей книжке, ссылка в шапке профиля.
+    scenes:
+      - image: "Close-up: boiling water poured from an enamel kettle over dried apricots, prunes and dried apple slices in an enamel pot"
+        motion: "Water pours in, the dried fruit shifts and floats up"
+      - image: "The grandmother wrapping the enamel pot in a thick knitted blanket on the warm stove bench"
+        motion: "She tucks the blanket around the pot and pats it twice"
+      - image: "Morning light, the grandmother ladling amber dried-fruit drink from the pot into a glass mug"
+        motion: "She ladles slowly, then lifts the mug towards the camera"
+      - image: "The grandmother by the window with geraniums sipping the warm drink from the glass mug"
+        motion: "She sips, closes her eyes for a second and smiles"
+    caption: |
+      После праздников у меня правило: на следующий день плиту не включаю. Вечером запариваю взвар — и утром живот сам говорит спасибо 🍑
+
+      Взвар — это не компот. Компот варят, а взвар запаривают, поэтому вкус мягче и глубже.
+
+      Что нужно на двухлитровую кастрюлю:
+      — горсть кураги
+      — горсть чернослива
+      — горсть сушёных яблок
+      — немного изюма
+      — ложка мёда (по желанию)
+
+      Как делаю:
+      1. Сухофрукты хорошо промываю тёплой водой.
+      2. Складываю в кастрюлю и заливаю крутым кипятком.
+      3. Крышка, сверху полотенце или старый плед — и до утра. Можно в термос.
+      4. Утром процеживаю. Мёд кладу, только когда взвар остынет до тёплого.
+
+      Пью стаканчик натощак, остальное — в течение дня вместо чая. Сухофрукты потом съедаю, не выбрасываю.
+
+      Сохрани до следующего праздника — пригодится. У тебя что после застолья спасает? Делись 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+      Мёд нельзя детям до года и при аллергии.
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+      #взвар #сухофрукты #последпраздников #бабушкинырецепты #деревенскаяеда #чернослив #рецептыбабушки #простыерецепты #бабазоя
+
+  - id: "18-superfud"
+    rubric: Пасека
+    title: Внук назвал это суперфудом
+    voiceover: >-
+      Внук приехал, говорит: бабуль, это ж суперфуд, в Москве втридорога продают. А мы это семьдесят лет едим. Перга — пыльца, которую пчёлки в сотах сами законсервировали. Кисленькая, как хлебушек. Утром половинку чайной ложки — и хватит. Если на мёд аллергия — не трогай. Про пасеку — в моей книжке. Напиши в комментариях «книга» — пришлю.
+    scenes:
+      - image: "Extreme close-up of honeycomb cells packed with multicoloured bee bread granules, yellow, orange and brown"
+        motion: "Slow sideways camera pan across the colourful cells"
+      - image: "The grandmother at a blue wooden beehive in a flowering meadow holding a honeycomb frame, wearing her headscarf"
+        motion: "She lifts the frame and looks at it, a few bees fly around calmly"
+      - image: "The grandmother and her teenage grandson at a wooden table outside the house, a small bowl of bee bread granules between them"
+        motion: "The boy looks at the granules with suspicion, she laughs and pushes the bowl towards him"
+      - image: "Close-up of the grandmother holding half a teaspoon of bee bread granules"
+        motion: "She shows the spoon to the camera, then puts the granules in her mouth"
+    caption: |
+      Внук приехал из Москвы и говорит: бабуль, это же суперфуд, у нас за баночку втридорога берут. А мы с дедом Колей её семьдесят лет едим и слова такого не знали 🐝
+
+      Перга — это пыльца, которую пчёлы сложили в соты и сами же законсервировали мёдом. Пасечники её берегут для себя, на продажу идёт мало.
+
+      Какая на вкус: кисленькая, чуть сладкая, похожа на ржаной хлебушек. Держишь во рту, пока не растает.
+
+      Как ем я:
+      — утром натощак, половинку чайной ложки;
+      — не запиваю, не глотаю сразу — рассасываю;
+      — больше не надо, это не варенье.
+
+      Как выбрать: гранулы плотные, шестигранные, разного цвета — от жёлтого до коричневого. Если слиплись в ком и пахнут кисло-плесенью — не бери.
+
+      Сохрани, чтобы в следующий раз знать, что это за «суперфуд». Пробовал пергу? Напиши, на что похожа 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+      Нельзя при аллергии на мёд и продукты пчеловодства, детям — только после врача.
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+      #перга #пасека #мёд #пчеловодство #суперфуд #бабушкинырецепты #деревня #продуктыпчеловодства #бабазоя
+
+  - id: "19-myod-kipyatok"
+    rubric: Пасека
+    title: Мёд в кипяток — зря
+    voiceover: >-
+      Мёд в горячий чай кладёшь? Зря. В кипятке он весь свой вкус и аромат теряет, одна сладость остаётся. Я делаю так: чай налила, подождала, пока пить можно, — и тогда ложку мёда. А утром — стакан тёплой воды с мёдом, с этого у меня день начинается. Детям до года мёд нельзя. Остальное — в книжке, ссылка в шапке профиля.
+    scenes:
+      - image: "Close-up of a wooden honey dipper with thick golden honey slowly dripping into a small bowl"
+        motion: "Honey drips in a slow thick stream, catching the window light"
+      - image: "The grandmother at the kitchen table pouring tea from an enamel kettle into a glass in a metal glass holder"
+        motion: "She pours the tea, stops and wags her finger at the camera with a smile"
+      - image: "The grandmother stirring a spoon of honey into a glass of tea"
+        motion: "She stirs gently and taps the spoon on the rim of the glass"
+      - image: "Early morning, the grandmother by the window drinking a glass of warm water"
+        motion: "She drinks, lowers the glass and looks out of the window contentedly"
+    caption: |
+      Мёд в горячий чай кладёшь? Я тоже раньше клала, пока дед Коля, пасечник, не отругал: «Зоя, ты его варишь» 🍯
+
+      В кипятке мёд теряет свой вкус и запах — остаётся просто сладость, как от сахара. Мёд переводишь зря.
+
+      Как делаю теперь:
+      1. Наливаю чай и жду пару минут, пока его можно пить, не обжигаясь.
+      2. Тогда кладу ложку мёда и размешиваю.
+      3. Или ем мёд вприкуску, а чай пью отдельно — так вкус лучше всего слышно.
+
+      А утро начинаю со стакана тёплой воды с чайной ложкой мёда. Вода — как парное молоко, не горячее. Выпила, полчасика — и завтракать.
+
+      Как проверить мёд: хороший со временем густеет и засахаривается. Если год стоит жидкий — задумайся.
+
+      Сохрани и перешли тому, кто кладёт мёд в кипяток 😉 А ты как ешь мёд — в чай или вприкуску? 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+      Мёд нельзя детям до года и при аллергии.
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+      #мёд #чай #пасека #полезныепривычки #утро #бабушкинысоветы #деревенскаяеда #пчеловодство #бабазоя
+
+  - id: 20-bez-deda
+    rubric: История
+    title: Шесть лет без деда Коли
+    voiceover: 'Шесть лет, как Коли нет. Все говорили: Зоя, продай пасеку, куда тебе одной. А я каждую весну выхожу к ульям — и он будто рядом стоит. Он меня всему научил: и мёд качать, и пчёл не бояться. А я его — пироги печь. Так и живём с ним, через пчёлок. Обними своих, пока они рядом.'
+    scenes:
+    - image: Close-up of weathered old hands resting on the wooden lid of a blue beehive, a few bees crawling on the edge, soft morning light
+      motion: Bees crawl slowly, one hand gently strokes the wooden lid
+    - image: The grandmother in her headscarf walking along a row of old painted beehives in a meadow at dawn
+      motion: She walks slowly along the hives, touching each lid with her palm
+    - image: An old black-and-white framed photograph of a smiling elderly man in a beekeeper hat standing on a wooden shelf next to a jar of honey
+      motion: The camera slowly moves closer to the photograph, dust floats in the window light
+    - image: The grandmother sitting on a wooden bench near the beehives with a cup of tea, looking into the distance
+      motion: She sips the tea, lowers the cup and smiles softly and a little sadly
+    caption: 'Шесть лет, как деда Коли нет. А пасеку я не бросила 🐝
+
+
+      Все говорили: Зоя, продай, куда тебе одной двенадцать ульев. Дети в город звали. А я не могу. Каждую весну выхожу открывать ульи — и он будто рядом стоит, ворчит: «Не маши руками, пчела суеты не любит».
+
+
+      Коля меня всему научил. Как дым пускать, как рамку держать, как понять по гулу, что семья здоровая. Как пергу брать и почему мёд нельзя в кипяток. Я ему в ответ — пироги. Сорок два года так и менялись.
+
+
+      Знаете, что он говорил? «Пчела работает не для себя — для семьи». Так и он жил.
+
+
+      Теперь я всё, что он знал, и всё, что я сама умею, записала в книжку. Чтобы не пропало.
+
+
+      А вы что храните от своих бабушек и дедушек? Рецепт, вещь, привычку? Напишите — я каждое читаю 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+
+      Обнимите своих, пока они рядом.
+
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+
+      #пасека #дедушка #бабушка #семья #память #пчеловодство #деревня #бабазоя'
+  - id: 21-ogurcy-sutki
+    rubric: Живые заготовки
+    title: Огурцы за сутки — и без уксуса
+    voiceover: Малосольные за сутки, и ни капли уксуса. Огурчикам кончики срежь — и в банку. Чеснок, укроп зонтиком, лист хрена, смородины. Литр воды, две ложки соли без горки — вскипяти и горячим залей. Сутки на столе — и хрустят так, что соседи слышат. Рецепт — в описании, а сто таких — в книжке.
+    scenes:
+    - image: Close-up of a crisp lightly salted cucumber being snapped in half above an open glass jar, drops of brine
+      motion: The cucumber snaps in half with a crunch, brine drips down
+    - image: The grandmother's hands trimming the ends of small green cucumbers on a wooden cutting board
+      motion: The knife trims the ends quickly, she drops the cucumbers into a glass jar
+    - image: A glass jar packed with cucumbers, dill umbrellas, garlic and horseradish leaves, the grandmother pouring hot brine from an enamel ladle
+      motion: The brine fills the jar, dill leaves shift and float up
+    - image: The grandmother at the kitchen table holding a lightly salted cucumber
+      motion: She bites it with a loud crunch, chews and nods approvingly at the camera
+    caption: 'Малосольные огурчики за сутки — и ни капли уксуса. Хрустят так, что соседи через забор слышат 🥒
+
+
+      Уксус огурцу не нужен. Соль, укроп да время — вот и вся хитрость.
+
+
+      Что нужно на 3-литровую банку:
+
+      — огурцы мелкие, крепкие — сколько влезет (около 1,5–2 кг)
+
+      — 4–5 зубчиков чеснока
+
+      — 2–3 зонтика укропа
+
+      — лист хрена, 5–6 листьев смородины или вишни
+
+      — на литр воды 2 столовые ложки соли без горки (соль крупная, без йода)
+
+
+      Как делаю:
+
+      1. Огурцы замочи в холодной воде на пару часов — будут крепче.
+
+      2. Кончики срежь — так рассол быстрее зайдёт.
+
+      3. На дно — половину зелени и чеснок, огурцы стоймя, плотно, сверху остальную зелень.
+
+      4. Рассол вскипяти и горячим залей. Горячий — за сутки, холодный — за двое-трое.
+
+      5. Накрой крышкой неплотно и оставь на столе. Через сутки — в холодильник.
+
+
+      Совет: хочешь похрустеть уже к ужину — разрежь огурцы вдоль на четвертинки.
+
+
+      Сохрани, пока огурцы на грядке 😉 А вы с уксусом солите или без? 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+
+      #огурцы #малосольныеогурцы #заготовки #рецепт #безуксуса #деревенскаяеда #бабушкинрецепт #бабазоя'
+  - id: 22-svekolnyj-kvas
+    rubric: Живые заготовки
+    title: Рубиновый квас, который все забыли
+    voiceover: Раньше в каждом доме свекольный квас стоял, а теперь и не слыхал никто. Две свёклы кружочками — в банку, корочку ржаного, ложку соли, залить кипячёной водой. Марлей накрыла — и три дня на столе. Цвет как рубин, кисленький, бодрит. Я к обеду полстаканчика пью. Рецепт — в описании.
+    scenes:
+    - image: Close-up of deep ruby-red beet kvass being poured from a glass jar into a clear glass against the window light
+      motion: The red liquid pours into the glass and glows in the light
+    - image: The grandmother slicing peeled beets into rounds on a wooden board stained with red juice
+      motion: The knife slices through the beet, she drops the rounds into a large glass jar
+    - image: The grandmother adding a crust of rye bread into the jar of beets and covering the neck with gauze
+      motion: She ties the gauze with a string and pats the jar twice
+    - image: The grandmother at the kitchen table raising a small glass of red beet kvass
+      motion: She takes a sip, squints happily and nods at the camera
+    caption: 'Раньше свекольный квас в каждой избе стоял — к обеду, к окрошке, к борщу. А теперь спросишь — и не слыхал никто 🍷
+
+
+      А ведь проще заготовки нет: свёкла, вода, соль да корочка хлеба. Три дня — и готово.
+
+
+      Что нужно на 3-литровую банку:
+
+      — 2–3 средние свёклы
+
+      — корочка ржаного хлеба
+
+      — 1 столовая ложка соли (можно ещё ложку мёда)
+
+      — кипячёная остуженная вода
+
+
+      Как делаю:
+
+      1. Свёклу почисть и порежь кружочками или брусочками.
+
+      2. Сложи в банку, чтобы заняла треть. Добавь соль и корочку.
+
+      3. Залей тёплой кипячёной водой почти доверху.
+
+      4. Горлышко — марлей, и на стол, подальше от солнца.
+
+      5. Каждый день снимай пенку. На третий-пятый день квас кисленький — процеди и в холодильник.
+
+
+      Как пью: полстаканчика перед обедом. На нём же варю холодный борщ летом — лучше покупного в сто раз.
+
+
+      Советую начинать с пары глотков: квас кислый, с непривычки много не надо. Если с желудком беда — сперва спроси врача.
+
+
+      Сохрани и попробуй 😉 Вы о свекольном квасе слышали? 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+
+      #свекольныйквас #квас #заготовки #рецепт #ферментация #деревенскаяеда #бабушкинрецепт #бабазоя'
+  - id: 23-mochenye-yabloki
+    rubric: Живые заготовки
+    title: Антоновка до весны — без сахара
+    voiceover: 'Антоновку до весны сохраню — и без варенья, без сахара. Мочу, как мать мочила. Яблоки плотно в банку, листом смородины переложить. Рассол: литр воды, ложка соли, ложка мёда да ложка ржаной муки. Залила, гнёт сверху — и в прохладу на месяц. Хрустят, кисло-сладкие, как газировка. Рецепт — в описании.'
+    scenes:
+    - image: Close-up of a pickled green Antonovka apple being cut in half with a knife, juicy white flesh glistening
+      motion: The knife cuts through, the halves fall apart, juice glistens
+    - image: The grandmother picking yellow-green apples from an apple tree in an autumn garden into a wicker basket
+      motion: She twists an apple off the branch and puts it into the basket
+    - image: The grandmother packing apples tightly into a big glass jar, placing blackcurrant leaves between them
+      motion: She places the apples one by one and tucks leaves between them
+    - image: The grandmother at a wooden kitchen table biting into a pickled apple
+      motion: She bites, laughs and shows the apple to the camera
+    caption: 'Антоновка пошла — значит, пора мочить. Так яблоки до весны лежат, и никакого варенья с килограммом сахара 🍏
+
+
+      Мочёное яблоко — это чудо: хрустит, кисло-сладкое, чуть шипит на языке, как газировка. Мама мочила в кадушке, я — в банках.
+
+
+      Что нужно на 3-литровую банку:
+
+      — антоновка, 2–2,5 кг (плотные, без бочков)
+
+      — листья смородины или вишни
+
+      — 1 литр воды
+
+      — 1 столовая ложка соли
+
+      — 1 столовая ложка мёда (или сахара)
+
+      — 1 столовая ложка ржаной муки
+
+
+      Как делаю:
+
+      1. Яблоки помой, не чисти.
+
+      2. На дно банки — листья, потом яблоки плотно, перекладывая листьями.
+
+      3. Муку разведи в стакане горячей воды, добавь к остальной воде, соль, мёд. Остуди.
+
+      4. Залей яблоки, чтобы рассол их покрывал.
+
+      5. Сверху — блюдце и баночка с водой вместо гнёта.
+
+      6. Неделю в комнате, потом в прохладу — погреб, балкон, холодильник. Через месяц готово.
+
+
+      Рассол доливай, если яблоки его выпьют — они пьют первые дни.
+
+
+      Сохрани до выходных 😉 А у вас антоновка растёт? 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+
+      Мёд нельзя детям до года.
+
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+
+      #мочёныеяблоки #антоновка #яблоки #заготовки #рецепт #осень #деревенскаяеда #бабазоя'
+  - id: 24-kasha-gorshok
+    rubric: Каши и взвары
+    title: Каша из печки — внуки не верили
+    voiceover: Кашу из печки в горшке пробовали? Вот и внуки не пробовали, пока ко мне не приехали. Пшено семь раз промой и кипятком ошпарь — горчить не будет. Тыкву кубиком на дно, пшено сверху, молоко, щепоть соли. В печь на час — само томится. Корочка румяная, внутри как крем. Можно и в духовке. Рецепт — в описании.
+    scenes:
+    - image: Close-up of an opened clay pot with golden millet porridge with pumpkin and a browned crust, a wooden spoon breaking the crust
+      motion: The spoon breaks the crust and scoops up creamy orange porridge
+    - image: The grandmother washing millet in an enamel bowl, pouring water from a jug
+      motion: She swirls the grain with her hand and pours off the cloudy water
+    - image: The grandmother putting a clay pot into a white Russian stove with a long iron oven fork
+      motion: She pushes the pot deep into the oven and closes the oven door
+    - image: The grandmother and her little granddaughter at a wooden table eating porridge from clay bowls
+      motion: The girl eats a spoonful, the grandmother strokes her head and smiles
+    caption: 'Внучка первый раз попробовала кашу из печки и говорит: бабуль, это что, десерт? 😄 Нет, милая, это пшёнка. Просто правильная.
+
+
+      Секрет не в печке, а в двух вещах: промыть и не торопить. А духовка тоже справится.
+
+
+      Что нужно на 2–3 порции:
+
+      — 1 стакан пшена
+
+      — 300 г тыквы
+
+      — 3 стакана молока (можно пополам с водой)
+
+      — щепоть соли, ложка мёда или сахара по вкусу
+
+      — кусочек сливочного масла
+
+
+      Как делаю:
+
+      1. Пшено промой раз семь, пока вода не станет прозрачной.
+
+      2. Залей кипятком на минуту и слей — горечь уйдёт.
+
+      3. Тыкву кубиком — на дно горшка, сверху пшено, соль.
+
+      4. Залей горячим молоком, чтобы было на два пальца выше крупы.
+
+      5. В печь или в духовку на 160 градусов на час, крышку не открывай.
+
+      6. Под конец — кусочек масла, и ещё 10 минут без крышки, чтобы корочка зарумянилась.
+
+
+      Горшка нет — подойдёт любая кастрюлька с толстым дном, которая идёт в духовку.
+
+
+      Сохрани на завтрак в выходной 😉 А вы пшёнку любите или с детства невзлюбили? 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+
+      #каша #пшённаякаша #тыква #завтрак #рецепт #русскаяпечь #деревенскаяеда #бабазоя'
+
+  # ---------------------------------------------------------------- Сериал «Тетрадь деда Коли»
+  # Арка сезона, герои и график — в content/series.md. Сцены с flashback: true — 1970-е,
+  # старая плёнка, без эталона бабы Зои (стиль в pipeline/config.yaml → flashback_style).
+
+  - id: s01-tetrad
+    rubric: Сериал
+    title: "Тетрадь деда Коли. Часть 1: Нашла то, что Коля прятал 40 лет"
+    voiceover: >-
+      Полезла на чердак за банками, а там коробка из-под чая, жестяная. Колина. Я её сорок лет не видела.
+      А в ней тетрадь. Открываю — его почерк. Первая строчка: «Зоя, если ты это читаешь — значит, я не успел сказать сам».
+      Села прямо на пол. Чай заварила, как он любил, с чабрецом, и читала до ночи.
+      А на последней странице — не его почерк.
+    scenes:
+      - image: The grandmother climbing a wooden ladder into a dusty village attic, light from a small window, old jars and baskets around
+        motion: She climbs up slowly, looks around the attic and stops, noticing something in the corner
+      - image: Close-up of the grandmother's hands wiping dust off an old rusty tin tea box with a faded floral pattern
+        motion: Her hands wipe the dust, then slowly open the tin lid
+      - image: The grandmother sitting on the attic floor holding an old worn school notebook, pages covered in faded ink scribbles and small pencil drawings of bees, her hand on her chest
+        motion: She turns the first page, freezes, covers her mouth with her hand
+      - image: The grandmother at the kitchen table at night under a warm lamp, a cup of tea with thyme sprigs, the old notebook open in front of her
+        motion: She slowly turns to the last pages, stops and looks straight at the camera, puzzled
+    caption: |
+      Тетрадь деда Коли. Часть 1 📓
+
+      Полезла на чердак за банками — а там жестяная коробка из-под чая. Колина. Я её лет сорок не видела, думала, давно выбросил.
+
+      А в коробке тетрадь. Обычная, школьная, в клетку. Открываю — его почерк. И первая строчка:
+      «Зоя, если ты это читаешь — значит, я не успел сказать сам».
+
+      Сорок два года вместе прожили. Я думала, знаю про него всё. Села прямо на пыльный пол и читала до темноты.
+
+      Буду читать вам по страничке. К каждой — рецепт, у Коли там и про еду много.
+
+      Сегодня — его чай с чабрецом. Коля пил его каждый вечер:
+      1. Чайник ополосни кипятком.
+      2. Ложка чёрного чая и веточка чабреца (сухого — щепотка).
+      3. Залей горячей водой, но не бурлящей, накрой полотенцем на 5 минут.
+      4. Мёд — только в тёплый, вприкуску, а не в кипяток.
+
+      А на последней странице — не его почерк. Чей — пока сама не знаю.
+
+      Как думаете, что Коля не успел мне сказать? Пишите 👇 Завтра — часть 2.
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+      Мёд нельзя детям до года и при аллергии.
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+      #тетрадьдедаколи #бабазоя #история #деревня #чабрец #чай #бабушкинырецепты #семья #сериал
+
+  - id: s02-pirog-na-tancah
+    rubric: Сериал
+    title: "Тетрадь деда Коли. Часть 2: Он украл мой пирог на танцах"
+    voiceover: >-
+      Семьдесят второй год, клуб, танцы. Я принесла пирог с антоновкой, на всех. Отвернулась — половины нет.
+      Стоит парень, щёки набиты, и говорит: «Выйдешь за меня — буду каждый день такой есть».
+      Сорок лет я рассказывала, что это он ко мне пристал. А в тетради Коля пишет: «Пирог я не крал. Мне его Зоина подружка отдала — чтоб я наконец подошёл».
+      А между страницами — бумажка. Адрес. В соседней деревне.
+    scenes:
+      - image: A 1970s Soviet village club dance hall in the evening, young people dancing, a table with a round apple pie on a plate, young Zoya in a red polka-dot headscarf standing by the table
+        motion: Couples dance in the background, young Zoya turns away from the table to talk to a friend
+        flashback: true
+      - image: Young Kolya with his mouth full, holding a big piece of apple pie, grinning shyly at young Zoya in the village club
+        motion: He chews, grins and says something, she puts her hands on her hips and laughs
+        flashback: true
+      - image: The grandmother in her kitchen taking a golden apple pie out of the oven, the old notebook lying open on the table
+        motion: She sets the pie on the table and smiles, shaking her head at a memory
+      - image: Close-up of the grandmother's fingers pulling a small folded yellowed piece of paper from between the notebook pages
+        motion: She unfolds the paper slowly and her face becomes serious
+    caption: |
+      Тетрадь деда Коли. Часть 2 🥧
+
+      1972 год, танцы в клубе. Я принесла пирог с антоновкой — на всех. Отвернулась на минутку, а половины уже нет. Стоит парень, щёки набиты, и говорит: «Выйдешь за меня — буду каждый день такой есть».
+
+      Сорок лет я всем рассказывала, что это Коля ко мне пристал. А в тетради у него совсем другая история:
+      «Пирог я не крал. Мне его Галька, Зоина подружка, сама отдала — чтоб я наконец подошёл. Сам бы год не решился».
+
+      Галька, ну ты и хитрая! Пятьдесят лет молчала.
+
+      Тот самый пирог с антоновкой:
+      1. 3 яйца взбей с полстаканом сахара.
+      2. Стакан кефира, щепотка соли, пол-ложки соды.
+      3. Мука — примерно полтора стакана, до густой сметаны.
+      4. 3–4 антоновки дольками на дно формы, сверху тесто.
+      5. 180 градусов, 40 минут. Проверь лучинкой.
+
+      А между страницами лежала бумажка. Адрес. В соседней деревне. Коля туда никогда при мне не ездил.
+
+      Как вы со своими познакомились? Пишите, я всё читаю 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+      #тетрадьдедаколи #бабазоя #пирогсяблоками #антоновка #любовь #семидесятые #бабушкинырецепты #сериал
+
+  - id: s03-pchely
+    rubric: Сериал
+    title: "Тетрадь деда Коли. Часть 3: Он разговаривал с пчёлами"
+    voiceover: >-
+      Съездила я по тому адресу. Там жил старый пасечник, у него Коля взял первый улей.
+      Коля с пчёлами разговаривал, я смеялась. А он в тетради пишет: «Пчела на ночь не ест и зря не суетится. Зоя, поучись».
+      Вот с тех пор вечером ем только лёгкое. Чай с мятой, ложка мёда — и спать.
+      Листаю дальше, а там: «Продал два улья. Зое не говорить».
+    scenes:
+      - image: Young Kolya kneeling by a single old wooden beehive in a 1970s village garden, an old beekeeper in a straw hat beside him showing a honeycomb frame
+        motion: The old man hands the frame to Kolya, bees fly around slowly, Kolya smiles carefully
+        flashback: true
+      - image: Young Kolya sitting on a stool next to a beehive at dusk, leaning close to it as if talking to the bees
+        motion: He leans towards the hive, speaking quietly, bees crawl on the entrance board
+        flashback: true
+      - image: The grandmother at the kitchen table in the evening pouring warm mint tea from a teapot, a small bowl of honey beside the old notebook
+        motion: She pours the tea, adds a spoon of honey to the cup and stirs slowly
+      - image: Close-up of the grandmother reading the old notebook by lamplight, her eyebrows raised in surprise
+        motion: She reads, stops, reads the line again and slowly lowers the notebook
+    caption: |
+      Тетрадь деда Коли. Часть 3 🐝
+
+      Съездила я по тому адресу из прошлой серии. Там, оказывается, жил старый пасечник Фёдор Ильич. У него Коля в 74-м взял первый улей. Мне сказал — «на базаре купил».
+
+      Коля с пчёлами разговаривал. Сядет вечером у улья и шепчет. Я смеялась: «Коль, они ж не понимают». А он в тетради пишет:
+      «Пчела на ночь не ест и зря не суетится. Весь день работает, а вечером — тишина. Зоя, поучись».
+
+      Поучилась. С тех пор вечером ем только лёгкое, а на ночь — его мятный чай:
+      1. Горсть свежей мяты или ложка сушёной.
+      2. Залей горячей водой (не кипятком), накрой, 7–10 минут.
+      3. Процеди, дай остыть до тёплого.
+      4. Ложка мёда — вприкуску или в тёплый чай.
+      Выпил — и спать, без телевизора.
+
+      Листаю дальше. А там строчка: «Продал два улья. Зое не говорить».
+      Продал? Коля? Который над каждой пчелой трясся?
+
+      Как думаете, зачем? 👇 Завтра узнаете.
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+      Мёд нельзя детям до года и при аллергии.
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+      #тетрадьдедаколи #бабазоя #пасека #пчёлы #мятныйчай #мёд #деревня #сериал
+
+  - id: s04-korova
+    rubric: Сериал
+    title: "Тетрадь деда Коли. Часть 4: Он продал ульи, чтобы…"
+    voiceover: >-
+      Восьмидесятый год, голодная зима, дочка маленькая. И вдруг Коля приводит корову. Говорит: в карты выиграл.
+      Я сорок лет верила. Ругала его ещё за эти карты.
+      А он ульи продал. Последние два. Чтобы у дочки молоко было. И ни слова.
+      Творог я с той коровы делала — до сих пор так делаю. А на последней странице… теперь я знаю, чей это почерк.
+    scenes:
+      - image: A snowy 1980 Soviet village street in winter, young Kolya in a sheepskin coat leading a brown cow by a rope towards a wooden house
+        motion: He walks through the snow pulling the cow, breath steaming, and waves towards the house
+        flashback: true
+      - image: Young Zoya in a winter shawl at the door of a wooden house holding a small child, looking surprised at a cow in the yard
+        motion: She steps onto the porch, holds the child closer and laughs in disbelief
+        flashback: true
+      - image: The grandmother in her kitchen pouring warm soured milk from a pot into a cheesecloth hanging over a bowl
+        motion: Whey drips from the cloth, she ties the cloth into a bundle
+      - image: The grandmother sitting at the table holding the old notebook to her chest, eyes wet, a bowl of fresh cottage cheese in front of her
+        motion: She presses the notebook to her chest, closes her eyes and nods slowly
+    caption: |
+      Тетрадь деда Коли. Часть 4 🐄
+
+      Зима 1980-го. Дочке два года, в магазине пусто, молока нет. И вдруг Коля приводит во двор корову. Бурёнку. Говорит: «В карты у мужиков выиграл».
+
+      Я его тогда так ругала за эти карты! Сорок лет потом вспоминала: «Картёжник ты мой».
+
+      А в тетради:
+      «Продал Ильичу два улья, последние. Купил корову. Зое скажу — выиграл. Она ульи любит больше меня, не простит».
+
+      Не в карты он выиграл. Он пасеку свою отдал, чтоб у дочки молоко было. И ни разу не проговорился.
+
+      Коля, ну как же так. Я бы простила. Я бы гордилась.
+
+      С той коровы я творог научилась делать. Делаю так до сих пор:
+      1. 2 литра деревенского молока оставь в тепле на сутки — пусть скиснет.
+      2. Кастрюлю с простоквашей поставь в большую кастрюлю с горячей водой (водяная баня), грей 20–30 минут, не кипяти.
+      3. Как сыворотка отойдёт — откинь на марлю.
+      4. Подвесь на 2–3 часа, пусть стечёт.
+      Сыворотку не выливай — на ней блины отличные.
+
+      А на последней странице… теперь я знаю, чей это почерк. Завтра расскажу.
+
+      Какой поступок ваших родных вы узнали только спустя годы? 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+      #тетрадьдедаколи #бабазоя #творог #домашнийтворог #любовь #семья #история #сериал
+
+  - id: s05-vnuk
+    rubric: Сериал
+    title: "Тетрадь деда Коли. Часть 5: Шесть лет внук хранил секрет деда"
+    voiceover: >-
+      Последние страницы писал внук. Ему было тринадцать. У Коли уже руки не слушались, и он диктовал.
+      Позвонила я Серёже. Он молчал, а потом говорит: «Бабуль, дед велел отдать, когда ты скучать начнёшь. А я боялся. Вот и спрятал на чердак».
+      Шесть лет он молчал. Приехал в субботу, сварил мне дедову кашу.
+      А одну страницу Коля оставил пустой. Только заголовок.
+    scenes:
+      - image: The grandmother at the kitchen table comparing two pages of the old notebook side by side, one filled with neat ink scribbles, the other with large uneven childish pencil scribbles
+        motion: She runs her finger along the uneven childish lines and slowly shakes her head in realisation
+      - image: The grandmother at the kitchen table holding an old push-button mobile phone to her ear, the notebook open in front of her
+        motion: She listens, presses her hand to her mouth, tears in her eyes
+      - image: A young man about nineteen in a hoodie hugging the grandmother in her kitchen doorway, a travel bag on the floor
+        motion: They hug tightly, she pats his back, both laugh through tears
+      - image: The grandmother and the young grandson sitting at the kitchen table eating buckwheat porridge with milk from clay bowls
+        motion: The grandson puts a spoonful into his mouth, she watches him and smiles
+    caption: |
+      Тетрадь деда Коли. Часть 5 💛
+
+      Последние страницы в тетради — почерк внука, Серёжи. Ему тогда было тринадцать. У Коли уже руки не слушались, и он диктовал, а Серёжа записывал.
+
+      Я ему позвонила. Он долго молчал. Потом говорит:
+      «Бабуль, дед велел отдать тетрадь, когда ты скучать начнёшь. А я боялся — вдруг ты плакать будешь. Вот и спрятал на чердак, в его коробку».
+
+      Шесть лет мальчишка носил в себе дедов секрет. Ни разу не проговорился. Весь в деда.
+
+      В субботу он приехал. Молча обнял. И сварил мне Колину кашу — дед его научил, пока тот записывал:
+      1. Стакан гречки промой и обсуши на сухой сковороде 2–3 минуты, до орехового запаха.
+      2. Два стакана кипятка, щепоть соли.
+      3. Закипело — огонь на самый малый, крышку не открывать 15 минут.
+      4. Сними, заверни в полотенце ещё на 10 минут.
+      5. Кусочек масла и кружка холодного молока рядом.
+
+      А одну страницу Коля оставил пустой. Только заголовок сверху.
+
+      Перешлите тем, кого давно не обнимали. Обнимите своих, пока они рядом 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+      #тетрадьдедаколи #бабазоя #внук #дедушка #семья #гречка #память #сериал
+
+  - id: s06-pryanik
+    rubric: Сериал
+    title: "Тетрадь деда Коли. Часть 6: Рецепт, который Коля не успел мне отдать"
+    voiceover: >-
+      Пустая страница. А сверху: «Медовый пряник. Для Зои».
+      Сорок два года я просила у него этот рецепт. А он смеялся: потом, Зоя, потом.
+      Серёжа вспомнил: дед всё продиктовал, а тот не успел дописать. И рассказал мне по памяти.
+      Испекла. Первый раз. Пахнет как тогда, на пасеке. Всё, что было в Колиной тетради, и всё, что знаю я, — теперь в моей книжке. Напиши в комментариях «книга» — пришлю.
+    scenes:
+      - image: Close-up of the grandmother's hand resting on a blank yellowed notebook page with a small pencil drawing of a bee in the corner
+        motion: Her finger slowly traces the little bee drawing, then rests on the empty page
+      - image: The grandmother and the young grandson in hoodie at the kitchen table, he gestures remembering, she writes in the old notebook with a pen
+        motion: He counts on his fingers, she writes carefully and nods
+      - image: The grandmother pulling a tray of golden round honey gingerbread cookies out of the oven, warm kitchen light
+        motion: She sets the tray down and leans in to smell the cookies, closing her eyes
+      - image: The grandmother sitting on a bench by the beehives at golden hour with a plate of honey gingerbread and the old notebook on her lap
+        motion: She breaks a gingerbread, looks at the hives and smiles softly
+    caption: |
+      Тетрадь деда Коли. Часть 6 — последняя 🍯
+
+      Пустая страница. А сверху его рукой: «Медовый пряник. Для Зои».
+
+      Сорок два года я просила у Коли этот рецепт. Он пёк пряники раз в год, на мой день рождения, и выгонял меня из кухни. Я просила записать — а он смеялся: «Потом, Зоя, потом».
+
+      Не успел. Продиктовал Серёже, а тот не дописал — дед устал, решили завтра. А завтра не случилось.
+
+      Серёжа вспомнил всё по памяти. И вот он — Колин пряник:
+      1. 3 ложки мёда и 2 ложки масла растопи на водяной бане — тёплые, не горячие.
+      2. Яйцо, щепотка соли, пол-ложки соды, по щепотке корицы и имбиря.
+      3. Мука — около двух стаканов, до мягкого теста, которое не липнет.
+      4. Шарики с грецкий орех, прижми ладонью.
+      5. 180 градусов, 15–20 минут. Горячими — в полотенце, чтоб стали мягкими.
+
+      Испекла. Первый раз в жизни. Пахнет как тогда — пасекой, августом и Колей.
+
+      Спасибо вам, что читали со мной его тетрадь. Всё, что в ней было, и всё, что знаю я сама, — теперь в моей книжке «Бабушкин стол». Чтобы не пропало.
+
+      А какой рецепт вы не успели взять у своих? Напишите — может, вспомним вместе 👇
+
+      📖 Напиши в комментариях «КНИГА» или просто ❤️ — пришлю тебе в директ бабушкины рецепты даром и ссылку на книжку.
+
+      Мёд нельзя детям до года и при аллергии.
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+      #тетрадьдедаколи #бабазоя #пряник #медовыйпряник #мёд #память #семья #бабушкинырецепты #сериал
+
+  - id: "25-kapusta-zhivot"
+    rubric: Живые заготовки
+    title: Капуста к застолью
+    voiceover: >-
+      Вот так у тебя в животе после оливье с майонезом. Камнем лежит. А у нас в деревне к застолью всегда ставили одну миску — и никто за живот не держался. Квашеная капуста. Только не магазинная, с уксусом, а живая. Смотри. Три кило капусты шинкую тонко. Морковку на тёрку. Соли две столовые ложки, без горки. И мну руками, пока сок не пустит, — не жалей, мни. Потом в банку, кулаком трамбую, чтоб сок сверху стоял. Три дня в тепле, и каждый день палочкой до дна протыкаю. Потом в холод. К жирному — вилку капустки с маслицем и лучком. Вот и весь секрет. Напиши в комментариях «книга» — пришлю тебе в личку ещё рецепты.
+    scenes:
+      - image: "The grandmother standing at a wooden kitchen table, holding at chest height towards the camera a transparent glass anatomical model of a human stomach; inside the glass stomach a dense heavy lump of creamy mayonnaise potato salad is pressed against the walls"
+        motion: "She holds the glass stomach close to the camera, taps the glass twice with her finger and shakes her head disapprovingly"
+      - image: "A festive table in the village house: crystal bowl of mayonnaise potato salad, herring under a beetroot layer, fried pork, the grandmother standing behind the table pointing at the dishes"
+        motion: "She points at the dishes one by one with a wry smile"
+      - image: "Close-up of the grandmother's hands shredding a white cabbage head into very thin strands with a large knife on a wooden board"
+        motion: "The knife moves quickly, thin cabbage strands pile up"
+      - image: "Close-up: a large enamel basin full of shredded cabbage, the grandmother's hand sprinkling coarse grey salt over it, a grated carrot on top"
+        motion: "Salt falls from her fingers onto the cabbage"
+      - image: "The grandmother kneading shredded cabbage with both hands in a large white enamel basin, the cabbage glistening with juice"
+        motion: "She squeezes and kneads the cabbage firmly, juice appears at the bottom of the basin"
+      - image: "The grandmother packing cabbage into a three-litre glass jar, pressing it down with her fist, brine rising above the cabbage"
+        motion: "She presses the cabbage down with her fist twice, the brine rises"
+      - image: "A three-litre jar of sauerkraut on a sunny windowsill with geraniums, the grandmother pushing a long thin wooden stick down into the cabbage"
+        motion: "She pushes the stick slowly to the bottom of the jar and pulls it out"
+      - image: "A plate of sauerkraut dressed with sunflower oil and sliced onion next to boiled potatoes with dill on the checkered oilcloth, the grandmother sitting at the table with a fork"
+        motion: "She takes a forkful of sauerkraut, eats it and nods with pleasure"
+      - image: "Medium close-up of the grandmother at the table looking straight into the camera with a warm sly smile"
+        motion: "She talks to the camera warmly and nods once at the end"
+    caption: |
+      Оливье, селёдка под шубой, жареное — а утром живот как камень. У нас в деревне к застолью всегда ставили одну миску, и никто за живот не держался 🥬
+
+      Живая квашеная капуста, без уксуса:
+      — 3 кг белокочанной капусты
+      — 1 морковка
+      — 2 ст. ложки крупной соли без горки
+
+      1. Капусту тонко шинкую, морковку на тёрку.
+      2. Солю и мну руками, пока не пустит сок.
+      3. Плотно трамбую в банку кулаком — сок должен стоять сверху.
+      4. Три дня в тепле, каждый день протыкаю палочкой до дна.
+      5. Потом в холод. К жирному — с маслицем и лучком.
+
+      🎁 Напиши любой комментарий — пришлю рецепт в личку и ещё семь в подарок
+
+      Сохрани до праздников. А у тебя дома капусту квасили? 👇
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+      #квашенаякапуста #капуста #безуксуса #застолье #бабушкинырецепты #деревенскаяеда #заготовки #рецептыбабушки #бабазоя
+  - id: "30-smetana"
+    rubric: Живые заготовки
+    title: Сметана, в которой ложка стоит
+    voiceover: >-
+      Сметана из магазина три недели стоит — и хоть бы что. А настоящая так не умеет.
+      Банку деревенского молока — на ночь в холодок. Утром сливки сверху снимаю,
+      ложку вчерашней сметаны туда — и сутки в тепле. Назавтра ложка в ней стоит.
+      Дед Коля в борщ по три ложки клал, а я — к блинам.
+      Ещё сто таких рецептов — по ссылке в шапке профиля.
+    scenes:
+      - image: "Close-up of a small clay pot filled with very thick white homemade village sour cream on a wooden table by the window, a wooden spoon standing upright in it, the grandmother's hand next to the pot"
+        motion: "Her hand lets go of the wooden spoon and it stays standing upright in the thick sour cream, she taps it lightly with a finger and it does not fall"
+      - image: "A three-litre glass jar of fresh village milk on a wooden windowsill in soft morning light, a thick yellowish layer of cream on top, the grandmother holding a large spoon above the jar"
+        motion: "She skims the thick cream from the top of the milk with the spoon and puts it into a small clay pot, calm and focused"
+      - image: "The grandmother at the kitchen table stirring a spoonful of sour cream into fresh cream in a small clay pot, a folded linen cloth beside it, whitewashed Russian stove behind her"
+        motion: "She stirs the cream slowly, covers the pot with the linen cloth and pats it gently, calm kind face"
+      - image: "The grandmother sitting at the kitchen table with a checkered oilcloth, a stack of golden pancakes and a clay pot of thick sour cream in front of her, a rolled pancake in her hand, warm kind face with a gentle closed-mouth smile"
+        motion: "She dips the rolled pancake into the thick sour cream, takes a bite, chews with a happy squint and nods at the camera, calm and kind, she does not talk"
+    caption: |
+      Пиши в комментариях «Книга» — вышлю 7 бесплатных рецептов.
+
+      Сметана из магазина три недели стоит — и хоть бы что. Настоящая так не умеет 🥛
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+  - id: "31-grib-sup"
+    rubric: Супы и каши
+    title: Грибы на нитке и суп из горсточки
+    voiceover: >-
+      Раньше над каждой печкой грибы на нитке висели. Зимой горсточку возьмёшь — и суп на всю семью.
+      Сушёные грибы на два часа замочу, в той же воде варю. Перловку туда, картошку, лучок с морковкой.
+      Запах — лесом на весь дом. Дед Коля по две тарелки съедал.
+      Этот и ещё девяносто девять рецептов — по ссылке в шапке профиля.
+    scenes:
+      - image: "A long string of dried porcini mushrooms hanging on a nail next to the whitewashed Russian stove in a rustic wooden kitchen, warm window light, the grandmother's hand reaching for it"
+        motion: "Her hand lifts the string of dried mushrooms off the nail, the mushrooms sway gently"
+      - image: "Close-up: the grandmother's hands dropping dried porcini mushrooms into a clay bowl of water on a wooden table, a cast-iron pot in the background"
+        motion: "She drops a handful of dried mushrooms into the water and gently presses them down with her fingers, they slowly soak"
+      - image: "The grandmother at the whitewashed Russian stove pouring pearl barley from a small wooden bowl into a cast-iron pot of dark mushroom broth, diced potatoes on a board beside her"
+        motion: "She pours the barley into the pot and stirs slowly with a wooden spoon, light steam rises, calm kind face"
+      - image: "The grandmother sitting at the kitchen table with a checkered oilcloth, a deep clay bowl of hot golden mushroom soup with pearl barley, potatoes and dill in front of her, a spoonful of sour cream on top, a slice of rye bread beside it, warm kind face with a gentle closed-mouth smile"
+        motion: "She stirs the sour cream into the soup, takes a spoonful, tastes it, squints happily and nods at the camera, calm and kind, she does not talk"
+    caption: |
+      Пиши в комментариях «Книга» — вышлю 7 бесплатных рецептов.
+  - id: "32-kartoshka-griby"
+    rubric: Грибы
+    title: Картошка с грибами на чугунке
+    voiceover: >-
+      Раньше осенью вся деревня так пахла — картошка с грибами на чугунной сковороде.
+      Грибы сначала отдельно жарю, пока вся вода не уйдёт. Картошку — соломкой, на масло, крышкой не накрываю.
+      Под конец грибы, лучок — и солю только в самом конце.
+      Дед Коля прямо со сковородки ел, хлебом подбирал.
+      Ещё сто таких рецептов — по ссылке в шапке профиля.
+    scenes:
+      - image: "Close-up of a black cast-iron skillet on a rustic wooden table with golden crispy fried potatoes and browned forest mushrooms with onion and dill, the grandmother's hand holding a wooden spatula"
+        motion: "She turns the crispy potatoes and mushrooms with the wooden spatula, they sizzle, light steam rises"
+      - image: "The grandmother at the whitewashed Russian stove frying sliced forest mushrooms in a black cast-iron skillet"
+        motion: "She stirs the sliced mushrooms with a wooden spatula as they sizzle and turn golden, calm kind face"
+      - image: "Close-up of the grandmother's hands cutting peeled potatoes into thin sticks on a wooden board, a bowl of potato sticks beside it"
+        motion: "The knife slices the potato into thin sticks, she pushes them into the bowl with the blade"
+      - image: "The grandmother sitting at the kitchen table with a checkered oilcloth, eating fried potatoes with mushrooms straight from a black cast-iron skillet with a fork, a slice of rye bread in her other hand, warm kind face with a gentle closed-mouth smile"
+        motion: "She takes a forkful of potatoes and mushrooms, eats it, wipes the skillet with the bread, squints happily and nods at the camera, she does not talk"
+    caption: |
+      Пиши в комментариях «Книга» — вышлю 7 бесплатных рецептов.
+  - id: "33-pirog-griby"
+    rubric: Грибы
+    title: Пирог с грибами и картошкой
+    voiceover: >-
+      В деревне по воскресеньям грибник пекли — пирог с грибами да с картошкой.
+      Тесто на кефире, без дрожжей, за десять минут. Начинка: картошка тонкими кружками, сверху грибы с луком.
+      Накрыть тестом, защипнуть — и в печь на сорок минут.
+      Внуков потом за уши не оттащишь.
+      Ещё сто таких рецептов — по ссылке в шапке профиля.
+    scenes:
+      - image: "Close-up: the grandmother's hands breaking a golden-crusted round homemade pie on a wooden board, inside a filling of potatoes and forest mushrooms with onion"
+        motion: "Her hands break the pie in half, the filling shows, light steam rises"
+      - image: "The grandmother kneading soft pale dough in a large clay bowl on a floured wooden table in a rustic kitchen"
+        motion: "She kneads the soft dough and forms it into a ball, calm kind face"
+      - image: "The grandmother laying thin potato slices and fried mushrooms with onion onto rolled-out dough in a round baking pan on a floured table"
+        motion: "She spreads the mushrooms over the potatoes, covers them with a layer of dough and pinches the edges"
+      - image: "The grandmother sitting at the kitchen table with a checkered oilcloth, a round mushroom pie on a wooden board in front of her, a slice in her hand, warm kind face with a gentle closed-mouth smile"
+        motion: "She takes a bite of the pie slice, chews with a happy squint and nods at the camera, she does not talk"
+    caption: |
+      Пиши в комментариях «Книга» — вышлю 7 бесплатных рецептов.
+  - id: "34-opyata-marinad"
+    rubric: Грибы
+    title: Маринованные опята к Новому году
+    voiceover: >-
+      Раньше опята в сентябре мариновали, а на Новый год банку открываешь — хрустят.
+      Опята сначала полчаса отвариваю, воду сливаю.
+      Маринад: литр воды, две ложки соли, ложка сахара, лаврушка, гвоздика, перчик горошком.
+      Опята туда на десять минут, в конце уксус — и в горячие банки.
+      Новый год без них не Новый год.
+      Ещё сто таких рецептов — по ссылке в шапке профиля.
+    scenes:
+      - image: "Close-up of a glass jar of marinated honey mushrooms with bay leaves, garlic and black peppercorns against the window light, the grandmother's hand on the lid"
+        motion: "She opens the jar and lifts a small golden mushroom on a fork, the marinade glistens"
+      - image: "The grandmother at the whitewashed Russian stove pouring cleaned honey mushrooms from an enamel colander into a large pot of water"
+        motion: "She pours the mushrooms into the pot and stirs with a wooden spoon, calm kind face"
+      - image: "The grandmother ladling hot honey mushrooms in marinade into clean glass jars standing on a linen towel, bay leaves and peppercorns visible"
+        motion: "She ladles the mushrooms with marinade into a jar and screws on the lid"
+      - image: "Festive table in the rustic kitchen: the grandmother sitting with a plate of marinated honey mushrooms with onion rings and boiled potatoes with dill, a small fir branch with a few old glass ornaments on the table, warm kind face with a gentle closed-mouth smile"
+        motion: "She picks up a mushroom with a fork, eats it, squints happily and nods at the camera, she does not talk"
+    caption: |
+      Пиши в комментариях «Книга» — вышлю 7 бесплатных рецептов.
+  - id: "35-ryzhiki"
+    rubric: Грибы
+    title: Рыжики за неделю
+    voiceover: >-
+      Рыжики у нас даже не варили — пересыпал солью, и через неделю на столе.
+      Не мочу, не варю — только тряпочкой обтираю.
+      В банку шляпками вниз, каждый слой — соль да лист смородины.
+      Гнёт сверху — и в холод. Сок они сами пустят.
+      Дед Коля их больше всех грибов любил.
+      Ещё сто таких рецептов — по ссылке в шапке профиля.
+    scenes:
+      - image: "Close-up of bright orange saffron milk cap mushrooms layered with coarse salt and blackcurrant leaves in a wide clay bowl on a wooden table by the window"
+        motion: "The grandmother's hand sprinkles coarse salt over the bright orange mushrooms"
+      - image: "The grandmother at the kitchen table wiping fresh orange saffron milk cap mushrooms with a linen cloth, a wicker basket full of them beside her"
+        motion: "She wipes a mushroom cap with the cloth and puts it into a bowl, calm kind face"
+      - image: "Close-up of the grandmother's hands laying orange saffron milk caps caps down into a large glass jar, coarse salt and a blackcurrant leaf between the layers"
+        motion: "Her hands lay the mushrooms, sprinkle salt, add a leaf and press down gently"
+      - image: "The grandmother sitting at the kitchen table with a checkered oilcloth, a plate of salted saffron milk caps with sour cream and boiled potatoes with dill in front of her, warm kind face with a gentle closed-mouth smile"
+        motion: "She picks up a mushroom with a fork, eats it, squints happily and nods at the camera, she does not talk"
+    caption: |
+      Пиши в комментариях «Книга» — вышлю 7 бесплатных рецептов.
+  - id: "36-mif-lozhka"
+    rubric: Грибы
+    title: Серебряная ложка не спасёт
+    voiceover: >-
+      Мать моя ложку серебряную в грибы клала — почернеет, значит ядовитый.
+      Сказки это, милок. Ложка не почернеет, лук не посинеет, а червяк и поганку ест.
+      Правило одно: не знаешь гриб — не бери.
+      Попала поганка в корзину — выкидывай всё.
+      Сохрани и отправь тем, кто в лес ходит.
+    scenes:
+      - image: "Close-up of an old silver spoon in a small enamel pot of boiling forest mushrooms on the stove, the grandmother's hand reaching for the spoon"
+        motion: "She lifts the silver spoon out of the pot, looks at it in the light and gently shakes her head"
+      - image: "The grandmother at a wooden table cutting an onion in half next to a bowl of fresh forest mushrooms, calm kind face"
+        motion: "She cuts the onion, glances at it and calmly puts it aside"
+      - image: "The grandmother sorting a wicker basket of forest mushrooms on the kitchen table, holding one pale white mushroom with a white ring on the stem and a bulb at the base"
+        motion: "She looks at the pale mushroom carefully and drops it into a bucket on the floor, calm and serious"
+      - image: "The grandmother standing at the edge of an autumn birch forest holding a wicker basket of mushrooms, golden leaves, warm kind face with a gentle closed-mouth smile, looking at the camera"
+        motion: "She lifts the basket slightly, nods at the camera kindly and gently wags her finger, she does not talk"
+    caption: |
+      Сохрани и отправь тем, кто в лес ходит.

@@ -1,0 +1,4 @@
+requests>=2.31
+pyyaml>=6.0
+imageio-ffmpeg>=0.5
+faster-whisper>=1.0   # необязательно: синхрон субтитров для своей озвучки

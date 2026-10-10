@@ -1,0 +1,32 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790472120454-w7yw90zt.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790472345648.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790472497831-38y0bh3m.mp4",
+  "prompt": "Oats pour into the jug, she adds water from a kettle"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790472687296.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790472942159-75bg480n.mp4",
+  "prompt": "She places the bread crust on top and covers the jug with a linen cloth"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790473023159.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790473328908-wk569kpm.mp4",
+  "prompt": "Milky liquid streams through gauze, she squeezes the gauze"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790473428735.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790473728455-ycbabe98.mp4",
+  "prompt": "Spoon stirs thick kissel, steam rises"
+ },
+ "scene_5": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790473819367.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790473952308-t02qpxjq.mp4",
+  "prompt": "She blows on the cup, sips, and nods warmly"
+ }
+}

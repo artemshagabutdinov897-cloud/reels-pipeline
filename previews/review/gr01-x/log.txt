@@ -1,0 +1,15 @@
+r_pan 200 5083240 PNG image data, 1536 x 2752, 16-bit/colo
+r_pot 200 3903387 PNG image data, 1536 x 2752, 16-bit/colo
+r_bowl 200 4899430 PNG image data, 1536 x 2752, 16-bit/colo
+https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791206997974.png 000  cannot open `tmp/gr01-x-https://storage.
+x2 200 5165932 PNG image data, 1536 x 2752, 16-bit/colo
+x3 200 4998367 PNG image data, 1536 x 2752, 16-bit/colo
+r_pan 200 5083240 PNG image data, 1536 x 2752, 16-bit/colo
+r_pot 200 3903387 PNG image data, 1536 x 2752, 16-bit/colo
+r_bowl 200 4899430 PNG image data, 1536 x 2752, 16-bit/colo
+x1 200 4045714 PNG image data, 1536 x 2752, 16-bit/colo
+x2 200 5165932 PNG image data, 1536 x 2752, 16-bit/colo
+x3 200 4998367 PNG image data, 1536 x 2752, 16-bit/colo
+clip_3 200 3769185 ISO Media, MP4 Base Media v1 [ISO 14496-
+clip_2 200 4421515 ISO Media, MP4 Base Media v1 [ISO 14496-
+clip_1 200 4039745 ISO Media, MP4 Base Media v1 [ISO 14496-

@@ -1,0 +1,43 @@
+name: sheet
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "id из media/<id>.json через пробел"
+        required: true
+permissions:
+  contents: write
+jobs:
+  sheet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: sheets
+        env:
+          IDS: ${{ inputs.ids }}
+        run: |
+          set +e
+          sudo apt-get -qq install -y ffmpeg >/dev/null 2>&1
+          for id in $IDS; do
+            out=previews/review/$id; mkdir -p $out tmp
+            python3 -c "import json,sys;d=json.load(open('media/$id.json'));[print(t,k,u) for t in ('keyframes','clips') for k,u in d.get(t,{}).items()]" |
+            while read t k u; do
+              case "$u" in *109.71.240.55*) continue;; esac
+              f=tmp/$id-$k; code=$(curl -sSL -A 'Mozilla/5.0' -w '%{http_code}' -o $f "$u" < /dev/null)
+              echo "$k $code $(stat -c %s $f 2>/dev/null) $(file -b $f | cut -c1-40)" >> $out/log.txt
+              if [ "$t" = keyframes ]; then
+                ffmpeg -nostdin -loglevel error -y -i $f -vf scale=432:-1 -q:v 5 $out/$k.jpg
+              else
+                for ts in 0.1 1 2 3 3.9; do ffmpeg -nostdin -loglevel error -y -ss $ts -i $f -frames:v 1 -vf scale=216:-1 tmp/f$ts.png; done
+                ffmpeg -nostdin -loglevel error -y -i tmp/f0.1.png -i tmp/f1.png -i tmp/f2.png -i tmp/f3.png -i tmp/f3.9.png -filter_complex hstack=inputs=5 -q:v 5 $out/$k.jpg
+                rm -f tmp/f*.png
+              fi
+            done
+          done
+          git config user.name "artemshagabutdinov897-cloud"
+          git config user.email "artemshagabutdinov897@gmail.com"
+          git add previews/review
+          git commit -m "review sheets: $IDS" || true
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push && break; sleep 8; done

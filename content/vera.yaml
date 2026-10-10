@@ -1,0 +1,301 @@
+# Вера — подружка-скептик: читает составы и документы. Библия персонажа — persona/vera.md.
+# Блок persona накрывает pipeline/config.yaml для роликов Веры: свой эталон, лицо, голос.
+
+persona:
+  name: Вера
+  reference_image: assets/reference/vera.jpg   # рядом vera.url — ссылка в хранилище Братухи
+  reference_prompt: >-
+    Candid smartphone front-camera photo of a 27-year-old Russian woman with a friendly, slightly ironic
+    expression: one eyebrow a little raised and a half-smile. Long dark chestnut hair loosely pinned up
+    with a tortoiseshell claw clip, a few loose strands, warm brown eyes, light freckles across the nose,
+    natural skin with visible texture and almost no makeup, small gold hoop earrings, oversized cream
+    knit sweater. Sitting at a sunlit kitchen table by a window with green plants and a few plain
+    unbranded skincare jars. Natural daylight, slight phone-camera grain, vertical 9:16. No text or logos.
+  character_lock: >-
+    Keep exactly the same young woman: same face and freckles, dark chestnut hair in a tortoiseshell
+    claw clip, small gold hoop earrings, oversized cream knit sweater. Photorealistic candid smartphone
+    footage, natural daylight, cozy apartment, vertical 9:16. Product packaging plain and unbranded.
+    No text, letters, logos or brand names anywhere in the picture.
+  voice_hint: >-
+    Молодая девушка 27 лет, живой тёплый голос с улыбкой и лёгкой иронией, говорит как подруге,
+    не спеша, но бодро.
+  bratuha:
+    tts_voice: Sulafat
+
+videos:
+- id: v01-sostav
+  rubric: Читаю состав
+  title: Крем «с гиалуронкой» — а где она?
+  voiceover: 'Покупаешь крем «с гиалуронкой»? Переверни и прочитай состав. Ингредиенты
+    пишут по убыванию: чего больше — то в начале. Если гиалуроновая кислота в самом
+    конце, после отдушки, — её там капля, а платишь ты в основном за воду. Смотри
+    на первые пять строчек — это и есть твой крем. Какой разобрать следующим? Пиши
+    в комментариях.'
+  scenes:
+  - image: Close-up of her hands holding a white unbranded cream tube in front of
+      her, turning it to the back side with tiny unreadable blurred print
+    motion: She flips the tube over and brings it closer to her eyes
+  - image: She sits at a wooden table with unbranded skincare jars, wearing glasses,
+      reading the back of the tube
+    motion: She reads, then raises one eyebrow and looks at the camera with a knowing
+      half-smile
+  - image: Extreme close-up of her fingertip sliding down the tiny blurred unreadable
+      print on the back of a white tube
+    motion: Her finger slowly slides down the list and stops near the bottom
+  - image: She puts the tube on the table and looks at the camera, relaxed, by the
+      window with plants
+    motion: She takes off her glasses, smiles warmly and gives a small nod to the
+      camera
+  caption: 'Купила крем, потому что на банке крупно «с гиалуроновой кислотой»? Переверни
+    👀
+
+
+    Состав на упаковке пишут по убыванию: чего в креме больше — то стоит в начале
+    списка. А всё, чего меньше одного процента, можно перечислять в конце в любом
+    порядке.
+
+
+    Как читаю я:
+
+    1. Смотрю первые пять строчек — обычно это и есть основа крема, большая часть
+    того, что ты наносишь на лицо.
+
+    2. Ищу «звезду» с этикетки. Если она стоит после отдушки (Parfum / Fragrance)
+    — её там совсем немного.
+
+    3. Сравниваю с ценой. Платить за гиалуронку в хвосте списка как за серьёзный актив
+    — странно.
+
+
+    Это не значит, что крем плохой. Просто покупай его за то, что в нём правда есть,
+    а не за надпись на банке.
+
+
+    Какой крем или сыворотку разобрать следующим? Пиши название в комментариях 👇
+
+
+    Я ИИ-персонаж: разбираю составы и уход без рекламной шелухи. Я не врач и не косметолог
+    — если с кожей проблемы, иди к дерматологу.
+
+
+    #составкосметики #уходзакожей #гиалуроноваякислота #косметика #разборсостава #бьюти
+    #уход'
+
+- id: v02-bez-otdushki
+  rubric: Читаю состав
+  title: «Без отдушки» — а это тогда что?
+  voiceover: >-
+    На банке крупно: «без отдушки». Переворачиваю — а в составе эфирное масло лаванды.
+    Формально не врут: отдушки нет, а пахнуть есть чему. Если у тебя кожа реагирует на запахи,
+    ищи не надпись на лицевой стороне, а слова Parfum, Fragrance и масла в конце списка.
+    Какую надпись на банке проверим следующей? Пиши в комментариях.
+  scenes:
+    - image: Close-up of her hand holding a plain white unbranded cream jar towards the camera, the other hand pointing at the front of the jar
+      motion: She taps the front of the jar with a fingernail and raises one eyebrow
+    - image: She sits at the sunlit kitchen table turning the plain jar to its back side, squinting at tiny blurred unreadable print
+      motion: She turns the jar around, brings it closer to her eyes and slowly nods
+    - image: She sniffs an opened plain cream jar with a skeptical face at the kitchen table
+      motion: She smells the cream, pulls back and gives the camera an ironic look
+    - image: She looks straight at the camera by the window with plants, holding the jar next to her face
+      motion: She shrugs slightly and smiles, as if saying "that's how it is"
+  caption: |
+    На банке крупно «без отдушки», а пахнет лавандой. Как так? 👀
+
+    «Без отдушки» обычно значит: нет синтетического ароматизатора (Parfum / Fragrance). А эфирные масла — лаванда, цитрус, чайное дерево — отдушкой формально не считаются. Пахнуть есть чему.
+
+    Как проверяю я:
+    1. Ищу в составе Parfum или Fragrance.
+    2. Смотрю, нет ли эфирных масел: Lavandula, Citrus, Mentha…
+    3. Если кожа капризная — «без отдушки» на лицевой стороне ничего не гарантирует, решает только состав.
+
+    Это не значит, что эфирные масла — зло. Просто покупай, понимая, что внутри.
+
+    Какую надпись на банке проверим следующей? Пиши в комментариях 👇
+
+    Я ИИ-персонаж: читаю составы без рекламной шелухи. Я не врач и не косметолог — если с кожей проблемы, иди к дерматологу.
+
+    #составкосметики #уходзакожей #чувствительнаякожа #разборсостава #косметика #бьюти
+
+- id: v03-slova-na-banke
+  rubric: Читаю состав
+  title: Три слова на банке, которые ничего не обещают
+  voiceover: >-
+    Три слова на банке, за которые ты переплачиваешь. «Гипоаллергенно» — единого строгого стандарта
+    для этого слова нет. «Дерматологически протестировано» — протестировано, а результат какой?
+    «Без химии» — вода тоже химия, если что. Я не говорю, что крем плохой. Я говорю: смотри в состав,
+    а не на обещания. Напиши «СОСТАВ» — разберу твой крем в следующем ролике.
+  scenes:
+    - image: She holds up three plain unbranded skincare jars in a row on the kitchen table, looking at the camera with a raised eyebrow
+      motion: She lifts the first jar towards the camera, then puts it back
+    - image: Close-up of her fingers tapping the front of a plain white jar, soft daylight
+      motion: Her finger taps the jar twice, the camera slightly shakes like a handheld phone
+    - image: She laughs at the kitchen table holding a glass of water up next to a cream jar
+      motion: She raises the glass of water, laughs and shakes her head
+    - image: She leans towards the camera by the window, friendly and a bit conspiratorial
+      motion: She leans in, smiles and points her finger at the camera
+  caption: |
+    Три слова на банке, за которые мы переплачиваем 👇
+
+    1. «Гипоаллергенно». Единого обязательного стандарта для этого слова нет — каждый производитель понимает его по-своему. Аллергия может быть на что угодно.
+    2. «Дерматологически протестировано». Протестировано — да. А результат какой, на скольких людях, кто проверял? Обычно не пишут.
+    3. «Без химии». Всё — химия, даже вода (H₂O, привет). Эта фраза про настроение, а не про состав.
+
+    Крем с такими надписями может быть отличным. Просто выбирай его по составу, а не по обещаниям.
+
+    Напиши «СОСТАВ» в комментариях — пришлю в директ, как прислать мне свой крем на разбор. Лучшие разберу в роликах 💬
+
+    Я ИИ-персонаж: читаю составы без рекламной шелухи. Я не врач и не косметолог.
+
+    #составкосметики #маркетинг #уходзакожей #разборсостава #косметика #бьюти
+
+- id: v04-kollagen-v-kreme
+  rubric: Читаю состав
+  title: Коллаген в креме — куда он девается
+  voiceover: >-
+    Крем «с коллагеном» за три тысячи. Слушай, молекула коллагена огромная — в глубокие слои кожи она
+    почти не проходит. В креме коллаген работает как увлажнитель на поверхности: приятно, но не больше.
+    Так что платить за него как за чудо — странно. А вот с коллагеном, который пьют, всё сложнее —
+    об этом в следующем ролике. Интересно? Пиши «КОЛЛАГЕН».
+  scenes:
+    - image: She holds a plain unbranded cream jar and reads the tiny blurred print on the back at the kitchen table
+      motion: She reads, then looks up at the camera with a skeptical half-smile
+    - image: She spreads a little cream on the back of her hand in daylight by the window
+      motion: She rubs the cream into her hand and looks at it, unimpressed
+    - image: She sits relaxed at the kitchen table with a cup of tea, looking at the camera and explaining something with her hands
+      motion: She gestures with one hand as if showing something big, then something small
+    - image: She raises her eyebrows and points at the camera with a playful smile
+      motion: She points at the camera and nods, as if saying "next time"
+  caption: |
+    Крем «с коллагеном» — за что платим? 🤔
+
+    Молекула коллагена очень большая. В глубокие слои кожи из крема она практически не проходит — это общее мнение дерматологов. На поверхности коллаген работает как увлажнитель: удерживает воду, кожа приятнее на ощупь.
+
+    Это неплохо! Но это умеют и глицерин, и гиалуронка — только дешевле.
+
+    Как смотрю я:
+    1. Где в составе Collagen — в начале или в хвосте списка?
+    2. Что стоит в первых пяти строчках — там и есть основа крема.
+    3. Сравниваю цену с таким же увлажняющим кремом без модного слова.
+
+    А с коллагеном, который пьют, история другая и сложнее. Разберу честно, с документами — в следующем ролике. Напиши «КОЛЛАГЕН», если интересно 👇
+
+    Я ИИ-персонаж: читаю составы без рекламной шелухи. Я не врач и не косметолог.
+
+    #коллаген #составкосметики #уходзакожей #разборсостава #косметика #бьюти
+
+- id: v05-severra-dokumenty
+  rubric: Проверяю документы
+  title: Коллаген за 9 490 ₽. Я скептик — проверила документы
+  voiceover: >-
+    Коллаген за девять с половиной тысяч. Я скептик, так что сначала — документы, а не обещания.
+    Состав — шесть строчек: коллаген из кожи щуки, вода, яблочный экстракт, витамин C, янтарная кислота,
+    стевия. Без сахара. Декларация ЕАЭС есть, протокол испытаний есть. А клинических исследований
+    именно этого продукта нет — и они сами это пишут. Честность мне нравится больше обещаний.
+    Документы и скидка — напиши «КОЛЛАГЕН».
+  scenes:
+    - image: She sits at the kitchen table with a plain white box and a few plain gel stick sachets without any logos spread in front of her, a skeptical look
+      motion: She picks up one sachet, turns it over and raises one eyebrow
+    - image: Close-up of her fingertip sliding down a short list of tiny blurred unreadable print on the back of a plain sachet
+      motion: Her finger slowly slides down six lines and stops, the camera slightly shakes like a handheld phone
+    - image: She holds a smartphone and scrolls a document, sitting by the window with plants
+      motion: She scrolls, stops, zooms in with two fingers and nods slowly
+    - image: She looks straight at the camera with a calm, honest half-smile, holding a sachet next to her face
+      motion: She shrugs slightly and smiles, as if saying "at least they are honest"
+  caption: |
+    Коллаген за 9 490 ₽ на месяц. Я скептик, поэтому начала с документов, а не с обещаний 📄
+
+    Что проверила — Severra, нативный коллаген из кожи щуки:
+
+    Состав — шесть строчек, всё:
+    1. Гидрат рыбного коллагена (типы 1, 2, 3)
+    2. Вода
+    3. Натуральный яблочный экстракт
+    4. Витамин C
+    5. Янтарная кислота
+    6. Стевия
+    Без сахара, глютена, лактозы и красителей.
+
+    Документы: декларация о соответствии ЕАЭС (действует до 2029), протокол испытаний аккредитованной лаборатории от августа 2026.
+
+    Что меня подкупило: клинического исследования именно этого продукта нет — и производитель так и пишет. Не «доказано учёными», а честно. Про «нативный, не гидролизат» и сроки эффекта — это слова производителя, я их не проверяла и выдавать за факт не буду.
+
+    Это пищевой продукт, не лекарство. Нельзя: при аллергии на рыбу, беременности и ГВ, болезнях почек и печени, если пьёшь препараты, разжижающие кровь, — сначала к врачу.
+
+    Напиши «КОЛЛАГЕН» — пришлю в директ документы и ссылку со скидкой по промокоду 👇
+    Ссылка партнёрская: мне — процент, тебе — скидка.
+
+    Я ИИ-персонаж: читаю составы и документы без рекламной шелухи. Я не врач.
+
+    #коллаген #нативныйколлаген #составкосметики #разборсостава #уходзакожей #северра
+
+- id: v06-pyat-voprosov
+  rubric: Проверяю документы
+  title: 5 вопросов перед покупкой коллагена
+  voiceover: >-
+    Прежде чем покупать любой коллаген — пять вопросов. Сколько строчек в составе и есть ли сахар?
+    Есть ли декларация и протокол испытаний? Пишут ли, кому нельзя? Честно ли говорят про исследования
+    или сразу «доказано»? И сколько стоит день приёма, а не банка? Если на что-то не отвечают —
+    это уже ответ. Я прогнала по этому списку один — напиши «КОЛЛАГЕН», покажу какой.
+  scenes:
+    - image: She sits at the kitchen table holding up five fingers towards the camera with a playful serious face
+      motion: She shows five fingers and folds them one by one
+    - image: Close-up of her hand writing a short checklist in a paper notebook with a pen, blurred unreadable handwriting, a cup of tea nearby
+      motion: She writes quickly, ticks a line and taps the pen on the notebook
+    - image: She compares two plain unbranded supplement jars in her hands by the window
+      motion: She weighs the jars in her hands, frowns at one and puts it aside
+    - image: She looks at the camera and smiles, holding the notebook
+      motion: She closes the notebook and nods confidently
+  caption: |
+    5 вопросов, которые я задаю любому коллагену перед покупкой ✍️
+
+    1. Сколько строчек в составе и есть ли сахар? Чем короче и понятнее — тем лучше.
+    2. Есть ли декларация и протокол испытаний? Их можно попросить у продавца — нормальный покажет.
+    3. Написано ли, кому нельзя? Если «подходит всем» — насторожись.
+    4. Как говорят про исследования: честно или сразу «доказано учёными»?
+    5. Сколько стоит один день приёма, а не банка?
+
+    Если на какой-то вопрос продавец не отвечает — это тоже ответ.
+
+    Я прогнала по этому списку один коллаген — рассказываю в предыдущем ролике. Напиши «КОЛЛАГЕН» — пришлю в директ его документы и ссылку со скидкой 👇
+    Ссылка партнёрская: мне — процент, тебе — скидка.
+
+    Сохрани список, пригодится в аптеке и на маркетплейсе.
+
+    Я ИИ-персонаж: читаю составы и документы без рекламной шелухи. Я не врач.
+
+    #коллаген #бады #составкосметики #разборсостава #чеклист #уходзакожей
+
+- id: v07-razbor-podpischicy
+  rubric: Вопрос от подписчицы
+  title: Разбираю крем подписчицы
+  voiceover: >-
+    Мне прислали крем: «Это нормальный состав или меня развели?» Окей, проверяем. Первые пять строк —
+    вода, глицерин, масло ши, эмульгатор, пантенол. Это основа, и она хорошая. Ниацинамид в середине —
+    отлично. Отдушка в конце — если кожа спокойная, не страшно. Вердикт: не развели. Хочешь, разберу
+    твой? Напиши «СОСТАВ».
+  scenes:
+    - image: She sits at the kitchen table looking at her smartphone screen with curiosity, a plain cream tube next to her
+      motion: She reads a message on the phone, raises her eyebrows and smiles
+    - image: Close-up of her fingertip sliding down tiny blurred unreadable print on the back of a plain white tube
+      motion: Her finger moves down the list line by line and pauses in the middle
+    - image: She holds the plain tube up to the camera and gives a thumbs up by the window
+      motion: She shows a thumbs up and nods approvingly
+    - image: She points at the camera with a friendly grin, sitting at the kitchen table
+      motion: She points at the camera and winks
+  caption: |
+    Подписчица прислала крем: «Нормальный состав или меня развели?» Разбираю 🔍
+
+    Первые пять строк — основа крема:
+    вода, глицерин, масло ши, эмульгатор, пантенол. Увлажнение и питание — хорошая база.
+
+    В середине — ниацинамид. Отлично, это рабочий компонент, и стоит он не в самом хвосте.
+
+    В конце — отдушка. Если кожа спокойная — не страшно. Если реактивная — я бы искала без неё.
+
+    Вердикт: не развели 👌
+
+    Хочешь, разберу твой? Напиши «СОСТАВ» в комментариях — пришлю в директ, как прислать фото. Самые интересные разберу в роликах 💬
+
+    Я ИИ-персонаж: читаю составы без рекламной шелухи. Я не врач и не косметолог.
+
+    #разборсостава #составкосметики #уходзакожей #ниацинамид #косметика #бьюти

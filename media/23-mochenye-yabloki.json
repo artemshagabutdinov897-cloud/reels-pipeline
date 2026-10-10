@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790514903275-et1mlt1n.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790514974269.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790515164993-4ko98ea2.mp4",
+  "prompt": "The knife cuts through, the halves fall apart, juice glistens"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790515251188.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790515424306-ko2v9c88.mp4",
+  "prompt": "She twists an apple off the branch and puts it into the basket"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790515528711.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790515725150-jg5eaeph.mp4",
+  "prompt": "She places the apples one by one and tucks leaves between them"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790515938339.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790516114707-678uzruc.mp4",
+  "prompt": "She bites, laughs and shows the apple to the camera"
+ }
+}

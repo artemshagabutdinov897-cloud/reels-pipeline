@@ -1,0 +1,43 @@
+name: make-video
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "id ролика из content/scripts.yaml"
+        required: true
+permissions:
+  contents: write
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r pipeline/requirements.txt
+      - name: generate
+        env:
+          BRATUHA_API_KEY: ${{ secrets.BRATUHA_API_KEY || secrets.YK_SECRET }}
+        run: python pipeline/fast.py "${{ inputs.id }}"
+      - name: save media links
+        if: always()
+        run: |
+          git config user.name "artemshagabutdinov897-cloud"
+          git config user.email "artemshagabutdinov897@gmail.com"
+          git add media/ || true
+          git commit -m "media: ${{ inputs.id }}" || true
+          for i in 1 2 3 4 5 6; do git pull -q --rebase && git push && break; sleep $((RANDOM % 10 + 5)); done || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ${{ inputs.id }}
+          path: |
+            output/${{ inputs.id }}/*.mp4
+            output/${{ inputs.id }}/caption.txt
+            output/${{ inputs.id }}/clips/*.png
+            output/bratuha_spend.json
+          if-no-files-found: ignore

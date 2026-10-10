@@ -1,0 +1,21 @@
+name: fetch
+on:
+  workflow_dispatch:
+    inputs:
+      path:
+        required: true
+permissions:
+  contents: read
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: previews
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fetch
+          path: ${{ inputs.path }}
+          retention-days: 3

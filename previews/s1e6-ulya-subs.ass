@@ -1,0 +1,36 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,DejaVu Sans,80,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,1,0,0,0,100,100,0,0,1,7,3,2,80,80,518,1
+Style: Simple,DejaVu Sans,49,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2.5,1,2,90,90,249,1
+Style: Hook,DejaVu Sans,68,&H00FFFFFF,&H00FFFFFF,&H00202020,&H28202020,1,0,0,0,100,100,0,0,3,22,0,8,90,90,230,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.12,Simple,,0,0,0,,Поехала я к Нине снова.
+Dialogue: 0,0:00:02.12,0:00:02.97,Simple,,0,0,0,,С ключом.
+Dialogue: 0,0:00:02.97,0:00:05.51,Simple,,0,0,0,,Она меня за огород повела, к
+Dialogue: 0,0:00:05.51,0:00:06.36,Simple,,0,0,0,,старому сараю.
+Dialogue: 0,0:00:06.36,0:00:08.48,Simple,,0,0,0,,А там два улья.
+Dialogue: 0,0:00:08.48,0:00:09.33,Simple,,0,0,0,,Старые, синие.
+Dialogue: 0,0:00:09.33,0:00:11.87,Simple,,0,0,0,,Нинин отец их так и не
+Dialogue: 0,0:00:11.87,0:00:12.30,Simple,,0,0,0,,продал.
+Dialogue: 0,0:00:12.30,0:00:15.27,Simple,,0,0,0,,Сорок лет берёг ждал, что Коля
+Dialogue: 0,0:00:15.27,0:00:15.69,Simple,,0,0,0,,выкупит.
+Dialogue: 0,0:00:15.69,0:00:18.24,Simple,,0,0,0,,А Коля каждый год с них
+Dialogue: 0,0:00:18.24,0:00:21.20,Simple,,0,0,0,,мёд брал и пёк мне на
+Dialogue: 0,0:00:21.20,0:00:22.48,Simple,,0,0,0,,день рождения пряники.
+Dialogue: 0,0:00:22.48,0:00:24.17,Simple,,0,0,0,,Я-то думала, с базара.
+Dialogue: 0,0:00:24.17,0:00:26.72,Simple,,0,0,0,,А под крышкой второго улья лежал
+Dialogue: 0,0:00:26.72,0:00:27.14,Simple,,0,0,0,,конверт.
+Dialogue: 0,0:00:27.14,0:00:29.69,Simple,,0,0,0,,Колиной рукой: «Зоя, открой в мой
+Dialogue: 0,0:00:29.69,0:00:30.53,Simple,,0,0,0,,день рождения».
+Dialogue: 0,0:00:30.53,0:00:33.50,Simple,,0,0,0,,День рождения у Коли через две
+Dialogue: 0,0:00:33.50,0:00:33.93,Simple,,0,0,0,,недели.
+Dialogue: 0,0:00:33.93,0:00:35.20,Simple,,0,0,0,,Открывать при вас?

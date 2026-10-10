@@ -1,0 +1,26 @@
+{
+ "keyframes": {
+  "b1": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791245873547.png",
+  "b2": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791245955485.png",
+  "s3": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791247188552.png",
+  "b4": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791246089428.png",
+  "s5": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791247241144.png",
+  "s6": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791247369099.png",
+  "s7": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791247475441.png",
+  "b9": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791246614078.png",
+  "b10": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791246673879.png",
+  "s11": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791247551345.png"
+ },
+ "clips": {
+  "clip_2": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791247793358-3ld85j9x.mp4",
+  "clip_4": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791247793113-53opr740.mp4",
+  "clip_3": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791247829350-4b0frp3o.mp4",
+  "clip_5": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791247922278-vpjttb51.mp4",
+  "clip_6": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791247922093-8mo3o4c3.mp4",
+  "clip_1": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791247948113-qognkgul.mp4",
+  "clip_7": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791247977911-yxhc84vd.mp4",
+  "clip_9": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791248087918-zu0y5d4u.mp4",
+  "clip_8": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791248098624-h75mrtcn.mp4",
+  "clip_10": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791248118854-dbq1u71n.mp4"
+ }
+}

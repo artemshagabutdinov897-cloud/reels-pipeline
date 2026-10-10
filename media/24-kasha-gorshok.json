@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790516197595-y1967lfm.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790516278122.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790516459678-lxvhtn5w.mp4",
+  "prompt": "The spoon breaks the crust and scoops up creamy orange porridge"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790516716644.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790516858005-ggft7wpl.mp4",
+  "prompt": "She swirls the grain with her hand and pours off the cloudy water"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790516943665.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790517119829-68avaibx.mp4",
+  "prompt": "She pushes the pot deep into the oven and closes the oven door"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790517543236.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790517719889-ritiw7lb.mp4",
+  "prompt": "The girl eats a spoonful, the grandmother strokes her head and smiles"
+ }
+}

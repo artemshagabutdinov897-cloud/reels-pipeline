@@ -1,0 +1,30 @@
+name: probe
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        required: true
+      name:
+        required: true
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: fetch
+        env:
+          URLS: ${{ inputs.urls }}
+        run: |
+          mkdir -p previews/probe
+          i=0
+          for u in $URLS; do i=$((i+1)); curl -sSL -A 'Mozilla/5.0' -o previews/probe/${{ inputs.name }}-$i.html "$u" || true; done
+          ls -la previews/probe
+          git config user.name "artemshagabutdinov897-cloud"
+          git config user.email "artemshagabutdinov897@gmail.com"
+          git add previews
+          git commit -m "probe ${{ inputs.name }}" || true
+          git push

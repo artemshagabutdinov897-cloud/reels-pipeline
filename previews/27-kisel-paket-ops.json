@@ -1,0 +1,74 @@
+{
+ "c7e60ded-2faa-4ffb-a000-85055f2be1dd": {
+  "status": 200,
+  "body": {
+   "id": "c7e60ded-2faa-4ffb-a000-85055f2be1dd",
+   "status": "completed",
+   "tool": "seedance-2-5",
+   "cost": 140,
+   "created_at": "2026-09-29T16:36:46.555855+00:00",
+   "completed_at": "2026-09-29T16:40:14.01044+00:00",
+   "result": {
+    "type": "video",
+    "urls": [
+     "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790700006720-9c4jm8i6.mp4"
+    ]
+   },
+   "error_message": null
+  }
+ },
+ "ab7d772f-701d-45e8-b2cd-3d80544a3450": {
+  "status": 200,
+  "body": {
+   "id": "ab7d772f-701d-45e8-b2cd-3d80544a3450",
+   "status": "completed",
+   "tool": "seedance-2-5",
+   "cost": 70,
+   "created_at": "2026-09-29T16:42:42.950827+00:00",
+   "completed_at": "2026-09-29T16:44:54.541186+00:00",
+   "result": {
+    "type": "video",
+    "urls": [
+     "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790700287137-9u2v232w.mp4"
+    ]
+   },
+   "error_message": null
+  }
+ },
+ "5c618675-1132-4c3b-8c59-13c5162f0a83": {
+  "status": 200,
+  "body": {
+   "id": "5c618675-1132-4c3b-8c59-13c5162f0a83",
+   "status": "completed",
+   "tool": "seedance-2-5",
+   "cost": 70,
+   "created_at": "2026-09-29T16:41:57.801261+00:00",
+   "completed_at": "2026-09-29T16:45:01.514521+00:00",
+   "result": {
+    "type": "video",
+    "urls": [
+     "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790700294323-0tkmzvuh.mp4"
+    ]
+   },
+   "error_message": null
+  }
+ },
+ "5854d6af-b83b-48f3-b14c-46490a2e8a79": {
+  "status": 200,
+  "body": {
+   "id": "5854d6af-b83b-48f3-b14c-46490a2e8a79",
+   "status": "completed",
+   "tool": "seedance-2-5",
+   "cost": 154,
+   "created_at": "2026-09-29T16:41:56.502469+00:00",
+   "completed_at": "2026-09-29T16:45:13.563509+00:00",
+   "result": {
+    "type": "video",
+    "urls": [
+     "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790700306055-7k7w59fc.mp4"
+    ]
+   },
+   "error_message": null
+  }
+ }
+}

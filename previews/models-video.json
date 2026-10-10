@@ -1,0 +1,2294 @@
+[
+ {
+  "slug": "hailuo-02",
+  "name": "Hailuo 02",
+  "description": "Генерирует короткие видео по текстовому описанию или оживляет картинку в видеоролик. Стоимость от 12 до 48 рублей за генерацию - зависит от режима (текст/изображение), версии модели, разрешения и длительности.",
+  "pricing": {
+   "type": "variable",
+   "from": 12,
+   "currency": "RUB"
+  },
+  "input_schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "hailuo_generation_type": {
+     "type": "string",
+     "title": "Тип генерации",
+     "default": "image",
+     "enum": [
+      "image",
+      "text"
+     ],
+     "x-bratuha-option-labels": {
+      "image": "Видео из изображений",
+      "text": "Видео из текста"
+     }
+    },
+    "hailuo_tier": {
+     "type": "string",
+     "title": "Модель",
+     "default": "standard",
+     "enum": [
+      "standard",
+      "pro"
+     ],
+     "x-bratuha-option-labels": {
+      "standard": "Standard",
+      "pro": "Pro"
+     }
+    },
+    "prompt": {
+     "type": "string",
+     "title": "Задание",
+     "minLength": 3,
+     "maxLength": 1500
+    },
+    "image_url": {
+     "type": "string",
+     "title": "Изображение",
+     "description": "JPEG/PNG/WebP/HEIC/HEIF (HEIC/HEIF конвертируем в PNG), до 10 МБ.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "hailuo_generation_type",
+      "value": "image",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "use_end_image": {
+     "type": "boolean",
+     "title": "Конечный кадр",
+     "default": false,
+     "x-bratuha-show-if": {
+      "field": "hailuo_generation_type",
+      "value": "image",
+      "operator": "=="
+     }
+    },
+    "end_image_url": {
+     "type": "string",
+     "title": "Конечный кадр",
+     "description": "JPEG/PNG/WebP/HEIC/HEIF (HEIC/HEIF конвертируем в PNG), до 10 МБ.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "use_end_image",
+      "value": true,
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "duration": {
+     "type": "string",
+     "title": "Длительность",
+     "default": "6",
+     "enum": [
+      "6",
+      "10"
+     ],
+     "x-bratuha-option-labels": {
+      "6": "6 сек",
+      "10": "10 сек"
+     }
+    },
+    "resolution": {
+     "type": "string",
+     "title": "Разрешение",
+     "default": "768P",
+     "enum": [
+      "512P",
+      "768P",
+      "1080p"
+     ],
+     "x-bratuha-option-labels": {
+      "512P": "512P",
+      "768P": "768P",
+      "1080p": "1080p"
+     }
+    }
+   },
+   "required": [
+    "hailuo_generation_type",
+    "hailuo_tier",
+    "prompt",
+    "duration",
+    "resolution"
+   ]
+  }
+ },
+ {
+  "slug": "hailuo-2-3",
+  "name": "Hailuo 2.3",
+  "description": "Превращает картинку в короткое видео, добавляя движение персонажей и камеры по вашему заданию. Стоимость от 30 до 90 рублей за генерацию - зависит от модели, длительности и разрешения.",
+  "pricing": {
+   "type": "variable",
+   "from": 30,
+   "currency": "RUB"
+  },
+  "input_schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "model": {
+     "type": "string",
+     "title": "Модель",
+     "default": "hailuo/2-3-image-to-video-standard",
+     "enum": [
+      "hailuo/2-3-image-to-video-standard",
+      "hailuo/2-3-image-to-video-pro"
+     ],
+     "x-bratuha-option-labels": {
+      "hailuo/2-3-image-to-video-standard": "Стандарт",
+      "hailuo/2-3-image-to-video-pro": "Про"
+     }
+    },
+    "prompt": {
+     "type": "string",
+     "title": "Задание",
+     "minLength": 2,
+     "maxLength": 5000
+    },
+    "image_url": {
+     "type": "string",
+     "title": "Изображение",
+     "description": "JPEG/PNG/WebP, до 10 МБ.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp"
+     ],
+     "format": "uri"
+    },
+    "duration": {
+     "type": "string",
+     "title": "Длительность",
+     "default": "6",
+     "enum": [
+      "6",
+      "10"
+     ],
+     "x-bratuha-option-labels": {
+      "6": "6 сек",
+      "10": "10 сек"
+     }
+    },
+    "resolution": {
+     "type": "string",
+     "title": "Разрешение",
+     "default": "768P",
+     "enum": [
+      "768P",
+      "1080P"
+     ],
+     "x-bratuha-option-labels": {
+      "768P": "768P",
+      "1080P": "1080P"
+     }
+    }
+   },
+   "required": [
+    "model",
+    "prompt",
+    "image_url",
+    "duration",
+    "resolution"
+   ]
+  }
+ },
+ {
+  "slug": "kling-2-1",
+  "name": "Kling 2.1",
+  "description": "Создаёт короткие видео по картинке (а в режиме Master - ещё и по текстовому описанию), добавляя движение персонажам и камере. Стоимость от 25 до 280 рублей за генерацию - зависит от выбранной модели и длительности 5 или 10 секунд.",
+  "pricing": {
+   "type": "variable",
+   "from": 25,
+   "currency": "RUB"
+  },
+  "input_schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "mode": {
+     "type": "string",
+     "title": "Тип генерации",
+     "default": "image",
+     "enum": [
+      "image",
+      "text"
+     ],
+     "x-bratuha-option-labels": {
+      "image": "Видео из изображений",
+      "text": "Видео из текста"
+     }
+    },
+    "model": {
+     "type": "string",
+     "title": "Модель",
+     "default": "kling/v2-1-standard",
+     "enum": [
+      "kling/v2-1-standard",
+      "kling/v2-1-pro",
+      "kling/v2-1-master-image-to-video",
+      "kling/v2-1-master-text-to-video"
+     ],
+     "x-bratuha-option-labels": {
+      "kling/v2-1-standard": "Стандарт",
+      "kling/v2-1-pro": "Про",
+      "kling/v2-1-master-image-to-video": "Мастер",
+      "kling/v2-1-master-text-to-video": "Мастер"
+     }
+    },
+    "prompt": {
+     "type": "string",
+     "title": "Задание",
+     "minLength": 2,
+     "maxLength": 5000
+    },
+    "image_url": {
+     "type": "string",
+     "title": "Изображение",
+     "description": "JPEG/PNG/WebP, до 10 МБ.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "mode",
+      "value": "image",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "tail_image_url": {
+     "type": "string",
+     "title": "Конечный кадр",
+     "description": "JPEG/PNG/WebP, до 10 МБ.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "model",
+      "value": "kling/v2-1-pro",
+      "operator": "=="
+     }
+    },
+    "duration": {
+     "type": "string",
+     "title": "Длительность",
+     "default": "5",
+     "enum": [
+      "5",
+      "10"
+     ],
+     "x-bratuha-option-labels": {
+      "5": "5 сек",
+      "10": "10 сек"
+     }
+    },
+    "aspect_ratio": {
+     "type": "string",
+     "title": "Соотношение сторон",
+     "default": "16:9",
+     "enum": [
+      "16:9",
+      "9:16",
+      "1:1"
+     ],
+     "x-bratuha-option-labels": {
+      "16:9": "16:9",
+      "9:16": "9:16",
+      "1:1": "1:1"
+     },
+     "x-bratuha-show-if": {
+      "field": "model",
+      "value": "kling/v2-1-master-text-to-video",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "use_negative_prompt": {
+     "type": "boolean",
+     "title": "Негативный промпт",
+     "default": false
+    },
+    "negative_prompt": {
+     "type": "string",
+     "title": "Негативный промпт",
+     "maxLength": 500,
+     "x-bratuha-show-if": {
+      "field": "use_negative_prompt",
+      "value": true,
+      "operator": "=="
+     }
+    },
+    "cfg_scale": {
+     "type": "number",
+     "title": "Сила следования промпту",
+     "default": 0.5,
+     "minimum": 0,
+     "maximum": 1
+    }
+   },
+   "required": [
+    "mode",
+    "model",
+    "prompt",
+    "duration"
+   ]
+  }
+ },
+ {
+  "slug": "kling-2-5-turbo",
+  "name": "Kling 2.5 Turbo Pro",
+  "description": "Генерирует короткие видео по текстовому описанию или “оживляет” картинку, превращая её в видеосцену. Стоимость 40 рублей за 5 секунд или 80 рублей за 10 секунд.",
+  "pricing": {
+   "type": "variable",
+   "from": 40,
+   "currency": "RUB"
+  },
+  "input_schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "model": {
+     "type": "string",
+     "title": "Тип генерации",
+     "default": "kling/v2-5-turbo-image-to-video-pro",
+     "enum": [
+      "kling/v2-5-turbo-image-to-video-pro",
+      "kling/v2-5-turbo-text-to-video-pro"
+     ],
+     "x-bratuha-option-labels": {
+      "kling/v2-5-turbo-image-to-video-pro": "Видео из изображения",
+      "kling/v2-5-turbo-text-to-video-pro": "Видео из текста"
+     }
+    },
+    "prompt": {
+     "type": "string",
+     "title": "Задание",
+     "maxLength": 2500
+    },
+    "image_url": {
+     "type": "string",
+     "title": "Изображение",
+     "description": "JPEG/PNG/WebP, до 10 МБ.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "model",
+      "value": "kling/v2-5-turbo-image-to-video-pro",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "use_end_image": {
+     "type": "boolean",
+     "title": "Конечный кадр",
+     "default": false,
+     "x-bratuha-show-if": {
+      "field": "model",
+      "value": "kling/v2-5-turbo-image-to-video-pro",
+      "operator": "=="
+     }
+    },
+    "tail_image_url": {
+     "type": "string",
+     "title": "Конечный кадр",
+     "description": "JPEG/PNG/WebP, до 10 МБ.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "use_end_image",
+      "value": true,
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "aspect_ratio": {
+     "type": "string",
+     "title": "Соотношение сторон",
+     "default": "16:9",
+     "enum": [
+      "16:9",
+      "9:16",
+      "1:1"
+     ],
+     "x-bratuha-option-labels": {
+      "16:9": "16:9",
+      "9:16": "9:16",
+      "1:1": "1:1"
+     },
+     "x-bratuha-show-if": {
+      "field": "model",
+      "value": "kling/v2-5-turbo-text-to-video-pro",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "duration": {
+     "type": "string",
+     "title": "Длительность",
+     "default": "5",
+     "enum": [
+      "5",
+      "10"
+     ],
+     "x-bratuha-option-labels": {
+      "5": "5 сек",
+      "10": "10 сек"
+     }
+    },
+    "use_negative_prompt": {
+     "type": "boolean",
+     "title": "Негативный промпт",
+     "default": false
+    },
+    "negative_prompt": {
+     "type": "string",
+     "title": "Негативный промпт",
+     "maxLength": 2496,
+     "x-bratuha-show-if": {
+      "field": "use_negative_prompt",
+      "value": true,
+      "operator": "=="
+     }
+    },
+    "cfg_scale": {
+     "type": "number",
+     "title": "Сила следования промпту",
+     "default": 0.5,
+     "minimum": 0,
+     "maximum": 1
+    }
+   },
+   "required": [
+    "model",
+    "prompt",
+    "duration"
+   ]
+  }
+ },
+ {
+  "slug": "kling-2-6",
+  "name": "Kling 2.6",
+  "description": "Генерирует короткие видео по текстовому описанию или оживляет загруженную картинку, добавляя движение и (по желанию) звук. Стоимость от 50 до 200 рублей за видео - зависит от длительности (5/10 сек) и включённого звука.",
+  "pricing": {
+   "type": "variable",
+   "from": 50,
+   "currency": "RUB"
+  },
+  "input_schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "model": {
+     "type": "string",
+     "title": "Тип генерации",
+     "default": "kling-2.6/image-to-video",
+     "enum": [
+      "kling-2.6/image-to-video",
+      "kling-2.6/text-to-video"
+     ],
+     "x-bratuha-option-labels": {
+      "kling-2.6/image-to-video": "Видео из изображения",
+      "kling-2.6/text-to-video": "Видео из текста"
+     }
+    },
+    "prompt": {
+     "type": "string",
+     "title": "Задание",
+     "maxLength": 2500
+    },
+    "image_urls": {
+     "type": "array",
+     "title": "Изображение",
+     "description": "JPEG/PNG/WebP, до 10 МБ.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 1,
+     "x-bratuha-show-if": {
+      "field": "model",
+      "value": "kling-2.6/image-to-video",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "sound": {
+     "type": "boolean",
+     "title": "Со звуком",
+     "default": false
+    },
+    "aspect_ratio": {
+     "type": "string",
+     "title": "Соотношение сторон",
+     "default": "1:1",
+     "enum": [
+      "1:1",
+      "16:9",
+      "9:16"
+     ],
+     "x-bratuha-option-labels": {
+      "1:1": "1:1",
+      "16:9": "16:9",
+      "9:16": "9:16"
+     },
+     "x-bratuha-show-if": {
+      "field": "model",
+      "value": "kling-2.6/text-to-video",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "duration": {
+     "type": "string",
+     "title": "Длительность",
+     "default": "5",
+     "enum": [
+      "5",
+      "10"
+     ],
+     "x-bratuha-option-labels": {
+      "5": "5 сек",
+      "10": "10 сек"
+     }
+    }
+   },
+   "required": [
+    "model",
+    "prompt",
+    "duration"
+   ]
+  }
+ },
+ {
+  "slug": "kling-2-6-motion-control",
+  "name": "Kling 2.6 Motion Control",
+  "description": "Переносит движение из референс‑видео на изображение и делает короткий ролик. Цена: 10 ₽/сек (720p) или 18 ₽/сек (1080p).",
+  "pricing": {
+   "type": "variable",
+   "from": 18,
+   "currency": "RUB"
+  },
+  "input_schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "prompt": {
+     "type": "string",
+     "title": "Задание",
+     "maxLength": 2500
+    },
+    "input_urls": {
+     "type": "array",
+     "title": "Референс-изображение",
+     "description": "JPEG/PNG, до 10 МБ.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 1
+    },
+    "video_urls": {
+     "type": "array",
+     "title": "Референс-видео",
+     "description": "MP4/MOV, до 100 МБ.",
+     "x-bratuha-file-kind": "video",
+     "x-bratuha-extensions": [
+      ".mp4",
+      ".mov"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 1
+    },
+    "character_orientation": {
+     "type": "string",
+     "title": "Ориентация персонажа",
+     "default": "video",
+     "enum": [
+      "video",
+      "image"
+     ],
+     "x-bratuha-option-labels": {
+      "video": "Video",
+      "image": "Image"
+     }
+    },
+    "mode": {
+     "type": "string",
+     "title": "Разрешение",
+     "default": "720p",
+     "enum": [
+      "720p",
+      "1080p"
+     ],
+     "x-bratuha-option-labels": {
+      "720p": "720p",
+      "1080p": "1080p"
+     }
+    }
+   },
+   "required": [
+    "input_urls",
+    "video_urls",
+    "character_orientation",
+    "mode"
+   ]
+  }
+ },
+ {
+  "slug": "kling-3-0",
+  "name": "Kling 3.0",
+  "description": "Создаёт видео по референсам, изображениям, текстовому описанию или исходному видео. Цена зависит от разрешения и нативного аудио: 720p - 11/14 ₽ за секунду, 1080p - 14/18 ₽ за секунду, 4K - 50 ₽ за секунду.",
+  "pricing": {
+   "type": "variable",
+   "from": 11,
+   "currency": "RUB"
+  },
+  "input_schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "kling_generation_type": {
+     "type": "string",
+     "title": "Тип генерации",
+     "default": "reference",
+     "enum": [
+      "reference",
+      "image",
+      "text",
+      "transformation"
+     ],
+     "x-bratuha-option-labels": {
+      "reference": "Видео по референсам",
+      "image": "Видео из изображений",
+      "text": "Видео из текста",
+      "transformation": "Трансформация"
+     }
+    },
+    "prompt": {
+     "type": "string",
+     "title": "Задание",
+     "description": "Можно ссылаться на загруженные референсы: напишите @image1 или @video1 либо введите @ и выберите файл из меню.",
+     "minLength": 3,
+     "maxLength": 3072
+    },
+    "shot_mode": {
+     "type": "string",
+     "title": "Сцены",
+     "description": "Можно оставить один общий ролик, доверить планирование сцен или задать сцены вручную.",
+     "default": "single",
+     "enum": [
+      "single",
+      "smart",
+      "custom"
+     ],
+     "x-bratuha-option-labels": {
+      "single": "Один ролик",
+      "smart": "Умное планирование",
+      "custom": "Свои сцены"
+     },
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "transformation",
+      "operator": "!="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "multi_prompt": {
+     "type": "array",
+     "title": "Сцены",
+     "items": {
+      "type": "object",
+      "properties": {
+       "prompt": {
+        "type": "string",
+        "title": "Описание сцены"
+       },
+       "duration": {
+        "type": "number",
+        "title": "Длительность сцены"
+       }
+      },
+      "required": [
+       "prompt",
+       "duration"
+      ],
+      "additionalProperties": false
+     },
+     "minItems": 1,
+     "maxItems": 6,
+     "x-bratuha-show-if": {
+      "field": "shot_mode",
+      "value": "custom",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "reference_image_urls": {
+     "type": "array",
+     "title": "Референсы",
+     "description": "JPG, JPEG или PNG. До 7 изображений, каждый файл до 50 МБ. Минимальный размер: 300×300 px.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 7,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "reference",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "image_frame_urls": {
+     "type": "array",
+     "title": "Первый кадр",
+     "description": "JPG, JPEG или PNG. 1 изображение до 50 МБ. Минимальный размер: 300×300 px.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 1,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "image",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "transform_video_urls": {
+     "type": "array",
+     "title": "Исходное видео",
+     "description": "MP4 или MOV. 1 видео до 200 МБ, длительность 3–15,5 сек, 24–60 fps.",
+     "x-bratuha-file-kind": "video",
+     "x-bratuha-extensions": [
+      ".mp4",
+      ".mov"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 1,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "transformation",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "use_transform_images": {
+     "type": "boolean",
+     "title": "Добавить изображения-референсы",
+     "description": "Включите, если нужно дополнить исходное видео изображениями стиля или персонажа.",
+     "default": false,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "transformation",
+      "operator": "=="
+     }
+    },
+    "transform_image_urls": {
+     "type": "array",
+     "title": "Референсы",
+     "description": "JPG, JPEG или PNG. До 4 изображений, каждый файл до 50 МБ.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 4,
+     "x-bratuha-show-if": {
+      "field": "use_transform_images",
+      "value": true,
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "elements": {
+     "type": "array",
+     "title": "Элементы",
+     "items": {
+      "type": "object",
+      "properties": {
+       "name": {
+        "type": "string",
+        "title": "Имя элемента"
+       },
+       "description": {
+        "type": "string",
+        "title": "Описание элемента"
+       },
+       "frontal_image_url": {
+        "type": "string",
+        "title": "Основное изображение"
+       },
+       "reference_image_urls": {
+        "type": "array",
+        "title": "Дополнительные референсы"
+       }
+      },
+      "required": [
+       "name",
+       "description",
+       "frontal_image_url",
+       "reference_image_urls"
+      ],
+      "additionalProperties": false
+     },
+     "minItems": 0,
+     "maxItems": 3,
+     "description": "Используйте для отдельных персонажей или объектов, которые нужно сохранить узнаваемыми в ролике."
+    },
+    "duration": {
+     "type": "number",
+     "title": "Длительность",
+     "description": "Итоговая длительность ролика от 3 до 15 секунд. Цена считается за каждую секунду.",
+     "default": 5,
+     "minimum": 3,
+     "maximum": 15,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "transformation",
+      "operator": "!="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "resolution": {
+     "type": "string",
+     "title": "Разрешение",
+     "description": "Чем выше разрешение, тем выше детализация и стоимость.",
+     "default": "720p",
+     "enum": [
+      "720p",
+      "1080p",
+      "4k"
+     ],
+     "x-bratuha-option-labels": {
+      "720p": "720p",
+      "1080p": "1080p",
+      "4k": "4K"
+     }
+    },
+    "audio": {
+     "type": "boolean",
+     "title": "Нативное аудио",
+     "description": "Добавляет звук, сгенерированный вместе с видео. Влияет на стоимость.",
+     "default": false
+    },
+    "aspect_ratio_standard": {
+     "type": "string",
+     "title": "Соотношение сторон",
+     "description": "Формат итогового видео.",
+     "default": "16:9",
+     "enum": [
+      "16:9",
+      "9:16",
+      "1:1"
+     ],
+     "x-bratuha-option-labels": {
+      "16:9": "16:9",
+      "9:16": "9:16",
+      "1:1": "1:1"
+     },
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": [
+       "reference",
+       "text"
+      ],
+      "operator": "in"
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "aspect_ratio_image": {
+     "type": "string",
+     "title": "Соотношение сторон",
+     "description": "Для обычного режима по первому кадру используется автоформат. Выбор доступен при своих сценах.",
+     "default": "16:9",
+     "enum": [
+      "16:9",
+      "9:16",
+      "1:1"
+     ],
+     "x-bratuha-option-labels": {
+      "16:9": "16:9",
+      "9:16": "9:16",
+      "1:1": "1:1"
+     },
+     "x-bratuha-show-if": {
+      "op": "and",
+      "conditions": [
+       {
+        "field": "kling_generation_type",
+        "value": "image",
+        "operator": "=="
+       },
+       {
+        "field": "shot_mode",
+        "value": "custom",
+        "operator": "=="
+       }
+      ]
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "aspect_ratio_transform": {
+     "type": "string",
+     "title": "Соотношение сторон",
+     "description": "При трансформации только видео используется автоформат. Выбор доступен при добавленных изображениях.",
+     "default": "16:9",
+     "enum": [
+      "16:9",
+      "9:16",
+      "1:1"
+     ],
+     "x-bratuha-option-labels": {
+      "16:9": "16:9",
+      "9:16": "9:16",
+      "1:1": "1:1"
+     },
+     "x-bratuha-show-if": {
+      "field": "use_transform_images",
+      "value": true,
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    }
+   },
+   "required": [
+    "kling_generation_type",
+    "prompt",
+    "resolution"
+   ]
+  }
+ },
+ {
+  "slug": "kling-3-0-motion-control",
+  "name": "Kling 3.0 Motion Control",
+  "description": "Переносит движение из референс-видео на персонажа с изображения, чтобы он повторял позу, жесты и динамику как в оригинале. Цена зависит от разрешения и длительности: 720p — 18 ₽/сек, 1080p — 26 ₽/сек.",
+  "pricing": {
+   "type": "variable",
+   "from": 18,
+   "currency": "RUB"
+  },
+  "input_schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "prompt": {
+     "type": "string",
+     "title": "Задание",
+     "maxLength": 2500
+    },
+    "input_urls": {
+     "type": "array",
+     "title": "Референс-изображение",
+     "description": "JPG/PNG. До 10 МБ. Размер > 300px, соотношение сторон от 2:5 до 5:2.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 1
+    },
+    "video_urls": {
+     "type": "array",
+     "title": "Референс-видео",
+     "description": "MP4/MOV. До 100 МБ. При ориентации «По изображению» до 10 сек, при «По видео» до 30 сек.",
+     "x-bratuha-file-kind": "video",
+     "x-bratuha-extensions": [
+      ".mp4",
+      ".mov"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 1
+    },
+    "character_orientation": {
+     "type": "string",
+     "title": "Ориентация персонажа",
+     "default": "video",
+     "enum": [
+      "video",
+      "image"
+     ],
+     "x-bratuha-option-labels": {
+      "video": "По видео (до 30 сек)",
+      "image": "По изображению (до 10 сек)"
+     }
+    },
+    "mode": {
+     "type": "string",
+     "title": "Разрешение",
+     "default": "720p",
+     "enum": [
+      "720p",
+      "1080p"
+     ],
+     "x-bratuha-option-labels": {
+      "720p": "720p",
+      "1080p": "1080p"
+     }
+    }
+   },
+   "required": [
+    "input_urls",
+    "video_urls",
+    "character_orientation",
+    "mode"
+   ]
+  }
+ },
+ {
+  "slug": "fal-kling-3-0",
+  "name": "Kling 3.0 (архив)",
+  "description": "Профессионально генерирует и редактирует видео по тексту, изображению, референсам и исходному видео, чтобы получались связные сцены с нужным стилем и движением камеры. Стоимость от 27 до 50 рублей за секунду - зависит от режима (генерация/редактирование), модели (Standard/Pro) и включения генерации аудио.",
+  "pricing": {
+   "type": "variable",
+   "from": 81,
+   "currency": "RUB"
+  },
+  "input_schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "kling_generation_type": {
+     "type": "string",
+     "title": "Тип генерации",
+     "default": "image_to_video",
+     "enum": [
+      "image_to_video",
+      "reference_image_to_video",
+      "text_to_video",
+      "edit_video",
+      "reference_video_to_video"
+     ],
+     "x-bratuha-option-labels": {
+      "image_to_video": "Видео из изображения",
+      "reference_image_to_video": "Видео по референсу (изображения)",
+      "text_to_video": "Видео из текста",
+      "edit_video": "Редактирование видео",
+      "reference_video_to_video": "Видео по референсу (видео)"
+     }
+    },
+    "kling_model_tier": {
+     "type": "string",
+     "title": "Модель",
+     "default": "standard",
+     "enum": [
+      "standard",
+      "pro"
+     ],
+     "x-bratuha-option-labels": {
+      "standard": "Standard",
+      "pro": "Pro"
+     }
+    },
+    "use_multi_prompt": {
+     "type": "boolean",
+     "title": "Сцены",
+     "description": "Включите, чтобы задать несколько сцен (multi-shot) отдельными промптами.",
+     "default": false,
+     "x-bratuha-show-if": {
+      "op": "and",
+      "conditions": [
+       {
+        "field": "use_end_image_i2v",
+        "value": true,
+        "operator": "!="
+       },
+       {
+        "field": "use_end_image_reference",
+        "value": true,
+        "operator": "!="
+       }
+      ]
+     }
+    },
+    "prompt": {
+     "type": "string",
+     "title": "Задание",
+     "minLength": 3,
+     "maxLength": 2500,
+     "x-bratuha-show-if": {
+      "field": "use_multi_prompt",
+      "value": true,
+      "operator": "!="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "multi_prompt": {
+     "type": "array",
+     "title": "Сцены",
+     "items": {
+      "type": "object",
+      "properties": {
+       "prompt": {
+        "type": "string",
+        "title": "Описание сцены"
+       },
+       "duration": {
+        "type": "number",
+        "title": "Длительность сцены"
+       }
+      },
+      "required": [
+       "prompt",
+       "duration"
+      ],
+      "additionalProperties": false
+     },
+     "minItems": 1,
+     "maxItems": 6,
+     "x-bratuha-show-if": {
+      "field": "use_multi_prompt",
+      "value": true,
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "image_url": {
+     "type": "string",
+     "title": "Изображение",
+     "description": "JPEG/PNG/WebP/HEIC/HEIF (HEIC/HEIF конвертируем в PNG), до 10 МБ.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "image_to_video",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "start_image_url": {
+     "type": "string",
+     "title": "Стартовый кадр",
+     "description": "JPEG/PNG/WebP/HEIC/HEIF (HEIC/HEIF конвертируем в PNG), до 10 МБ.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "reference_image_to_video",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "image_urls": {
+     "type": "array",
+     "title": "Референсы (изображения)",
+     "description": "До 4 изображений (если включён «Конечный кадр» — до 2). Ссылайтесь в промпте как @Image1, @Image2 и т.д.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 4,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "reference_image_to_video",
+      "operator": "=="
+     }
+    },
+    "elements": {
+     "type": "array",
+     "title": "Элементы",
+     "items": {
+      "type": "object",
+      "properties": {
+       "frontal_image_url": {
+        "type": "string",
+        "title": "Фронтальное изображение"
+       },
+       "reference_image_urls": {
+        "type": "array",
+        "title": "Референсы элемента"
+       }
+      },
+      "required": [
+       "frontal_image_url"
+      ],
+      "additionalProperties": false
+     },
+     "minItems": 0,
+     "maxItems": 4,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "reference_image_to_video",
+      "operator": "=="
+     }
+    },
+    "video_url_edit": {
+     "type": "string",
+     "title": "Видео",
+     "description": "MP4/MOV, 3–10 сек, до 200 МБ.",
+     "x-bratuha-file-kind": "video",
+     "x-bratuha-extensions": [
+      ".mp4",
+      ".mov"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "edit_video",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "video_url_reference": {
+     "type": "string",
+     "title": "Видео",
+     "description": "MP4/MOV, 3–10 сек, до 200 МБ.",
+     "x-bratuha-file-kind": "video",
+     "x-bratuha-extensions": [
+      ".mp4",
+      ".mov"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "reference_video_to_video",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "keep_audio_edit": {
+     "type": "boolean",
+     "title": "Сохранить оригинальное аудио",
+     "default": true,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "edit_video",
+      "operator": "=="
+     }
+    },
+    "keep_audio_reference": {
+     "type": "boolean",
+     "title": "Сохранить оригинальное аудио",
+     "default": true,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "reference_video_to_video",
+      "operator": "=="
+     }
+    },
+    "image_urls_edit": {
+     "type": "array",
+     "title": "Референсы (изображения)",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 4,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "edit_video",
+      "operator": "=="
+     }
+    },
+    "image_urls_reference": {
+     "type": "array",
+     "title": "Референсы (изображения)",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 4,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "reference_video_to_video",
+      "operator": "=="
+     }
+    },
+    "elements_edit": {
+     "type": "array",
+     "title": "Элементы",
+     "items": {
+      "type": "object",
+      "properties": {
+       "frontal_image_url": {
+        "type": "string",
+        "title": "Фронтальное изображение"
+       },
+       "reference_image_urls": {
+        "type": "array",
+        "title": "Референсы элемента"
+       }
+      },
+      "required": [
+       "frontal_image_url"
+      ],
+      "additionalProperties": false
+     },
+     "minItems": 0,
+     "maxItems": 4,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "edit_video",
+      "operator": "=="
+     }
+    },
+    "elements_reference": {
+     "type": "array",
+     "title": "Элементы",
+     "items": {
+      "type": "object",
+      "properties": {
+       "frontal_image_url": {
+        "type": "string",
+        "title": "Фронтальное изображение"
+       },
+       "reference_image_urls": {
+        "type": "array",
+        "title": "Референсы элемента"
+       }
+      },
+      "required": [
+       "frontal_image_url"
+      ],
+      "additionalProperties": false
+     },
+     "minItems": 0,
+     "maxItems": 4,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "reference_video_to_video",
+      "operator": "=="
+     }
+    },
+    "use_end_image_i2v": {
+     "type": "boolean",
+     "title": "Конечный кадр",
+     "default": false,
+     "x-bratuha-show-if": {
+      "op": "and",
+      "conditions": [
+       {
+        "field": "kling_generation_type",
+        "value": "image_to_video",
+        "operator": "=="
+       },
+       {
+        "field": "use_multi_prompt",
+        "value": true,
+        "operator": "!="
+       }
+      ]
+     }
+    },
+    "end_image_url_i2v": {
+     "type": "string",
+     "title": "Конечный кадр",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "use_end_image_i2v",
+      "value": true,
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "use_end_image_reference": {
+     "type": "boolean",
+     "title": "Конечный кадр",
+     "default": false,
+     "x-bratuha-show-if": {
+      "op": "and",
+      "conditions": [
+       {
+        "field": "kling_generation_type",
+        "value": "reference_image_to_video",
+        "operator": "=="
+       },
+       {
+        "field": "use_multi_prompt",
+        "value": true,
+        "operator": "!="
+       }
+      ]
+     }
+    },
+    "end_image_url_reference": {
+     "type": "string",
+     "title": "Конечный кадр",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "use_end_image_reference",
+      "value": true,
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "duration": {
+     "type": "number",
+     "title": "Длительность",
+     "default": 5,
+     "minimum": 3,
+     "maximum": 15,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": [
+       "edit_video",
+       "reference_video_to_video"
+      ],
+      "operator": "notIn"
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "duration_v2v": {
+     "type": "number",
+     "title": "Длительность",
+     "default": 5,
+     "minimum": 3,
+     "maximum": 10,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "reference_video_to_video",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "aspect_ratio": {
+     "type": "string",
+     "title": "Соотношение сторон",
+     "default": "16:9",
+     "enum": [
+      "16:9",
+      "9:16",
+      "1:1"
+     ],
+     "x-bratuha-option-labels": {
+      "16:9": "16:9",
+      "9:16": "9:16",
+      "1:1": "1:1"
+     },
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "text_to_video",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "aspect_ratio_v2v": {
+     "type": "string",
+     "title": "Соотношение сторон",
+     "default": "auto",
+     "enum": [
+      "auto",
+      "16:9",
+      "9:16",
+      "1:1"
+     ],
+     "x-bratuha-option-labels": {
+      "auto": "Авто",
+      "16:9": "16:9",
+      "9:16": "9:16",
+      "1:1": "1:1"
+     },
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "reference_video_to_video",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "generate_audio": {
+     "type": "boolean",
+     "title": "Сгенерировать аудио",
+     "description": "Генерация нативного аудио для видео. Доступно в режимах «Видео из изображения», «Видео по референсу (изображения)» и «Видео из текста». Влияет на цену.",
+     "default": false,
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": [
+       "image_to_video",
+       "reference_image_to_video",
+       "text_to_video"
+      ],
+      "operator": "in"
+     }
+    },
+    "voice_ids": {
+     "type": "array",
+     "title": "Voice IDs",
+     "description": "Опционально. ID голосов, которыми будут говорить персонажи в видео. Получить Voice ID можно в нейросети [Kling Voice](https://bratuha.ru/tools/kling-voice). В промпте используйте <<<voice_1>>> и <<<voice_2>>> (максимум 2 голоса).",
+     "items": {
+      "type": "string"
+     },
+     "x-bratuha-show-if": {
+      "field": "kling_generation_type",
+      "value": "text_to_video",
+      "operator": "=="
+     }
+    }
+   },
+   "required": [
+    "kling_generation_type",
+    "kling_model_tier"
+   ]
+  }
+ },
+ {
+  "slug": "kling-image-o3",
+  "name": "Kling Image O3",
+  "description": "Генерирует изображения по текстовому описанию и может переработать загруженные картинки по вашему заданию. Цена зависит от разрешения: 1K - 5 ₽, 2K - 5 ₽, 4K - 10 ₽.",
+  "pricing": {
+   "type": "variable",
+   "from": 5,
+   "currency": "RUB"
+  },
+  "input_schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "prompt": {
+     "type": "string",
+     "title": "Задание",
+     "minLength": 3,
+     "maxLength": 2500
+    },
+    "images": {
+     "type": "array",
+     "title": "Изображения",
+     "description": "До 10 изображений. Форматы: JPG, PNG, WebP, HEIC, HEIF.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 10
+    },
+    "aspect_ratio": {
+     "type": "string",
+     "title": "Соотношение сторон",
+     "default": "auto",
+     "enum": [
+      "auto",
+      "16:9",
+      "9:16",
+      "1:1",
+      "4:3",
+      "3:4",
+      "3:2",
+      "2:3",
+      "21:9"
+     ],
+     "x-bratuha-option-labels": {
+      "auto": "Авто",
+      "16:9": "16:9",
+      "9:16": "9:16",
+      "1:1": "1:1",
+      "4:3": "4:3",
+      "3:4": "3:4",
+      "3:2": "3:2",
+      "2:3": "2:3",
+      "21:9": "21:9"
+     }
+    },
+    "resolution": {
+     "type": "string",
+     "title": "Разрешение",
+     "default": "2k",
+     "enum": [
+      "1k",
+      "2k",
+      "4k"
+     ],
+     "x-bratuha-option-labels": {
+      "1k": "1K",
+      "2k": "2K",
+      "4k": "4K"
+     }
+    },
+    "num_images": {
+     "type": "number",
+     "title": "Количество изображений",
+     "default": 1,
+     "minimum": 1,
+     "maximum": 10
+    },
+    "output_format": {
+     "type": "string",
+     "title": "Формат",
+     "default": "png",
+     "enum": [
+      "png",
+      "jpeg",
+      "webp"
+     ],
+     "x-bratuha-option-labels": {
+      "png": "PNG",
+      "jpeg": "JPEG",
+      "webp": "WebP"
+     }
+    }
+   },
+   "required": [
+    "prompt",
+    "aspect_ratio",
+    "resolution",
+    "num_images",
+    "output_format"
+   ]
+  }
+ },
+ {
+  "slug": "kling-video-to-audio",
+  "name": "Kling Video-to-Audio",
+  "description": "Генерирует подходящие звуковые эффекты и фоновую музыку по вашему видео, чтобы ролик не был «немым». Цена - 7 ₽ за 1 видео.",
+  "pricing": {
+   "type": "fixed",
+   "from": 7,
+   "currency": "RUB"
+  },
+  "input_schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "video": {
+     "type": "string",
+     "title": "Видео",
+     "description": "MP4/MOV/WebM, 1 файл. Длительность: до 20 секунд.",
+     "x-bratuha-file-kind": "video",
+     "x-bratuha-extensions": [
+      ".mp4",
+      ".mov",
+      ".webm"
+     ],
+     "format": "uri"
+    },
+    "sound_effect_prompt": {
+     "type": "string",
+     "title": "Промпт для звуковых эффектов",
+     "description": "Опишите нужные звуковые эффекты для видео. Можно оставить пустым.",
+     "maxLength": 200
+    },
+    "bgm_prompt": {
+     "type": "string",
+     "title": "Промпт для фоновой музыки",
+     "description": "Опишите стиль фоновой музыки. Можно оставить пустым.",
+     "maxLength": 200
+    },
+    "asmr_mode": {
+     "type": "boolean",
+     "title": "ASMR‑режим",
+     "description": "Усиливает детальные звуковые эффекты — подходит для иммерсивных сцен.",
+     "default": false
+    }
+   },
+   "required": [
+    "video"
+   ]
+  }
+ },
+ {
+  "slug": "seedance-2-5",
+  "name": "Seedance 2.5",
+  "description": "Создаёт видео по тексту, изображениям, референсам и исходному видео, а ещё умеет делать переход между первым и конечным кадром. Без видео-референсов - 14 ₽/сек. в 480p, 28 ₽/сек. в 720p, 55 ₽/сек. в 1080p, с видео-референсами - 8 ₽/сек. в 480p, 16 ₽/сек. в 720p, 30 ₽/сек. в 1080p (считается по формуле: (длительность генерации + суммарная длительность видео-референсов) × ставка за секунду), для редактирования - 16 ₽/сек. в 480p, 32 ₽/сек. в 720p, 60 ₽/сек. в 1080p.",
+  "pricing": {
+   "type": "variable",
+   "from": 32,
+   "currency": "RUB"
+  },
+  "input_schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "seedance_2_5_generation_type": {
+     "type": "string",
+     "title": "Тип генерации",
+     "default": "references",
+     "enum": [
+      "references",
+      "edit",
+      "image",
+      "text",
+      "frames"
+     ],
+     "x-bratuha-option-labels": {
+      "references": "Видео по референсам",
+      "edit": "Редактирование",
+      "image": "Видео из изображений",
+      "text": "Видео из текста",
+      "frames": "Переход"
+     }
+    },
+    "prompt": {
+     "type": "string",
+     "title": "Задание",
+     "description": "Можно ссылаться на загруженные референсы: напишите @image1, @video1 или @audio1 либо введите @ и выберите файл из меню.",
+     "minLength": 2,
+     "maxLength": 20000
+    },
+    "image_urls": {
+     "type": "array",
+     "title": "Изображения",
+     "description": "JPG, JPEG, PNG, WebP, BMP, TIFF, GIF, HEIC и HEIF. До 30 изображений, каждое до 30 МБ. Стороны: 300–6000 px.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp",
+      ".bmp",
+      ".tiff",
+      ".tif",
+      ".gif"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 30,
+     "x-bratuha-show-if": {
+      "field": "seedance_2_5_generation_type",
+      "value": "image",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "first_frame_url": {
+     "type": "string",
+     "title": "Первый кадр",
+     "description": "JPG, JPEG, PNG, WebP, BMP, TIFF, GIF, HEIC и HEIF. 1 изображение до 30 МБ. Стороны: 300–6000 px.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp",
+      ".bmp",
+      ".tiff",
+      ".tif",
+      ".gif"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "seedance_2_5_generation_type",
+      "value": "frames",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "last_frame_url": {
+     "type": "string",
+     "title": "Конечный кадр",
+     "description": "JPG, JPEG, PNG, WebP, BMP, TIFF, GIF, HEIC и HEIF. 1 изображение до 30 МБ. Стороны: 300–6000 px.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp",
+      ".bmp",
+      ".tiff",
+      ".tif",
+      ".gif"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "seedance_2_5_generation_type",
+      "value": "frames",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "reference_image_urls": {
+     "type": "array",
+     "title": "Референсные изображения",
+     "description": "JPG, JPEG, PNG, WebP, BMP, TIFF, GIF, HEIC и HEIF. До 30 изображений, каждое до 30 МБ. Стороны: 300–6000 px.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp",
+      ".bmp",
+      ".tiff",
+      ".tif",
+      ".gif"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 30,
+     "x-bratuha-show-if": {
+      "field": "seedance_2_5_generation_type",
+      "value": "references",
+      "operator": "=="
+     }
+    },
+    "video_urls": {
+     "type": "array",
+     "title": "Видео-референсы",
+     "description": "MP4 и MOV. До 10 видео, каждое до 200 МБ. Длительность каждого файла 2–30 сек., суммарно до 30 сек.; разрешение 480p, 720p или 1080p.",
+     "x-bratuha-file-kind": "video",
+     "x-bratuha-extensions": [
+      ".mp4",
+      ".mov"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 10,
+     "x-bratuha-show-if": {
+      "field": "seedance_2_5_generation_type",
+      "value": "references",
+      "operator": "=="
+     }
+    },
+    "audio_urls": {
+     "type": "array",
+     "title": "Аудио-референсы",
+     "description": "WAV и MP3. До 10 файлов, каждый до 15 МБ. Длительность каждого файла 2–30 сек., суммарно до 30 сек.",
+     "x-bratuha-file-kind": "audio",
+     "x-bratuha-extensions": [
+      ".wav",
+      ".mp3"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 10,
+     "x-bratuha-show-if": {
+      "field": "seedance_2_5_generation_type",
+      "value": "references",
+      "operator": "=="
+     }
+    },
+    "edit_video_url": {
+     "type": "string",
+     "title": "Исходное видео",
+     "description": "MP4 или MOV. Одно видео до 200 МБ, длительность 4–30 секунд. Длительность результата будет определена автоматически.",
+     "x-bratuha-file-kind": "video",
+     "x-bratuha-extensions": [
+      ".mp4",
+      ".mov"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "seedance_2_5_generation_type",
+      "value": "edit",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "edit_image_urls": {
+     "type": "array",
+     "title": "Изображения-референсы",
+     "description": "JPG, JPEG, PNG, WebP, BMP, TIFF, GIF, HEIC и HEIF. До 30 изображений, каждое до 30 МБ.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp",
+      ".bmp",
+      ".tiff",
+      ".tif",
+      ".gif"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 30,
+     "x-bratuha-show-if": {
+      "field": "seedance_2_5_generation_type",
+      "value": "edit",
+      "operator": "=="
+     }
+    },
+    "edit_audio_urls": {
+     "type": "array",
+     "title": "Аудио-референсы",
+     "description": "WAV и MP3. До 10 файлов, каждый до 15 МБ.",
+     "x-bratuha-file-kind": "audio",
+     "x-bratuha-extensions": [
+      ".wav",
+      ".mp3"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 10,
+     "x-bratuha-show-if": {
+      "field": "seedance_2_5_generation_type",
+      "value": "edit",
+      "operator": "=="
+     }
+    },
+    "size": {
+     "type": "string",
+     "title": "Соотношение сторон",
+     "description": "Адаптивное соотношение подстраивается под загруженный материал. Для первого/конечного кадра и задач редактирования используйте адаптивное.",
+     "default": "adaptive",
+     "enum": [
+      "16:9",
+      "4:3",
+      "1:1",
+      "3:4",
+      "9:16",
+      "21:9",
+      "adaptive"
+     ],
+     "x-bratuha-option-labels": {
+      "16:9": "16:9",
+      "4:3": "4:3",
+      "1:1": "1:1",
+      "3:4": "3:4",
+      "9:16": "9:16",
+      "21:9": "21:9",
+      "adaptive": "Адаптивное"
+     },
+     "x-bratuha-show-if": {
+      "field": "seedance_2_5_generation_type",
+      "value": "edit",
+      "operator": "!="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "resolution": {
+     "type": "string",
+     "title": "Разрешение",
+     "description": "480p/720p считаются по таблице в описании. 1080p оставлен как добавленное разрешение: 55 ₽/сек. без видео-референса, 30 ₽/сек. с видео-референсом. В edit: 480p — 16 ₽/сек., 720p — 32 ₽/сек., 1080p — 60 ₽/сек.",
+     "default": "720p",
+     "enum": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "x-bratuha-option-labels": {
+      "480p": "480p",
+      "720p": "720p",
+      "1080p": "1080p"
+     }
+    },
+    "duration": {
+     "type": "number",
+     "title": "Длительность",
+     "description": "Поддерживается длительность от 4 до 30 секунд. Цена считается за каждую секунду.",
+     "default": 5,
+     "minimum": 4,
+     "maximum": 30,
+     "x-bratuha-show-if": {
+      "field": "seedance_2_5_generation_type",
+      "value": "edit",
+      "operator": "!="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "generate_audio": {
+     "type": "boolean",
+     "title": "Сгенерировать звук",
+     "description": "Добавляет звук к ролику, если модель сможет согласовать его со сценой.",
+     "default": true
+    },
+    "watermark": {
+     "type": "boolean",
+     "title": "Добавить водяной знак",
+     "description": "Добавляет отметку о том, что видео создано с помощью ИИ.",
+     "default": false,
+     "x-bratuha-show-if": {
+      "field": "seedance_2_5_generation_type",
+      "value": "edit",
+      "operator": "!="
+     }
+    },
+    "output_format": {
+     "type": "string",
+     "title": "Формат результата",
+     "description": "MP4 подходит для большинства задач. MOV может быть полезен для дальнейшего монтажа.",
+     "default": "mp4",
+     "enum": [
+      "mp4",
+      "mov"
+     ],
+     "x-bratuha-option-labels": {
+      "mp4": "MP4",
+      "mov": "MOV"
+     }
+    }
+   },
+   "required": [
+    "seedance_2_5_generation_type",
+    "prompt",
+    "resolution",
+    "output_format"
+   ]
+  }
+ },
+ {
+  "slug": "veo-3-1",
+  "name": "Veo 3.1",
+  "description": "Генерирует короткие видео по тексту, одному изображению или набору референсов. Цена зависит от модели и разрешения: от 10 ₽ за видео.",
+  "pricing": {
+   "type": "variable",
+   "from": 10,
+   "currency": "RUB"
+  },
+  "input_schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "generation_type": {
+     "type": "string",
+     "title": "Тип генерации",
+     "description": "Видео из текста не требует изображения. Видео из изображения использует один кадр. Видео по референсам использует до 3 изображений и доступно только с моделью Fast.",
+     "default": "text",
+     "enum": [
+      "text",
+      "image",
+      "reference"
+     ],
+     "x-bratuha-option-labels": {
+      "text": "Видео из текста",
+      "image": "Видео из изображения",
+      "reference": "Видео по референсам"
+     }
+    },
+    "model": {
+     "type": "string",
+     "title": "Модель",
+     "description": "Lite — самый бюджетный вариант для видео из текста. Fast работает во всех режимах. Обычная даёт максимальное качество, но не поддерживает режим референсов.",
+     "default": "veo3.1-lite",
+     "enum": [
+      "veo3.1-lite",
+      "veo3.1-fast",
+      "veo3.1-quality"
+     ],
+     "x-bratuha-option-labels": {
+      "veo3.1-lite": "Lite",
+      "veo3.1-fast": "Fast",
+      "veo3.1-quality": "Обычная"
+     }
+    },
+    "prompt": {
+     "type": "string",
+     "title": "Задание",
+     "minLength": 3,
+     "maxLength": 4000
+    },
+    "image_urls": {
+     "type": "string",
+     "title": "Изображение",
+     "description": "Форматы: JPG, JPEG, PNG, WebP. До 10 МБ.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp"
+     ],
+     "format": "uri",
+     "x-bratuha-show-if": {
+      "field": "generation_type",
+      "value": "image",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "reference_image_urls": {
+     "type": "array",
+     "title": "Референсы",
+     "description": "Форматы: JPG, JPEG, PNG, WebP. До 3 изображений, до 10 МБ каждое.",
+     "x-bratuha-file-kind": "image",
+     "x-bratuha-extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp"
+     ],
+     "items": {
+      "type": "string",
+      "format": "uri"
+     },
+     "maxItems": 3,
+     "x-bratuha-show-if": {
+      "field": "generation_type",
+      "value": "reference",
+      "operator": "=="
+     },
+     "x-bratuha-required-when-visible": true
+    },
+    "aspect_ratio": {
+     "type": "string",
+     "title": "Соотношение сторон",
+     "default": "16:9",
+     "enum": [
+      "16:9",
+      "9:16"
+     ],
+     "x-bratuha-option-labels": {
+      "16:9": "16:9",
+      "9:16": "9:16"
+     }
+    },
+    "resolution": {
+     "type": "string",
+     "title": "Разрешение",
+     "default": "1080p",
+     "enum": [
+      "720p",
+      "1080p",
+      "4k"
+     ],
+     "x-bratuha-option-labels": {
+      "720p": "720p",
+      "1080p": "1080p",
+      "4k": "4K"
+     }
+    }
+   },
+   "required": [
+    "generation_type",
+    "model",
+    "prompt",
+    "aspect_ratio",
+    "resolution"
+   ]
+  }
+ }
+]

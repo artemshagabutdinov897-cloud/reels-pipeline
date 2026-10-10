@@ -1,0 +1,41 @@
+name: avatar
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        required: true
+      image:
+        required: true
+      audio:
+        required: true
+      seconds:
+        required: true
+      prompt:
+        required: true
+permissions:
+  contents: write
+jobs:
+  avatar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r pipeline/requirements.txt
+      - name: generate
+        env:
+          BRATUHA_API_KEY: ${{ secrets.BRATUHA_API_KEY || secrets.YK_SECRET }}
+          PROMPT: ${{ inputs.prompt }}
+          IMG: ${{ inputs.image }}
+          AUD: ${{ inputs.audio }}
+        run: python -u pipeline/avatar_one.py "${{ inputs.name }}" "$IMG" "$AUD" "${{ inputs.seconds }}" "$PROMPT"
+      - name: save
+        run: |
+          git config user.name "artemshagabutdinov897-cloud"
+          git config user.email "artemshagabutdinov897@gmail.com"
+          git add previews
+          git commit -m "avatar ${{ inputs.name }}" || true
+          for i in 1 2 3 4; do git pull -q --rebase && git push && break; sleep 7; done

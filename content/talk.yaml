@@ -1,0 +1,655 @@
+# Ролики «баба Зоя говорит в камеру»: talk_in (в камеру, липсинк) → broll (готовка под закадр) → talk_out (в камеру).
+# Собирает pipeline/talk.py.
+
+talks:
+  - id: "00-hello"
+    title: Кружочек-приветствие для бота
+    talk_in:
+      text: >-
+        Здравствуй, милок! Я баба Зоя. Рада, что заглянул. Держи от меня семь рецептов в подарок — жми кнопку внизу.
+      image: "Close-up selfie-style shot: the grandmother in her rustic kitchen with the white Russian stove behind her, face in the upper middle of the frame, looking straight into the camera with a warm kind smile, one hand raised in a friendly wave"
+      motion: "The grandmother greets the viewer warmly, waves her hand, smiles and nods, small natural head movements, handheld smartphone selfie video"
+
+  - id: "26-hleb-mesyac"
+    title: Батон, который не черствеет
+    talk_in:
+      text: >-
+        Этот батон я купила месяц назад. Месяц, милок! Ни плесени, ни корочки — мягкий, как вчерашний. А что ж тогда в нём такое?
+      image: "Medium close-up: the grandmother standing in her rustic kitchen, looking straight into the camera, holding up in one hand a soft white supermarket loaf in a plain clear plastic bag without any print, squeezing it slightly with her fingers"
+      motion: "The grandmother talks to the camera with a puzzled, slightly suspicious expression, raises her eyebrows, squeezes the loaf, small natural head movements, handheld smartphone video"
+    broll:
+      text: >-
+        А мой хлеб — мука ржаная, вода, соль да закваска. С вечера замесила, к утру поднялся. Час в печке — и корочка трещит. А через неделю он зачерствеет, как и положено живому хлебу.
+      scenes:
+        - image: "Close-up of the grandmother's hands mixing dark rye dough in a large wooden bowl on a floured table"
+          motion: "Her hands knead and fold the sticky rye dough"
+        - image: "A round rye dough rising in a clay bowl covered with a linen towel on a sunny windowsill, morning light"
+          motion: "She lifts the corner of the towel and looks at the risen dough, pleased"
+        - image: "The grandmother taking a dark crusty rye loaf out of the whitewashed Russian stove with a wooden peel"
+          motion: "She pulls the loaf out of the stove and puts it on the table"
+        - image: "Close-up: the grandmother cutting the dark rye loaf with a large knife on a wooden board, crumbs on the table"
+          motion: "The knife goes through the crackling crust, a thick slice falls over"
+    talk_out:
+      text: >-
+        Живой хлеб долго не живёт, милок, зато и живот после него спокойный. Закваска и хлеб с граммами — в моей книжке. Напиши в комментариях «книга» — пришлю.
+      image: "Medium close-up: the grandmother sitting at the kitchen table with a checkered oilcloth, holding a thick slice of dark rye bread, a whole rye loaf on the board in front of her, looking warmly straight into the camera"
+      motion: "The grandmother talks to the camera warmly with a gentle sly smile, nods, small natural gestures with the bread slice, handheld smartphone video"
+    caption: |
+      Этот батон месяц пролежал — и хоть бы что. А мой ржаной через неделю черствеет. Живой хлеб долго не живёт 🍞
+
+      Мой хлеб — это ржаная мука, вода, соль и закваска. Замешиваю с вечера, к утру поднялся, час в печке (в духовке тоже получится).
+
+      Закваску заводят за неделю: каждый день по ложке ржаной муки и тёплой воды в банку. Подробно, с граммами — в книжке.
+
+      🎁 Напиши любой комментарий — пришлю рецепт в личку и ещё семь в подарок
+
+      А ты какой хлеб берёшь? 👇
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+      #хлебназакваске #ржанойхлеб #закваска #домашнийхлеб #бабушкинырецепты #деревенскаяеда #рецептыбабушки #бабазоя
+
+  - id: "27-kisel-paket"
+    title: Кисель из пакета и настоящий
+    talk_in:
+      text: >-
+        Вот это — кисель из пакетика. Сахар, крахмал да краска. А настоящий кисель у нас в деревне варили вот из чего.
+      image: "Medium close-up: the grandmother in her rustic kitchen looking straight into the camera, holding up in one hand a small plain paper sachet of instant pink jelly powder without any print, and in the other hand a glass jar of rolled oats"
+      motion: "The grandmother talks to the camera, shakes the sachet with a disapproving look, then lifts the jar of oats and smiles, small natural head movements, handheld smartphone video"
+    broll:
+      text: >-
+        Вечером стакан овсяных хлопьев заливаю тёплой водой, сверху корочку ржаного — и под полотенце. Утром процеживаю через марлю, отжимаю. Варю на тихом огне и мешаю, пока не загустеет, как сметана. Щепотка соли, кусочек масла.
+      scenes:
+        - image: "Close-up: the grandmother pouring warm water from an enamel kettle over rolled oats in a glass jar, a crust of rye bread next to it"
+          motion: "Water pours over the oats, she puts the bread crust on top"
+        - image: "Morning, the grandmother straining the cloudy oat liquid through gauze into an enamel pot, squeezing the gauze with her hands"
+          motion: "She squeezes the gauze bundle, the milky liquid runs into the pot"
+        - image: "The grandmother stirring a thick creamy oat kissel in a small enamel pot on the stove with a wooden spoon"
+          motion: "She stirs slowly, the kissel thickens and coats the spoon"
+        - image: "Close-up: warm thick oat kissel poured from the pot into a glass mug, a small piece of butter melting on top"
+          motion: "The kissel flows into the mug, the butter melts"
+    talk_out:
+      text: >-
+        Стаканчик тёплого киселя с утра — и до обеда сыт, и в животе тепло. Напиши в комментариях «книга» — пришлю тебе в личку ещё рецепты.
+      image: "Medium close-up: the grandmother sitting by the window with geraniums, holding a glass mug of warm creamy oat kissel with both hands, looking warmly straight into the camera"
+      motion: "The grandmother talks to the camera warmly, smiles, raises the mug slightly, small natural head movements, handheld smartphone video"
+    caption: |
+      Кисель из пакетика — это сахар, крахмал да краска. А настоящий овсяный варили в каждой деревне из того, что было в доме 🥣
+
+      Что нужно:
+      — стакан овсяных хлопьев (не быстрых)
+      — 3 стакана тёплой кипячёной воды
+      — корочка ржаного хлеба
+      — щепотка соли, кусочек масла
+
+      1. Вечером залей хлопья тёплой водой, сверху корочку, накрой полотенцем.
+      2. Утром процеди через марлю и хорошо отожми.
+      3. Вари на тихом огне, всё время мешая, 5–7 минут — пока не загустеет, как сметана.
+      4. Посоли, положи масло. Пей тёплым.
+
+      🎁 Напиши любой комментарий — пришлю рецепт в личку и ещё семь в подарок
+
+      Сохрани на утро. Ты пробовал настоящий кисель? 👇
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+      #кисель #овсяныйкисель #завтрак #бабушкинырецепты #деревенскаяеда #рецептыбабушки #простыерецепты #бабазоя
+
+  - id: "28-smetana"
+    title: Сметана, которая не киснет
+    talk_in:
+      text: >-
+        Эту сметану я купила три недели назад. Три недели, милок! А она как новенькая. Настоящая столько не живёт.
+      image: "Medium close-up: the grandmother standing in her rustic kitchen, looking straight into the camera, holding up in one hand a small plain white plastic cup of sour cream without any print or label, the lid half open"
+      motion: "The grandmother talks to the camera with a suspicious squint, tilts the cup, sniffs it and shakes her head, small natural head movements, handheld smartphone video"
+    broll:
+      text: >-
+        Вечером наливаю банку деревенского молока — и в холодок. К утру сверху сливки, вот такой слой. Снимаю ложкой, кладу ложку вчерашней сметаны и ставлю в тепло на сутки. Назавтра ложка в ней стоит.
+      scenes:
+        - image: "Close-up: the grandmother pouring fresh whole milk from an enamel jug into a large glass jar on a wooden table, evening light"
+          motion: "The milk pours into the jar and fills it to the top"
+        - image: "Close-up of a glass jar of milk with a thick yellowish layer of cream on top, the grandmother's hand skimming the cream with a wooden spoon into a small bowl"
+          motion: "She slowly skims the thick cream off the top"
+        - image: "A small clay pot of cream wrapped in a linen towel standing on the warm ledge of a whitewashed Russian stove"
+          motion: "The grandmother tucks the towel around the pot and pats it gently"
+        - image: "Close-up: a wooden spoon standing upright on its own in a clay pot of very thick homemade sour cream"
+          motion: "The grandmother lets go of the spoon, it stays standing upright, she taps it with a finger"
+    talk_out:
+      text: >-
+        Живая сметана через неделю скиснет — и правильно. Зато в борще, на блинах — совсем другой вкус. Напиши в комментариях «книга» — пришлю рецепты.
+      image: "Medium close-up: the grandmother sitting at the kitchen table with a checkered oilcloth, a clay pot of thick homemade sour cream and a plate of pancakes in front of her, looking warmly straight into the camera"
+      motion: "The grandmother talks to the camera warmly with a sly smile, dips a pancake into the sour cream, nods, handheld smartphone video"
+    caption: |
+      Три недели стоит — и хоть бы что. А живая сметана так не умеет 🥛
+
+      Как делаю я — сливки с банки молока, ложка вчерашней сметаны, сутки в тепле. С граммами — в книжке.
+
+      А ты какую берёшь? 👇
+
+      Подпишись и будь здоров.
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+  - id: "29-suhariki"
+    title: Сухарики из пачки и мои
+    talk_in:
+      text: >-
+        Внук привёз сухарики. Я на пачку глянула — там слов больше, чем в моей книжке. Ну-ка, Серёжа, отдай бабушке.
+      image: "Medium close-up: the grandmother standing in her rustic kitchen, looking straight into the camera, holding up a small plain silver foil snack bag without any print or logo between two fingers, a skeptical look"
+      motion: "The grandmother talks to the camera, squints at the foil bag, shakes it with a disapproving look, then puts it away behind her back with a sly smile, small natural head movements, handheld smartphone video"
+    broll:
+      text: >-
+        Беру вчерашний ржаной, режу брусочками. Чеснок давлю с солью и ложкой масла, всё перемешиваю. На противень — и в печку, минут на пятнадцать. Хрустят так, что на всю избу слышно.
+      scenes:
+        - image: "Close-up: the grandmother's hands cutting a dark rye loaf into small cubes with a big knife on a wooden board"
+          motion: "The knife cuts the bread into neat little cubes, crumbs fall"
+        - image: "Close-up: rye bread cubes in a wide enamel bowl, the grandmother's hands tossing them with crushed garlic and oil"
+          motion: "Her hands toss the bread cubes, coating them in garlic oil"
+        - image: "The grandmother sliding a black baking tray of bread cubes into the hot oven of a whitewashed Russian stove"
+          motion: "She pushes the tray in and closes the stove door"
+        - image: "Close-up: golden crunchy rye croutons poured from a baking tray into a clay bowl, a young man's hand reaching in to grab some"
+          motion: "Croutons tumble into the bowl, a hand grabs a few"
+    talk_out:
+      text: >-
+        Серёжа полтарелки за раз умял, а про свои и не вспомнил. Напиши в комментариях «книга» — пришлю тебе рецепты.
+      image: "Medium close-up: the grandmother sitting at the kitchen table with a clay bowl of golden rye croutons, looking warmly straight into the camera"
+      motion: "The grandmother talks to the camera with a proud sly smile, takes a crouton and crunches it, nods, handheld smartphone video"
+    caption: |
+      Внук привёз сухарики из пачки. Пришлось показать, какие бывают настоящие 😄
+
+      Вчерашний ржаной, чеснок, соль, ложка масла — 15 минут в духовке на 180.
+
+      А ты что внукам готовишь вместо магазинного? 👇
+
+      Подпишись и будь здоров.
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+  # ---------- Сериал «Тетрадь деда Коли», сезон 1 (формат: в камеру → флешбэки под закадр → крючок в камеру)
+
+  - id: "s1e1-tetrad"
+    title: "Тетрадь деда Коли. Часть 1"
+    talk_in:
+      text: >-
+        Полезла я на чердак за банками. А там — вот эта коробка. Колина. Я её сорок лет не видела.
+      image: "Medium close-up: the grandmother sitting at the kitchen table, holding up towards the camera an old rusty tin tea box with a faded floral pattern, dust on the lid, looking straight into the camera, a bit shaken"
+      motion: "The grandmother talks to the camera quietly, turns the tin box in her hands, wipes the dust with her palm, handheld smartphone video"
+    broll:
+      text: >-
+        А в коробке тетрадь. Его почерк. Первая строчка: «Зоя, если ты это читаешь — значит, я так и не решился сказать сам». Заварила чай с чабрецом, как он любил, и читала до ночи. Про пчёл, про пироги, про меня.
+      scenes:
+        - image: "The grandmother climbing a wooden ladder into a dusty village attic, light from a small window, old jars and baskets around"
+          motion: "She climbs up slowly, looks around the attic and stops, noticing something in the corner"
+        - image: "Close-up of the grandmother's hands opening an old rusty tin tea box, inside lies a worn school notebook"
+          motion: "Her hands slowly lift the lid and take out the notebook"
+        - image: "Close-up of an old yellowed notebook page covered in faded illegible handwriting and a small pencil drawing of a bee, the grandmother's finger touching the first line"
+          motion: "Her finger slowly moves along the first line, trembling slightly"
+        - image: "The grandmother at the kitchen table at night under a warm lamp, a glass of tea with thyme sprigs, the old notebook open in front of her"
+          motion: "She sips the tea and turns a page, absorbed in reading"
+    talk_out:
+      text: >-
+        А последняя страница написана не им. Почерк женский. И подпись — одна буква, «эн». И «прости меня, Зоя». Сорок два года вместе прожили… Кто она такая?
+      image: "Close-up: the grandmother at the kitchen table at night under a warm lamp, holding the old open notebook with both hands, looking straight into the camera with a serious, worried face"
+      motion: "The grandmother speaks quietly and seriously to the camera, glances down at the page, then looks back up into the camera and slowly closes the notebook, handheld smartphone video"
+    caption: |
+      Тетрадь деда Коли. Часть 1 📓
+
+      Сорок два года вместе. Думала, знаю про него всё. А на последней странице — чужой почерк.
+
+      Как думаете, кто такая «Н.»? Пишите 👇 Завтра — часть 2.
+
+      Подпишись, чтоб не пропустить.
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей.
+
+  - id: "s1e2-pirog"
+    title: "Тетрадь деда Коли. Часть 2"
+    talk_in:
+      text: >-
+        Всю ночь не спала. Кто такая «эн»? Стала читать сначала. А там — про тот самый пирог.
+      image: "Medium close-up: the grandmother in her kitchen in the early morning, tired eyes, holding the old worn notebook open in one hand, looking straight into the camera"
+      motion: "The grandmother talks to the camera, shakes her head, taps the notebook page with a finger, handheld smartphone video"
+    broll:
+      text: >-
+        Семьдесят второй год, танцы в клубе. Я принесла пирог с антоновкой. Отвернулась — половины нет. Стоит парень, щёки набиты: «Выйдешь за меня — буду каждый день такой есть». Я сорок лет рассказывала, что он ко мне пристал. А Коля пишет: «Пирог мне Галька отдала. Сам бы год не решился».
+      scenes:
+        - flashback: true
+          image: "A 1970s Soviet village club dance hall in the evening, young people dancing, a table with a round apple pie on a plate, young Zoya in a red polka-dot headscarf standing by the table"
+          motion: "Couples dance in the background, young Zoya turns away from the table to talk to a friend"
+        - flashback: true
+          image: "Young Kolya with his mouth full, holding a big piece of apple pie, grinning shyly at young Zoya in the village club"
+          motion: "He chews, grins and says something, she puts her hands on her hips and laughs"
+        - image: "The grandmother in her kitchen taking a golden apple pie out of the oven, the old notebook lying open on the table"
+          motion: "She sets the pie on the table and smiles, shaking her head at a memory"
+        - image: "Close-up of the grandmother's fingers pulling a small old black-and-white photograph with white borders from between yellowed notebook pages"
+          motion: "She slowly pulls out the photo and her fingers stop"
+    talk_out:
+      text: >-
+        А между страницами — карточка. Коля молодой, у улья. А рядом девушка. Не я. На обороте: «Коле от Нины. Семьдесят четвёртый». Мы тогда уже два года женаты были.
+      image: "Close-up: the grandmother at the kitchen table holding a small old black-and-white photograph with white borders, its back turned towards the camera and completely blank, looking straight into the camera with a hurt, stunned face"
+      motion: "The grandmother speaks slowly to the camera, looks at the photo, then back into the camera, presses her lips together, handheld smartphone video"
+    caption: |
+      Тетрадь деда Коли. Часть 2 🥧
+
+      Пирог на танцах, оказывается, был подстроен. Но это не самое главное, что я нашла.
+
+      Кто такая Нина? Пишите версии 👇 Завтра — часть 3.
+
+      Подпишись, чтоб не пропустить.
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей.
+
+  - id: "s1e3-adres"
+    title: "Тетрадь деда Коли. Часть 3"
+    talk_in:
+      text: >-
+        На обороте карточки — адрес. Соседняя деревня, двенадцать километров. Собралась и поехала. Сама не знаю, зачем.
+      image: "Medium close-up: the grandmother in a warm coat and headscarf standing on a country road by a wooden bus stop, holding a bag, looking straight into the camera, determined"
+      motion: "The grandmother talks to the camera, adjusts her headscarf, glances down the road, handheld smartphone video"
+    broll:
+      text: >-
+        Коля мне всегда говорил: первый улей на базаре купил. А в той деревне жил старый пасечник, Фёдор Ильич. Коля к нему молодым бегал, с пчёлами учился разговаривать. Я ему мятный чай с мёдом в дорогу собирала — и не знала, куда он ездит.
+      scenes:
+        - flashback: true
+          image: "Young Kolya kneeling by an old wooden beehive in a 1970s village garden, an old beekeeper in a straw hat beside him showing a honeycomb frame"
+          motion: "The old man hands the frame to Kolya, bees fly around slowly, Kolya smiles carefully"
+        - flashback: true
+          image: "Young Kolya sitting on a stool next to a beehive at dusk, leaning close to it as if talking to the bees"
+          motion: "He leans towards the hive, speaking quietly, bees crawl on the entrance board"
+        - image: "The grandmother in a warm coat walking along a muddy village street with old wooden houses, autumn trees"
+          motion: "She walks slowly, looking at the houses, searching"
+        - image: "The grandmother standing at an old wooden gate with peeling blue paint in front of a small old village house"
+          motion: "She hesitates, then knocks on the gate"
+    talk_out:
+      text: >-
+        Дверь открыла старушка. Посмотрела на меня долго-долго и говорит: «Зоя? А Коля говорил, что ты придёшь».
+      image: "Close-up: the grandmother in a warm coat and headscarf standing by an old wooden gate with peeling blue paint, looking straight into the camera, shocked"
+      motion: "The grandmother speaks quietly to the camera, her voice catching, she presses her hand to her chest, handheld smartphone video"
+    caption: |
+      Тетрадь деда Коли. Часть 3 🐝
+
+      Поехала по адресу с карточки. Не думала, что меня там ждут.
+
+      Что она мне сказала дальше — завтра. А вы бы поехали? 👇
+
+      Подпишись, чтоб не пропустить.
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей.
+
+  - id: "s1e4-korova"
+    title: "Тетрадь деда Коли. Часть 4"
+    talk_in:
+      text: >-
+        Её зовут Нина. Дочка того пасечника. Посадила меня за стол и спрашивает: «Про корову-то он тебе так и не сказал?»
+      image: "Medium close-up: the grandmother sitting at a wooden table in an unfamiliar old village house, a cup of tea in front of her, looking straight into the camera, tense"
+      motion: "The grandmother talks to the camera quietly, turns the teacup in her hands, handheld smartphone video"
+    broll:
+      text: >-
+        Восьмидесятый год, голодная зима, дочке два года. Коля приводит корову: в карты, мол, выиграл. Я его сорок лет картёжником звала. А он ульи продал. Последние два — Нининому отцу. Чтоб у дочки молоко было. И Нину попросил: Зое ни слова.
+      scenes:
+        - flashback: true
+          image: "A snowy 1980 Soviet village street in winter, young Kolya in a sheepskin coat leading a brown cow by a rope towards a wooden house"
+          motion: "He walks through the snow pulling the cow, breath steaming, and waves towards the house"
+        - flashback: true
+          image: "Young Zoya in a winter shawl at the door of a wooden house holding a small child, looking surprised at a cow in the yard"
+          motion: "She steps onto the porch, holds the child closer and laughs in disbelief"
+        - flashback: true
+          image: "Young Kolya and an old beekeeper carrying a wooden beehive across a snowy yard"
+          motion: "They carry the hive slowly, Kolya looks back at it for a moment"
+        - image: "Two elderly women at a wooden table in an old village house: the grandmother in her headscarf and a thin old woman with a grey bun and a dark green knitted shawl, talking"
+          motion: "The thin old woman talks softly, the grandmother covers her mouth with her hand"
+    talk_out:
+      text: >-
+        Сорок лет молчала. Вот за что «прости». А потом Нина говорит: «Последнюю страницу я писала не одна. Рядом сидел мальчик. Лет тринадцати».
+      image: "Close-up: the grandmother sitting at a wooden table in an old village house, looking straight into the camera, eyes wet, confused"
+      motion: "The grandmother speaks slowly to the camera, wipes her eye, then freezes, realizing something, handheld smartphone video"
+    caption: |
+      Тетрадь деда Коли. Часть 4 🐄
+
+      Сорок лет я ругала его за карты. А он…
+
+      Кто был тот мальчик? Пишите 👇 Завтра — часть 5.
+
+      Подпишись, чтоб не пропустить.
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей.
+
+  - id: "s1e5-vnuk"
+    title: "Тетрадь деда Коли. Часть 5"
+    talk_in:
+      text: >-
+        Мальчик лет тринадцати. Я сразу поняла. Звоню Серёже, внуку. А он молчит.
+      image: "Medium close-up: the grandmother in her kitchen holding an old push-button mobile phone to her ear, looking straight into the camera, anxious"
+      motion: "The grandmother talks to the camera, then listens to the phone, waiting, handheld smartphone video"
+    broll:
+      text: >-
+        А потом говорит: «Бабуль, дед уже болел. Попросил отвезти его к Нине — чтоб она своей рукой правду написала, а то ты ему не поверишь. Велел отдать тетрадь, когда ты скучать начнёшь. А я боялся». Шесть лет мальчишка молчал. В субботу приехал и сварил мне дедову гречку.
+      scenes:
+        - image: "The grandmother at the kitchen table holding an old push-button mobile phone to her ear, the old notebook open in front of her"
+          motion: "She listens, presses her hand to her mouth, tears in her eyes"
+        - image: "A young man about nineteen with short dark hair in a grey hoodie hugging the grandmother in her kitchen doorway, a travel bag on the floor"
+          motion: "They hug tightly, she pats his back, both laugh through tears"
+        - image: "The young man in a grey hoodie at the stove stirring buckwheat in a pot, the grandmother watching him from the table"
+          motion: "He stirs and tastes, she smiles"
+        - image: "The grandmother and the young grandson in a grey hoodie at the kitchen table eating buckwheat porridge with milk from clay bowls"
+          motion: "He eats, she watches him and smiles"
+    talk_out:
+      text: >-
+        А уезжая, положил на стол ключ. Старый, ржавый. «Это Нина просила передать. Сказала — от того, что твоё».
+      image: "Close-up: the grandmother at the kitchen table holding up a small old rusty iron key towards the camera, looking straight into the camera, puzzled"
+      motion: "The grandmother speaks to the camera, turns the rusty key in her fingers, raises her eyebrows, handheld smartphone video"
+    caption: |
+      Тетрадь деда Коли. Часть 5 💛
+
+      Шесть лет внук хранил дедов секрет. Весь в деда.
+
+      От чего этот ключ? Ваши версии 👇 Завтра — последняя часть.
+
+      Подпишись, чтоб не пропустить.
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей.
+
+  - id: "s1e6-ulya"
+    title: "Тетрадь деда Коли. Часть 6"
+    talk_in:
+      text: >-
+        Поехала я к Нине снова. С ключом. Она меня за огород повела, к старому сараю.
+      image: "Medium close-up: the grandmother in a warm coat and headscarf standing in an autumn village garden by an old wooden shed, holding a small rusty key, looking straight into the camera, nervous"
+      motion: "The grandmother talks to the camera quietly, looks at the shed door, handheld smartphone video"
+    broll:
+      text: >-
+        А там — два улья. Старые, синие. Нинин отец их так и не продал. Сорок лет берёг — ждал, что Коля выкупит. А Коля каждый год с них мёд брал — и пёк мне на день рождения пряники. Я-то думала, с базара.
+      scenes:
+        - image: "Close-up: an old rusty padlock on a weathered wooden shed door, the grandmother's hand turning a small rusty key in it"
+          motion: "The key turns, the padlock opens, the door creaks open"
+        - image: "Two old wooden beehives painted faded blue standing in a dusty wooden shed, a beam of light from a gap in the wall"
+          motion: "Dust floats in the light, the grandmother steps in slowly"
+        - image: "The grandmother kneeling by an old faded blue beehive, both palms resting on its wooden lid"
+          motion: "She strokes the lid, closes her eyes and smiles through tears"
+        - image: "The grandmother taking a tray of golden round honey gingerbread cookies out of the oven, warm kitchen light"
+          motion: "She sets the tray down and leans in to smell them, closing her eyes"
+    talk_out:
+      text: >-
+        А под крышкой второго улья лежал конверт. Колиной рукой: «Зоя, открой в мой день рождения». День рождения у Коли — через две недели. Открывать при вас?
+      image: "Close-up: the grandmother at the kitchen table holding a sealed old yellowed envelope with nothing written on the visible side, looking straight into the camera, excited and moved"
+      motion: "The grandmother speaks to the camera, holds up the envelope, pauses, then smiles with a mysterious look, handheld smartphone video"
+    caption: |
+      Тетрадь деда Коли. Часть 6 — последняя в первом сезоне 🍯
+
+      Сорок лет его ульи ждали меня в чужом сарае. А в улье — письмо.
+
+      Открывать при вас? Пишите «да» 👇
+
+      Подпишись, чтоб не пропустить.
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей.
+
+  - id: "30-pryaniki"
+    title: Пряники деда Коли (между сезонами, ждём письмо)
+    talk_in:
+      text: >-
+        Письмо Колино на комоде лежит — не открываю, жду его дня рождения. А руки сами пряники затеяли. По его тетради.
+      image: "Medium close-up: the grandmother in her rustic kitchen with the white Russian stove behind her, looking straight into the camera with a warm thoughtful smile, holding a small glass jar of golden honey in her hands"
+      motion: "The grandmother talks to the camera warmly, looks at the jar of honey and smiles, small natural head movements, handheld smartphone video"
+    broll:
+      text: >-
+        Мёд с Колиных ульев — в кастрюльку, с маслом и сахаром, пока не запенится. Корица, гвоздика, мука — тесто мягкое, как ушко. Пятнадцать минут в печи — и дух по избе, как сорок лет назад.
+      scenes:
+        - image: "Close-up: a small enamel saucepan on the iron cooktop of the white Russian stove, golden honey melting with butter and sugar into a bubbling foam, the grandmother's hand stirring with a wooden spoon"
+          motion: "The wooden spoon stirs the bubbling honey, golden foam rises"
+        - image: "Close-up: the grandmother's hands kneading a soft golden-brown honey dough on a floured wooden table, a small saucer of cinnamon sticks and cloves beside"
+          motion: "Her hands knead and fold the soft dough, flour dust in the light"
+        - image: "Close-up: the grandmother's hands cutting neat rounds from rolled golden honey dough with an old faceted glass on a floured wooden table, a few rounds already on a dark baking tray"
+          motion: "She presses the glass into the dough, lifts a neat round and lays it on the tray"
+        - image: "The grandmother taking a baking tray of round glossy golden honey gingerbread cookies out of the white Russian stove, warm kitchen light"
+          motion: "She sets the tray on the table and leans in to smell them, smiling with closed eyes"
+    talk_out:
+      text: >-
+        Напиши в комментариях «книга» — пришлю рецепты. А письмо откроем вместе, в Колин день.
+      image: "Close-up: the grandmother at the kitchen table holding up a round golden honey gingerbread cookie, a plate of gingerbread and a sealed old yellowed envelope beside her, looking straight into the camera with a warm sly smile"
+      motion: "The grandmother speaks to the camera, holds up the gingerbread, taps the envelope with a finger and smiles mysteriously, handheld smartphone video"
+    caption: |
+      Пряники деда Коли 🍯
+
+      Мёд с его ульев, корица, гвоздика — и пятнадцать минут в печи. По всей избе пахнет, как сорок лет назад.
+
+      Письмо ждёт Колиного дня рождения. Откроем вместе — подпишись, чтоб не пропустить.
+
+      Напиши «книга» — пришлю рецепты 👇
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+  - id: "30-pryaniki-v2"
+    title: Пряники деда Коли — v2, Зоя говорит в камеру живым видео (липсинк)
+    talk_in:
+      text: >-
+        Письмо Колино на комоде лежит — не открываю, жду его дня рождения. А руки сами пряники затеяли. По его тетради.
+      image: "Medium close-up: the grandmother in her rustic kitchen with the white Russian stove behind her, looking straight into the camera with a warm thoughtful smile, holding a small glass jar of golden honey in her hands"
+      motion: "The grandmother talks to the camera warmly, looks at the jar of honey and smiles, small natural head movements, handheld smartphone video"
+    broll:
+      text: >-
+        Мёд с Колиных ульев — в кастрюльку, с маслом и сахаром, пока не запенится. Корица, гвоздика, мука — тесто мягкое, как ушко. Пятнадцать минут в печи — и дух по избе, как сорок лет назад.
+      scenes:
+        - image: "Close-up: a small enamel saucepan on the iron cooktop of the white Russian stove, golden honey melting with butter and sugar into a bubbling foam, the grandmother's hand stirring with a wooden spoon"
+          motion: "The wooden spoon stirs the bubbling honey, golden foam rises"
+        - image: "Close-up: the grandmother's hands kneading a soft golden-brown honey dough on a floured wooden table, a small saucer of cinnamon sticks and cloves beside"
+          motion: "Her hands knead and fold the soft dough, flour dust in the light"
+        - image: "Close-up: the grandmother's hands cutting neat rounds from rolled golden honey dough with an old faceted glass on a floured wooden table, a few rounds already on a dark baking tray"
+          motion: "She presses the glass into the dough, lifts a neat round and lays it on the tray"
+        - image: "The grandmother taking a baking tray of round glossy golden honey gingerbread cookies out of the white Russian stove, warm kitchen light"
+          motion: "She sets the tray on the table and leans in to smell them, smiling with closed eyes"
+    talk_out:
+      text: >-
+        Напиши в комментариях «книга» — пришлю рецепты. А письмо откроем вместе, в Колин день.
+      image: "Close-up: the grandmother at the kitchen table holding up a round golden honey gingerbread cookie, a plate of gingerbread and a sealed old yellowed envelope beside her, looking straight into the camera with a warm sly smile"
+      motion: "The grandmother speaks to the camera, holds up the gingerbread, taps the envelope with a finger and smiles mysteriously, handheld smartphone video"
+    caption: |
+      Пряники деда Коли 🍯
+
+      Мёд с его ульев, корица, гвоздика — и пятнадцать минут в печи. По всей избе пахнет, как сорок лет назад.
+
+      Письмо ждёт Колиного дня рождения. Откроем вместе — подпишись, чтоб не пропустить.
+
+      Напиши «книга» — пришлю рецепты 👇
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+  - id: "37-shchi-sutochnye"
+    title: Суточные щи — Зоя говорит в камеру живым видео (липсинк)
+    talk_in:
+      text: >-
+        Щи я сегодня варю, а есть будем завтра. Суточные, милок. Пока ночь не постоят — это ещё не щи.
+      image: "Medium close-up: the grandmother in her rustic kitchen with the white Russian stove behind her, a black cast-iron pot steaming on the stove, looking straight into the camera with a warm sly smile, holding a big wooden ladle in her hand"
+      motion: "The grandmother talks to the camera warmly, gestures a little with the wooden ladle, nods and smiles, small natural head movements, handheld smartphone video"
+    broll:
+      text: >-
+        Говядину на косточке — в чугунок, пусть бульон варится. Кислую капусту тушу на сале с луком и морковкой, пока не станет мягкой. Всё в бульон — и в печь, томиться. А на ночь — в сени, на холодок.
+      scenes:
+        - image: "Close-up: a black cast-iron pot on the iron cooktop of the white Russian stove, a big piece of beef on the bone simmering in clear broth with a whole onion and a bay leaf, wisps of steam, fire glowing in the open mouth of the stove below"
+          motion: "The broth gently simmers around the beef, steam rises, the fire flickers in the stove"
+        - image: "Close-up: the grandmother's hands stirring sauerkraut with sliced onion and grated carrot in a black cast-iron frying pan on the iron cooktop of the white Russian stove, a piece of salo melting at the side, fire glowing below"
+          motion: "Her wooden spatula stirs the sizzling cabbage, steam rises"
+        - image: "The grandmother pushing a black cast-iron pot of cabbage soup into the glowing mouth of the white Russian stove with a long iron oven fork (ukhvat), red embers inside, warm kitchen light"
+          motion: "She slides the pot deeper into the stove with the oven fork, embers glow"
+        - image: "Close-up: a ladle pouring thick rich golden sour cabbage soup with pieces of beef into a deep clay bowl on a wooden table, a dollop of sour cream and a slice of dark rye bread beside, steam rising"
+          motion: "The ladle pours the soup, steam rises, a spoon of sour cream is placed on top"
+    talk_out:
+      text: >-
+        Со сметаной да с ржаной корочкой — лучше обеда нет. Напиши в комментариях «книга» — пришлю рецепты.
+      image: "Close-up: the grandmother at the kitchen table with a deep clay bowl of steaming cabbage soup with a dollop of sour cream and a slice of rye bread, looking straight into the camera with a warm smile, holding a wooden spoon"
+      motion: "The grandmother speaks to the camera, takes a spoonful of soup, closes her eyes with pleasure and smiles, handheld smartphone video"
+    caption: |
+      Суточные щи 🥣
+
+      Сегодня варю — завтра едим. Ночь на холодке — и капуста, мясо и бульон становятся одним вкусом.
+
+      Что нужно на 3-литровую кастрюлю:
+      — 600 г говядины на кости
+      — 500 г квашеной капусты
+      — 1 луковица, 1 морковка
+      — 2 картофелины (по желанию)
+      — ложка сала или масла, лавровый лист, перец, зубчик чеснока
+      — сметана и ржаной хлеб к столу
+
+      Как делаю:
+      1. Говядину залей 2,5 л холодной воды, сними пену и вари полтора часа.
+      2. Капусту отожми и туши на сале с ложкой воды 30–40 минут, до мягкости.
+      3. Лук и морковку обжарь и добавь к капусте.
+      4. Мясо разбери и верни в бульон вместе с капустой. Картошку — по желанию.
+      5. Лавровый лист, перец — и томи ещё час на самом малом огне. В печи или в духовке на 120°.
+      6. Остуди и на ночь — в холодильник. Назавтра разогрей и добавь толчёный чеснок.
+
+      Со сметаной да с ржаной корочкой.
+
+      Напиши «книга» — пришлю рецепты 👇
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+  - id: "37-shchi-v2"
+    title: Суточные щи v2 (сцена 2 без второй Зои) — Зоя говорит в камеру живым видео (липсинк)
+    talk_in:
+      text: >-
+        Щи я сегодня варю, а есть будем завтра. Суточные, милок. Пока ночь не постоят — это ещё не щи.
+      image: "Medium close-up: the grandmother in her rustic kitchen with the white Russian stove behind her, a black cast-iron pot steaming on the stove, looking straight into the camera with a warm sly smile, holding a big wooden ladle in her hand"
+      motion: "The grandmother talks to the camera warmly, gestures a little with the wooden ladle, nods and smiles, small natural head movements, handheld smartphone video"
+    broll:
+      text: >-
+        Говядину на косточке — в чугунок, пусть бульон варится. Кислую капусту тушу на сале с луком и морковкой, пока не станет мягкой. Всё в бульон — и в печь, томиться. А на ночь — в сени, на холодок.
+      scenes:
+        - image: "Close-up: a black cast-iron pot on the iron cooktop of the white Russian stove, a big piece of beef on the bone simmering in clear broth with a whole onion and a bay leaf, wisps of steam, fire glowing in the open mouth of the stove below"
+          motion: "The broth gently simmers around the beef, steam rises, the fire flickers in the stove"
+        - image: "The grandmother alone at the white Russian stove, seen from the side at waist height, stirring sauerkraut with sliced onion and grated carrot in a black cast-iron frying pan on the iron cooktop with a wooden spatula held in one hand, her other hand resting on the pan handle, a piece of salo melting at the side, fire glowing below. She is the only person in the frame: no other people, no extra arms or hands."
+          motion: "She stirs the sizzling cabbage with the wooden spatula, steam rises, the fire flickers below"
+        - image: "The grandmother pushing a black cast-iron pot of cabbage soup into the glowing mouth of the white Russian stove with a long iron oven fork (ukhvat), red embers inside, warm kitchen light"
+          motion: "She slides the pot deeper into the stove with the oven fork, embers glow"
+        - image: "Close-up: a ladle pouring thick rich golden sour cabbage soup with pieces of beef into a deep clay bowl on a wooden table, a dollop of sour cream and a slice of dark rye bread beside, steam rising"
+          motion: "The ladle pours the soup, steam rises, a spoon of sour cream is placed on top"
+    talk_out:
+      text: >-
+        Со сметаной да с ржаной корочкой — лучше обеда нет. Напиши в комментариях «книга» — пришлю рецепты.
+      image: "Close-up: the grandmother at the kitchen table with a deep clay bowl of steaming cabbage soup with a dollop of sour cream and a slice of rye bread, looking straight into the camera with a warm smile, holding a wooden spoon"
+      motion: "The grandmother speaks to the camera, takes a spoonful of soup, closes her eyes with pleasure and smiles, handheld smartphone video"
+    caption: |
+      Суточные щи 🥣
+
+      Сегодня варю — завтра едим. Ночь на холодке — и капуста, мясо и бульон становятся одним вкусом.
+
+      Что нужно на 3-литровую кастрюлю:
+      — 600 г говядины на кости
+      — 500 г квашеной капусты
+      — 1 луковица, 1 морковка
+      — 2 картофелины (по желанию)
+      — ложка сала или масла, лавровый лист, перец, зубчик чеснока
+      — сметана и ржаной хлеб к столу
+
+      Как делаю:
+      1. Говядину залей 2,5 л холодной воды, сними пену и вари полтора часа.
+      2. Капусту отожми и туши на сале с ложкой воды 30–40 минут, до мягкости.
+      3. Лук и морковку обжарь и добавь к капусте.
+      4. Мясо разбери и верни в бульон вместе с капустой. Картошку — по желанию.
+      5. Лавровый лист, перец — и томи ещё час на самом малом огне. В печи или в духовке на 120°.
+      6. Остуди и на ночь — в холодильник. Назавтра разогрей и добавь толчёный чеснок.
+
+      Со сметаной да с ржаной корочкой.
+
+      Напиши «книга» — пришлю рецепты 👇
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+  - id: "38-limon-utro"
+    title: Тёплая вода с лимоном и мёдом натощак — формат «модель кишечника» (гипотеза Артёма, 2026-10-08)
+    cfg:
+      subtitles: "karaoke"
+      words_per_line: 1
+      highlight_color: "FFFFFF"
+      font_size: 104
+    talk_in:
+      text: >-
+        Вот он, кишечник, милок. Всё, что ты съел, идёт тут — метр за метром. Батон, колбаса, сладкий йогурт. А утром он у тебя спит, как и ты.
+      image: "Medium shot outdoors: the grandmother sitting on the wooden porch of an old log house, green garden and trees behind her, soft overcast daylight, looking straight into the camera. In front of her chest she holds with both hands a clear transparent plastic educational anatomical model of the human intestines: hollow see-through tubes of the small intestine coiled inside the frame of the large intestine, partly filled with beige-brown food mush, about the size of a serving tray. In her other hand a small glass of white drinking yogurt tilted over the top opening of the model, a thin stream of white yogurt pouring into it"
+      motion: "The grandmother talks to the camera, pours a little white yogurt into the top of the transparent intestine model, then lifts the model slightly to show it, small natural head movements, handheld smartphone video"
+    broll:
+      text: >-
+        Воду грею, но не кипячу — тёплая, как парное молоко. Пару кружков свежего лимона. Снимаю с огня — и ложку мёда: в кипяток мёд не кладут. И в кружку.
+      scenes:
+        - image: "Close-up outdoors: a small white enamel saucepan with a dark blue rim and a black handle, filled with water, on a compact portable camping gas stove with a blue flame, standing on a weathered wooden table in the yard of an old log house, green garden blurred behind, the grandmother's hands in burgundy knitted cardigan sleeves holding the pot handle"
+          motion: "The water warms gently, tiny wisps of steam rise, the blue flame flickers"
+        - image: "Close-up outdoors: the grandmother's hands dropping thin slices of fresh lemon into the warm water in a small white enamel saucepan with a dark blue rim and a black handle on a portable camping gas stove on a weathered wooden table, a halved lemon and a glass jar of golden honey beside, log house wall behind"
+          motion: "The lemon slices slide into the water one by one and float, the water ripples"
+        - image: "Close-up outdoors: the grandmother's hand stirring a spoonful of thick golden honey into the warm lemon water in a small white enamel saucepan with a dark blue rim and a black handle standing on the wooden table next to the turned-off portable gas stove, a glass jar of honey with a spoon beside"
+          motion: "The spoon stirs slowly, the honey dissolves in golden swirls around the lemon slices"
+        - image: "Close-up outdoors: warm golden lemon water with a lemon slice being poured from a small white enamel saucepan with a dark blue rim and a black handle into a clear glass mug on a weathered wooden table, soft daylight, green garden behind"
+          motion: "The warm drink pours into the glass mug, the lemon slice tumbles in, light steam rises"
+    talk_out:
+      text: >-
+        Стакан натощак, за полчаса до завтрака. Десять дней — и почуешь: живот по утрам просыпается вовремя. Это не лекарство, просто тёплое будит кишечник. Пиши «Книга» — забирай мои рецепты для живота.
+      image: "Medium close-up outdoors: the grandmother sitting at a weathered wooden table in the yard of an old log house, green garden and trees behind her, soft overcast daylight, holding with both hands a clear glass mug of warm golden lemon water with a lemon slice inside, looking straight into the camera with a calm kind smile"
+      motion: "The grandmother speaks to the camera calmly, holds the glass mug, takes a small sip and nods, small natural head movements, handheld smartphone video"
+    caption: |
+      Тёплая вода с лимоном и мёдом натощак 🍋
+
+      Шлаков в кишечнике нет — он чистится сам. Но утром он просыпается не сразу, и стакан тёплого его будит.
+
+      Что нужно на стакан:
+      — 250 мл воды
+      — 2 кружка свежего лимона
+      — 1 ч. л. мёда
+
+      Как делаю:
+      1. Воду грею до тёплой, как парное молоко, — не кипячу.
+      2. Кладу лимон, снимаю с огня.
+      3. Мёд — только в тёплую: в кипятке он теряет вкус.
+      4. Пью натощак, за полчаса до завтрака.
+
+      Мёд нельзя детям до года и при аллергии. При язве и гастрите с лимоном осторожно. Запор дольше недели, боль или кровь — сразу к врачу.
+
+      Пиши в комментариях «Книга» — пришлю 7 рецептов для живота 👇
+
+      Баба Зоя — собирательный образ, рецепты из деревенских тетрадей. Это еда, а не лечение.
+
+  - id: "39-sekrety-6"
+    title: 6 бабушкиных секретов — формат «Бабы Нюры» (1,5 млн), гипотеза Артёма 2026-10-09
+    cfg:
+      subtitles: "karaoke"
+      words_per_line: 1
+      highlight_color: "FFFFFF"
+      font_size: 104
+    talk_in:
+      text: >-
+        Новые туфли пятку до крови натирают? Намажь пятку дезодорантом перед тем, как обуться, — и ни одного волдыря не будет.
+      image: "Medium close-up: the grandmother sitting at a kitchen table by a bright window with a radiator and jars of pickles on the windowsill, looking straight into the camera with a lively expression, holding up in one hand a glossy red high-heeled women's shoe and in the other hand a white stick deodorant with the cap off, plain unbranded deodorant without any text"
+      motion: "The grandmother talks to the camera, shows the red shoe, then rubs the deodorant stick in the air as if applying it to a heel, nods knowingly, small natural head movements, handheld smartphone video"
+    broll:
+      text: >-
+        Ноги пахнут — подержи их пятнадцать минут в тёплой воде с содой, и запах уйдёт. Подмышки потеют — протри их на ночь яблочным уксусом пополам с водой, только не после бритья. Ноготь на ноге врос — распарь ногу в горячей солёной воде и подсунь под край кусочек ватки, полегчает. А если гноится — к врачу. Губы потрескались — смешай мёд с сахаром и потри минутку: кожица сойдёт, губы станут мягкие. Волосы быстро жирнятся — ополосни после мытья водой с ложкой уксуса, дольше чистыми будут.
+      scenes:
+        - image: "The grandmother sitting on a wooden kitchen stool by a bright window with a radiator, her bare feet in a white enamel basin of warm water, holding a plain unlabeled cardboard box of baking soda in her lap and smiling at the camera"
+          motion: "She sprinkles a little baking soda into the basin, swirls her feet in the water and smiles, small natural movements"
+        - image: "Medium shot: the grandmother sitting by the kitchen window, holding a small glass bottle of golden apple cider vinegar without a label in one hand and a white cotton pad in the other, dabbing the cotton pad under her arm over the sleeve of her cardigan, looking at the camera"
+          motion: "She moistens the cotton pad from the bottle and dabs it under her arm, explaining with a nod, small natural movements"
+        - image: "Close-up: the grandmother's bare foot resting on a folded towel on a stool next to a white enamel basin of steaming salted water, her fingers gently tucking a tiny wisp of white cotton under the edge of the big toenail, kitchen with radiator behind"
+          motion: "Her fingers carefully tuck the cotton wisp under the toenail edge, steam rises from the basin"
+        - image: "Close-up: the grandmother holding a small white saucer with honey mixed with sugar crystals, rubbing a little of it on her lips with her fingertip and smiling at the camera, kitchen window behind"
+          motion: "She gently rubs the honey scrub on her lips with a fingertip, then smiles, small natural head movements"
+        - image: "The grandmother standing at the kitchen sink pouring water from a white enamel mug onto the long wet dark hair of a young woman who is bending over a basin with her face hidden, kitchen window behind"
+          motion: "She slowly pours the water over the hair from the mug, the water streams down, gentle natural movements"
+    talk_out:
+      text: >-
+        И подпишись, милок, я ещё много чего расскажу.
+      image: "Medium close-up: the grandmother sitting at the kitchen table with a small bowl of honey and a glass bottle of vinegar in front of her, raising her index finger with a sly warm smile, looking straight into the camera, kitchen window with pickle jars behind"
+      motion: "The grandmother wags her raised finger playfully and smiles warmly at the camera, small natural head movements, handheld smartphone video"
+    caption: |
+      6 бабушкиных секретов — сохрани, пригодятся 👇
+
+      1. Новые туфли натирают — намажь пятку дезодорантом перед тем, как обуться.
+      2. Ноги пахнут — 15 минут в тёплой воде с ложкой соды.
+      3. Подмышки потеют — на ночь яблочный уксус пополам с водой. Не после бритья и не на раздражённую кожу.
+      4. Ноготь врос — распарь ногу в горячей солёной воде и подложи под край кусочек ватки. Покраснело сильно, гноится, болит — сразу к врачу.
+      5. Губы потрескались — мёд с щепоткой сахара, потри минутку и смой.
+      6. Волосы быстро жирнятся — после мытья ополосни водой с ложкой уксуса на литр.
+
+      Мёд — не при аллергии.
+
+      Подпишись, ещё расскажу. А рецепты для живота — пиши «Книга» 👇
+
+      Баба Зоя — собирательный образ, советы из деревенских тетрадей. Это не лечение.

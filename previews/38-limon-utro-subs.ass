@@ -1,0 +1,97 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,DejaVu Sans,104,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,1,0,0,0,100,100,0,0,1,7,3,2,80,80,518,1
+Style: Simple,DejaVu Sans,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2.5,1,2,90,90,249,1
+Style: Hook,DejaVu Sans,88,&H00FFFFFF,&H00FFFFFF,&H00202020,&H28202020,1,0,0,0,100,100,0,0,3,22,0,8,90,90,230,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.46,Sub,,0,0,0,,{\c&H00FFFFFF&}Вот{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.46,0:00:00.93,Sub,,0,0,0,,{\c&H00FFFFFF&}он{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.93,0:00:01.39,Sub,,0,0,0,,{\c&H00FFFFFF&}кишечник{\c&H00FFFFFF&}
+Dialogue: 0,0:00:01.39,0:00:01.86,Sub,,0,0,0,,{\c&H00FFFFFF&}милок{\c&H00FFFFFF&}
+Dialogue: 0,0:00:01.86,0:00:02.32,Sub,,0,0,0,,{\c&H00FFFFFF&}Всё{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.32,0:00:02.79,Sub,,0,0,0,,{\c&H00FFFFFF&}что{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.79,0:00:03.25,Sub,,0,0,0,,{\c&H00FFFFFF&}ты{\c&H00FFFFFF&}
+Dialogue: 0,0:00:03.25,0:00:03.72,Sub,,0,0,0,,{\c&H00FFFFFF&}съел{\c&H00FFFFFF&}
+Dialogue: 0,0:00:03.72,0:00:04.18,Sub,,0,0,0,,{\c&H00FFFFFF&}идёт{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.18,0:00:05.11,Sub,,0,0,0,,{\c&H00FFFFFF&}тут{\c&H00FFFFFF&}
+Dialogue: 0,0:00:05.11,0:00:05.58,Sub,,0,0,0,,{\c&H00FFFFFF&}метр{\c&H00FFFFFF&}
+Dialogue: 0,0:00:05.58,0:00:06.04,Sub,,0,0,0,,{\c&H00FFFFFF&}за{\c&H00FFFFFF&}
+Dialogue: 0,0:00:06.04,0:00:06.51,Sub,,0,0,0,,{\c&H00FFFFFF&}метром{\c&H00FFFFFF&}
+Dialogue: 0,0:00:06.51,0:00:06.97,Sub,,0,0,0,,{\c&H00FFFFFF&}Батон{\c&H00FFFFFF&}
+Dialogue: 0,0:00:06.97,0:00:07.44,Sub,,0,0,0,,{\c&H00FFFFFF&}колбаса{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.44,0:00:07.90,Sub,,0,0,0,,{\c&H00FFFFFF&}сладкий{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.90,0:00:08.37,Sub,,0,0,0,,{\c&H00FFFFFF&}йогурт{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.37,0:00:08.83,Sub,,0,0,0,,{\c&H00FFFFFF&}А{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.83,0:00:09.30,Sub,,0,0,0,,{\c&H00FFFFFF&}утром{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.30,0:00:09.76,Sub,,0,0,0,,{\c&H00FFFFFF&}он{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.76,0:00:10.23,Sub,,0,0,0,,{\c&H00FFFFFF&}у{\c&H00FFFFFF&}
+Dialogue: 0,0:00:10.23,0:00:10.69,Sub,,0,0,0,,{\c&H00FFFFFF&}тебя{\c&H00FFFFFF&}
+Dialogue: 0,0:00:10.69,0:00:11.16,Sub,,0,0,0,,{\c&H00FFFFFF&}спит{\c&H00FFFFFF&}
+Dialogue: 0,0:00:11.16,0:00:11.62,Sub,,0,0,0,,{\c&H00FFFFFF&}как{\c&H00FFFFFF&}
+Dialogue: 0,0:00:11.62,0:00:12.09,Sub,,0,0,0,,{\c&H00FFFFFF&}и{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.09,0:00:12.55,Sub,,0,0,0,,{\c&H00FFFFFF&}ты{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.55,0:00:13.02,Sub,,0,0,0,,{\c&H00FFFFFF&}Воду{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.02,0:00:13.48,Sub,,0,0,0,,{\c&H00FFFFFF&}грею{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.48,0:00:13.94,Sub,,0,0,0,,{\c&H00FFFFFF&}но{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.94,0:00:14.41,Sub,,0,0,0,,{\c&H00FFFFFF&}не{\c&H00FFFFFF&}
+Dialogue: 0,0:00:14.41,0:00:15.34,Sub,,0,0,0,,{\c&H00FFFFFF&}кипячу{\c&H00FFFFFF&}
+Dialogue: 0,0:00:15.34,0:00:15.80,Sub,,0,0,0,,{\c&H00FFFFFF&}тёплая{\c&H00FFFFFF&}
+Dialogue: 0,0:00:15.80,0:00:16.27,Sub,,0,0,0,,{\c&H00FFFFFF&}как{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.27,0:00:16.73,Sub,,0,0,0,,{\c&H00FFFFFF&}парное{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.73,0:00:17.20,Sub,,0,0,0,,{\c&H00FFFFFF&}молоко{\c&H00FFFFFF&}
+Dialogue: 0,0:00:17.20,0:00:17.66,Sub,,0,0,0,,{\c&H00FFFFFF&}Пару{\c&H00FFFFFF&}
+Dialogue: 0,0:00:17.66,0:00:18.13,Sub,,0,0,0,,{\c&H00FFFFFF&}кружков{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.13,0:00:18.59,Sub,,0,0,0,,{\c&H00FFFFFF&}свежего{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.59,0:00:19.06,Sub,,0,0,0,,{\c&H00FFFFFF&}лимона{\c&H00FFFFFF&}
+Dialogue: 0,0:00:19.06,0:00:19.52,Sub,,0,0,0,,{\c&H00FFFFFF&}Снимаю{\c&H00FFFFFF&}
+Dialogue: 0,0:00:19.52,0:00:19.99,Sub,,0,0,0,,{\c&H00FFFFFF&}с{\c&H00FFFFFF&}
+Dialogue: 0,0:00:19.99,0:00:20.92,Sub,,0,0,0,,{\c&H00FFFFFF&}огня{\c&H00FFFFFF&}
+Dialogue: 0,0:00:20.92,0:00:21.38,Sub,,0,0,0,,{\c&H00FFFFFF&}и{\c&H00FFFFFF&}
+Dialogue: 0,0:00:21.38,0:00:21.85,Sub,,0,0,0,,{\c&H00FFFFFF&}ложку{\c&H00FFFFFF&}
+Dialogue: 0,0:00:21.85,0:00:22.31,Sub,,0,0,0,,{\c&H00FFFFFF&}мёда{\c&H00FFFFFF&}
+Dialogue: 0,0:00:22.31,0:00:22.78,Sub,,0,0,0,,{\c&H00FFFFFF&}в{\c&H00FFFFFF&}
+Dialogue: 0,0:00:22.78,0:00:23.24,Sub,,0,0,0,,{\c&H00FFFFFF&}кипяток{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.24,0:00:23.71,Sub,,0,0,0,,{\c&H00FFFFFF&}мёд{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.71,0:00:24.17,Sub,,0,0,0,,{\c&H00FFFFFF&}не{\c&H00FFFFFF&}
+Dialogue: 0,0:00:24.17,0:00:24.64,Sub,,0,0,0,,{\c&H00FFFFFF&}кладут{\c&H00FFFFFF&}
+Dialogue: 0,0:00:24.64,0:00:25.10,Sub,,0,0,0,,{\c&H00FFFFFF&}И{\c&H00FFFFFF&}
+Dialogue: 0,0:00:25.10,0:00:25.57,Sub,,0,0,0,,{\c&H00FFFFFF&}в{\c&H00FFFFFF&}
+Dialogue: 0,0:00:25.57,0:00:26.03,Sub,,0,0,0,,{\c&H00FFFFFF&}кружку{\c&H00FFFFFF&}
+Dialogue: 0,0:00:26.03,0:00:26.50,Sub,,0,0,0,,{\c&H00FFFFFF&}Стакан{\c&H00FFFFFF&}
+Dialogue: 0,0:00:26.50,0:00:26.96,Sub,,0,0,0,,{\c&H00FFFFFF&}натощак{\c&H00FFFFFF&}
+Dialogue: 0,0:00:26.96,0:00:27.42,Sub,,0,0,0,,{\c&H00FFFFFF&}за{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.42,0:00:27.89,Sub,,0,0,0,,{\c&H00FFFFFF&}полчаса{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.89,0:00:28.35,Sub,,0,0,0,,{\c&H00FFFFFF&}до{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.35,0:00:28.82,Sub,,0,0,0,,{\c&H00FFFFFF&}завтрака{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.82,0:00:29.28,Sub,,0,0,0,,{\c&H00FFFFFF&}Десять{\c&H00FFFFFF&}
+Dialogue: 0,0:00:29.28,0:00:30.21,Sub,,0,0,0,,{\c&H00FFFFFF&}дней{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.21,0:00:30.68,Sub,,0,0,0,,{\c&H00FFFFFF&}и{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.68,0:00:31.14,Sub,,0,0,0,,{\c&H00FFFFFF&}почуешь{\c&H00FFFFFF&}
+Dialogue: 0,0:00:31.14,0:00:31.61,Sub,,0,0,0,,{\c&H00FFFFFF&}живот{\c&H00FFFFFF&}
+Dialogue: 0,0:00:31.61,0:00:32.07,Sub,,0,0,0,,{\c&H00FFFFFF&}по{\c&H00FFFFFF&}
+Dialogue: 0,0:00:32.07,0:00:32.54,Sub,,0,0,0,,{\c&H00FFFFFF&}утрам{\c&H00FFFFFF&}
+Dialogue: 0,0:00:32.54,0:00:33.00,Sub,,0,0,0,,{\c&H00FFFFFF&}просыпается{\c&H00FFFFFF&}
+Dialogue: 0,0:00:33.00,0:00:33.47,Sub,,0,0,0,,{\c&H00FFFFFF&}вовремя{\c&H00FFFFFF&}
+Dialogue: 0,0:00:33.47,0:00:33.93,Sub,,0,0,0,,{\c&H00FFFFFF&}Это{\c&H00FFFFFF&}
+Dialogue: 0,0:00:33.93,0:00:34.40,Sub,,0,0,0,,{\c&H00FFFFFF&}не{\c&H00FFFFFF&}
+Dialogue: 0,0:00:34.40,0:00:34.86,Sub,,0,0,0,,{\c&H00FFFFFF&}лекарство{\c&H00FFFFFF&}
+Dialogue: 0,0:00:34.86,0:00:35.33,Sub,,0,0,0,,{\c&H00FFFFFF&}просто{\c&H00FFFFFF&}
+Dialogue: 0,0:00:35.33,0:00:35.79,Sub,,0,0,0,,{\c&H00FFFFFF&}тёплое{\c&H00FFFFFF&}
+Dialogue: 0,0:00:35.79,0:00:36.26,Sub,,0,0,0,,{\c&H00FFFFFF&}будит{\c&H00FFFFFF&}
+Dialogue: 0,0:00:36.26,0:00:36.72,Sub,,0,0,0,,{\c&H00FFFFFF&}кишечник{\c&H00FFFFFF&}
+Dialogue: 0,0:00:36.72,0:00:37.19,Sub,,0,0,0,,{\c&H00FFFFFF&}Пиши{\c&H00FFFFFF&}
+Dialogue: 0,0:00:37.19,0:00:38.12,Sub,,0,0,0,,{\c&H00FFFFFF&}Книга{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.12,0:00:38.58,Sub,,0,0,0,,{\c&H00FFFFFF&}забирай{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.58,0:00:39.05,Sub,,0,0,0,,{\c&H00FFFFFF&}мои{\c&H00FFFFFF&}
+Dialogue: 0,0:00:39.05,0:00:39.51,Sub,,0,0,0,,{\c&H00FFFFFF&}рецепты{\c&H00FFFFFF&}
+Dialogue: 0,0:00:39.51,0:00:39.98,Sub,,0,0,0,,{\c&H00FFFFFF&}для{\c&H00FFFFFF&}
+Dialogue: 0,0:00:39.98,0:00:40.44,Sub,,0,0,0,,{\c&H00FFFFFF&}живота{\c&H00FFFFFF&}

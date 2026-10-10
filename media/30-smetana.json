@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791045577121-pu2vnm40.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791045642636.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791045782383-kuqn5as4.mp4",
+  "prompt": "She dips the rolled pancake into the thick sour cream, takes a bite, chews with a happy squint and nods at the camera, calm and kind, she does not talk"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791045653977.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791045844851-w9p5wgn3.mp4",
+  "prompt": "Her hand lets go of the wooden spoon and it stays standing upright in the thick sour cream, she taps it lightly with a finger and it does not fall"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791045694154.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791045889033-8evmq191.mp4",
+  "prompt": "She stirs the cream slowly, covers the pot with the linen cloth and pats it gently, calm kind face"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791045756606.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791045949106-z9reis4s.mp4",
+  "prompt": "She skims the thick cream from the top of the milk with the spoon and puts it into a small clay pot, calm and focused"
+ }
+}

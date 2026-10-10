@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790482602952-41m223gf.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790482819654.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790485748513-k2e3t2oj.mp4",
+  "prompt": "Slow sideways camera pan across the colourful cells"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790485845806.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790486358672-khapl1v7.mp4",
+  "prompt": "She lifts the frame and looks at it, a few bees fly around calmly"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790486455602.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790486675422-tvm9tjxn.mp4",
+  "prompt": "The boy looks at the granules with suspicion, she laughs and pushes the bowl towards him"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790486750230.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790486929200-p6trg692.mp4",
+  "prompt": "She shows the spoon to the camera, then puts the granules in her mouth"
+ }
+}

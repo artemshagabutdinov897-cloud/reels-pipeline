@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049082450-o105nauw.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049145001.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049323846-4m3tj7kf.mp4",
+  "prompt": "She kneads the soft dough and forms it into a ball, calm kind face"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049148796.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049313985-d8rx4e59.mp4",
+  "prompt": "She takes a bite of the pie slice, chews with a happy squint and nods at the camera, she does not talk"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049159314.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049339063-08iikxo3.mp4",
+  "prompt": "She spreads the mushrooms over the potatoes, covers them with a layer of dough and pinches the edges"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049163595.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049324033-y1f379ws.mp4",
+  "prompt": "Her hands break the pie in half, the filling shows, light steam rises"
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "keyframes": {
+  "sky_face": "https://109.71.240.55/graf/media/ref/sky-face.jpg",
+  "sky_body": "https://109.71.240.55/graf/media/ref/sky-body.jpg",
+  "sky_mood": "https://109.71.240.55/graf/media/ref/sky-mood.jpg",
+  "p1_armchair": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791195814747.png",
+  "p2_banquet": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791195897019.png",
+  "p3_bust": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791195977377.png",
+  "p4_disdain": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791196072498.png"
+ },
+ "clips": {}
+}

@@ -1,0 +1,55 @@
+name: talk
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        required: true
+      mode:
+        required: false
+        default: ""
+permissions:
+  contents: write
+jobs:
+  talk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r pipeline/requirements.txt
+      - uses: actions/cache/restore@v4
+        with:
+          path: output
+          key: talk-${{ inputs.id }}-${{ github.run_id }}
+          restore-keys: talk-${{ inputs.id }}-
+      - name: generate
+        env:
+          BRATUHA_API_KEY: ${{ secrets.BRATUHA_API_KEY || secrets.YK_SECRET }}
+        timeout-minutes: 75
+        run: python -u pipeline/talk.py "${{ inputs.id }}" ${{ inputs.mode }}
+      - name: save preview
+        if: always()
+        run: |
+          mkdir -p previews
+          O=output/${{ inputs.id }}
+          if [ -f $O/${{ inputs.id }}.mp4 ]; then
+            cp $O/${{ inputs.id }}.mp4 previews/
+            D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 $O/${{ inputs.id }}.mp4 || echo 40)
+            ffmpeg -hide_banner -loglevel error -y -i $O/${{ inputs.id }}.mp4 -vf "fps=12/$D,scale=270:-1,tile=4x3" -frames:v 1 -q:v 5 previews/${{ inputs.id }}.jpg || true
+          fi
+          cp $O/state.json previews/${{ inputs.id }}-state.json 2>/dev/null || true
+          git config user.name "artemshagabutdinov897-cloud"
+          git config user.email "artemshagabutdinov897@gmail.com"
+          git add previews
+          git commit -m "talk ${{ inputs.id }}" || true
+          git stash -q || true
+          for i in 1 2 3; do git pull -q --rebase && git push && break; sleep 5; done || true
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: output
+          key: talk-${{ inputs.id }}-${{ github.run_id }}

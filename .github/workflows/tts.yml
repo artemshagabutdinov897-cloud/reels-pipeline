@@ -1,0 +1,35 @@
+name: tts
+on:
+  workflow_dispatch:
+    inputs:
+      name: {required: true}
+      text: {required: true}
+      sample: {required: true}
+      sample_text: {required: true}
+permissions:
+  contents: write
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r pipeline/requirements.txt
+      - name: generate
+        env:
+          BRATUHA_API_KEY: ${{ secrets.BRATUHA_API_KEY || secrets.YK_SECRET }}
+          TXT: ${{ inputs.text }}
+          SMP: ${{ inputs.sample }}
+          SMT: ${{ inputs.sample_text }}
+        run: python -u pipeline/tts_one.py "${{ inputs.name }}" "$TXT" "$SMP" "$SMT"
+      - name: save
+        run: |
+          git config user.name "artemshagabutdinov897-cloud"
+          git config user.email "artemshagabutdinov897@gmail.com"
+          git add previews
+          git commit -m "tts ${{ inputs.name }}" || true
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push && break; sleep 8; done

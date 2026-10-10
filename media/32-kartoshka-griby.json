@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049077112-uasy9onu.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Gacrux"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049155662.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049324315-tlqbdfqx.mp4",
+  "prompt": "She stirs the sliced mushrooms with a wooden spatula as they sizzle and turn golden, calm kind face"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049156097.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049323927-lpt192ua.mp4",
+  "prompt": "She turns the crispy potatoes and mushrooms with the wooden spatula, they sizzle, light steam rises"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049163386.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049354529-maojpt7c.mp4",
+  "prompt": "She takes a forkful of potatoes and mushrooms, eats it, wipes the skillet with the bread, squints happily and nods at the camera, she does not talk"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1791049181576.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1791049359733-x3bvbqce.mp4",
+  "prompt": "The knife slices the potato into thin sticks, she pushes them into the bowl with the blade"
+ }
+}

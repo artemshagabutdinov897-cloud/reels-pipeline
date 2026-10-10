@@ -1,0 +1,27 @@
+{
+ "voice": {
+  "url": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790577267385-urgxj7pj.mp3",
+  "tool": "gemini-3-1-flash-tts",
+  "voice": "Sulafat"
+ },
+ "scene_1": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790577540960.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790577734782-r2l62gl5.mp4",
+  "prompt": "She flips the tube over and brings it closer to her eyes"
+ },
+ "scene_2": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790577993519.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790578205414-p5ez165z.mp4",
+  "prompt": "She reads, then raises one eyebrow and looks at the camera with a knowing half-smile"
+ },
+ "scene_3": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790578466819.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790578665111-4f418njj.mp4",
+  "prompt": "Her finger slowly slides down the list and stops near the bottom"
+ },
+ "scene_4": {
+  "frame": "https://storage.yandexcloud.net/bratuha.ru.files/user_files2/gemini_2K_1790578861301.png",
+  "video": "https://storage.yandexcloud.net/bratuha.ru.files/user_files/1790579023443-2hjwl7qk.mp4",
+  "prompt": "She takes off her glasses, smiles warmly and gives a small nod to the camera"
+ }
+}

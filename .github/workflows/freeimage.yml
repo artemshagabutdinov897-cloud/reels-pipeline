@@ -1,0 +1,39 @@
+name: freeimage
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        required: true
+      prompt:
+        required: true
+      aspect:
+        required: false
+        default: "3:4"
+permissions:
+  contents: write
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r pipeline/requirements.txt
+      - name: generate
+        env:
+          BRATUHA_API_KEY: ${{ secrets.BRATUHA_API_KEY || secrets.YK_SECRET }}
+          PROMPT: ${{ inputs.prompt }}
+          NAME: ${{ inputs.name }}
+          ASPECT: ${{ inputs.aspect }}
+        run: python pipeline/free_image.py "$NAME" "$PROMPT" "$ASPECT"
+      - name: save
+        run: |
+          git config user.name "artemshagabutdinov897-cloud"
+          git config user.email "artemshagabutdinov897@gmail.com"
+          git pull -q --rebase || true
+          git add previews
+          git commit -m "freeimage ${{ inputs.name }}" || true
+          git push

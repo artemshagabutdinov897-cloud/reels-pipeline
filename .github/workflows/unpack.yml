@@ -1,0 +1,29 @@
+name: unpack
+on:
+  workflow_dispatch:
+    inputs:
+      tgz:
+        description: "base64 tar.gz с файлами от корня репозитория"
+        required: true
+      msg:
+        required: true
+permissions:
+  contents: write
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: unpack
+        env:
+          TGZ: ${{ inputs.tgz }}
+          MSG: ${{ inputs.msg }}
+        run: |
+          echo "$TGZ" | base64 -d | tar xzf -
+          git config user.name "artemshagabutdinov897-cloud"
+          git config user.email "artemshagabutdinov897@gmail.com"
+          git add -A
+          git commit -m "$MSG"
+          git push
