@@ -6,6 +6,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import make_video as M
 
 name, tool, payload = sys.argv[1], sys.argv[2], json.loads(sys.argv[3])
+if tool.startswith("__schema__:"):
+    import os, urllib.request
+    req = urllib.request.Request("https://bratuha.ru/api/v1/tools/" + tool.split(":", 1)[1] + "/schema", headers={"Authorization": "Bearer " + os.environ["BRATUHA_API_KEY"]})
+    print(json.dumps(json.loads(urllib.request.urlopen(req, timeout=60).read()), ensure_ascii=True)[:6000])
+    sys.exit(0)
 if tool == "__list__":
     import os, urllib.request
     req = urllib.request.Request("https://bratuha.ru/api/v1/tools", headers={"Authorization": "Bearer " + os.environ["BRATUHA_API_KEY"]})
