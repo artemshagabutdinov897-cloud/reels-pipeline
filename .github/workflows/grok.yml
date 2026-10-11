@@ -1,0 +1,45 @@
+name: grok
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        required: true
+      prompt:
+        required: true
+      images:
+        required: true
+      seconds:
+        required: false
+        default: "6"
+      resolution:
+        required: false
+        default: "720p"
+      tool:
+        required: false
+        default: "grok-video-1-5"
+permissions:
+  contents: write
+jobs:
+  grok:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r pipeline/requirements.txt
+      - name: generate
+        env:
+          BRATUHA_API_KEY: ${{ secrets.BRATUHA_API_KEY || secrets.YK_SECRET }}
+          PROMPT: ${{ inputs.prompt }}
+          IMGS: ${{ inputs.images }}
+        run: python -u pipeline/grok_one.py "${{ inputs.name }}" "$PROMPT" "$IMGS" "${{ inputs.seconds }}" "${{ inputs.resolution }}" "${{ inputs.tool }}"
+      - name: save
+        run: |
+          git config user.name "artemshagabutdinov897-cloud"
+          git config user.email "artemshagabutdinov897@gmail.com"
+          git add previews
+          git commit -m "grok ${{ inputs.name }}" || true
+          for i in 1 2 3 4 5 6 7 8; do git pull -q --rebase && git push && break; sleep $((RANDOM % 10 + 5)); done
