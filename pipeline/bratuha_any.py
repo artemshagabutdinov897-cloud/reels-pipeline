@@ -9,7 +9,11 @@ name, tool, payload = sys.argv[1], sys.argv[2], json.loads(sys.argv[3])
 if tool.startswith("__schema__:"):
     import os, urllib.request
     req = urllib.request.Request("https://bratuha.ru/api/v1/tools/" + tool.split(":", 1)[1] + "/schema", headers={"Authorization": "Bearer " + os.environ["BRATUHA_API_KEY"]})
-    print(json.dumps(json.loads(urllib.request.urlopen(req, timeout=60).read()), ensure_ascii=True)[:6000])
+    sch = json.loads(urllib.request.urlopen(req, timeout=60).read())
+props = sch.get("input_schema", {}).get("properties", {})
+for k, v in props.items():
+    print(k, json.dumps({x: v.get(x) for x in ("type", "enum", "default", "minimum", "maximum")}))
+print("required:", sch.get("input_schema", {}).get("required"))
     sys.exit(0)
 if tool == "__list__":
     import os, urllib.request
